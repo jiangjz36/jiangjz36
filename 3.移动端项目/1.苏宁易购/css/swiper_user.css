@@ -1,0 +1,69 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 0.8438rem;/*18px*/
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/* Common Styles */
+.banner .swiper-pagination-fraction,
+.banner .swiper-pagination-custom,
+.banner .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0.1875rem;/*4px*/
+  right: 0.4219rem;/*9px*/
+
+  width: 3.375rem;/*72px*/
+  /*height: 5px;*/
+}
+/* Bullets */
+.swiper-pagination-bullet {
+  width: 0.2344rem;/*5px*/
+  height: 0.2344rem;/*5px*/
+}
+
+/*每个bullets之间的距离*/
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0.0938rem;/*0 2px*/
+}
+/* Bullets */
+.swiper-pagination-bullet {
+  background: #FFF;
+  opacity: 0.9;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FFC001!important;
+}
+
+
+
+
+/* Common Styles */
+.banner1 .swiper-pagination-fraction,
+.banner1 .swiper-pagination-custom,
+.banner1 .swiper-container-horizontal > .swiper-pagination-bullets {
+  top: -0.4688rem;/*-10px*/
+  right: -0.4219rem;/*-9px*/
+
+  width: 72px;
+  height: 5px;
+}

@@ -1,0 +1,127 @@
+.container {
+	width: 1280px;
+	margin: 0 auto;
+}
+.container .wrap {
+	width: 1190px;
+	margin: 0 auto;
+}
+
+
+
+/*轮播图*/
+.swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 12px;
+        opacity: 1;
+        background: #444851;
+		color: #FFF;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active {
+        color:#fff;
+        background: #CB351A;
+    }
+
+
+.selling {
+	width: 1200px!important;
+	position: relative;
+	left: 10px;
+}
+.selling h3 {
+	font-size: 20px;
+	margin: 20px 0 10px;
+}
+   .icon_selling {
+   		display: inline-block;
+   		width: 20px;
+   		height: 22px;
+   		background: url(../img/sale_icon.png) no-repeat scroll 0 0;
+   		vertical-align: middle;
+   }
+
+
+   .sel_sec {
+   		float: left;
+   		width: 290px;
+   		height: 312px;
+   		box-shadow: 0 0 2px 1px rgba(100,100,100,.2);
+   		margin-bottom: 10px;
+   		margin-right: 10px;
+   }
+   .sel_sec:nth-child(5n) {
+   		/*margin-right: 0;*/
+   }
+   .sel_sec_img {
+   		width: 290px;
+   		height: 230px;
+   		overflow: hidden;
+   }
+   .sel_sec_img img {
+   		width: 290px;
+   		height: 230px;
+   		transform: scale(1);
+   		transition: all 1s;
+   }
+   .sel_sec_img img:hover {
+		transform: scale(1.1);
+   }
+   .sel_sec p {
+   	height: 42px;
+   	margin: 0 10px;
+   	line-height: 42px;
+   	font-size: 14px;
+   	border-bottom: 1px dashed #C6C6C6;
+   }
+   .sel_sec p span {
+   	float: right;
+   	font-size: 15px;
+   	color: #FF0000;
+   }
+   .sel_sec p b {
+   		font-size: 22px;
+   		font-weight: normal;
+   }
+	.countdown {
+   		width: 180px;
+   		height: 36px;
+   		font-size: 12px;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 36px;
+	}
+	   .icon_time {
+	   		display: inline-block;
+	   		width: 22px;
+	   		height: 22px;
+	   		margin-right: 5px;
+	   		background: url(../img/sale_icon.png) no-repeat scroll -48px 1px;
+	   		vertical-align: middle;
+	   }

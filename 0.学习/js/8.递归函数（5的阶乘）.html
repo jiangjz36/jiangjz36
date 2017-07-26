@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>递归函数</title>
+	<script >
+	//5的阶乘
+	function cal(n){
+		if(n>1){
+		    return n*cal(n-1);//5*4*3*2 
+		}else if(n==1||n==0){
+		    return 1;
+		}else{
+		    alert("请输入正确数字");
+		}
+	}
+	alert(cal(5));
+	</script>
+</head>
+<body>
+</body>
+</html>

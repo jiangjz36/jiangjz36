@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        #theBtn{
+            width: 100%;
+            height: 200px;
+        }
+    input {
+        font-size:50px;
+        width: 300px;
+        height: 200px;
+        /*margin: 100px 300px 200px 500px;*/
+    }
+        #theShow{
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            height: 600px;
+            border: 1px solid black;
+        }
+    </style>
+    <script src="../javascripts/jquery.js"></script>
+    <script type="text/javascript" src="./javascripts/jquery.js"></script>
+    <title></title>
+</head>
+<body>
+<div id="theBtn">
+
+    <input type="button" value="GET" id="theGet"/>
+    <input type="button" value="POST" id="thePost"/>
+</div>
+
+<div id="theShow"></div>
+<script>
+    $(function () {
+        // 当我点击  thieGet  按钮 会发出请求，进入到服务器返回
+        $("#theGet").click(function () {
+            $.ajax({
+                // url: '/VueHandler/AdminLoginAndRegHandler?action=verification',// 生成验证码
+                // url: '/VueHandler/AdminLoginAndRegHandler?action=checkVerification',// 校验验证码
+                // url: '/VueHandler/AdminHandler?action=show',//请求地址
+                // url: '/VueHandler/AdminHandler?action=delete',   // 删除接口
+                // url: '/VueHandler/AdminHandler?action=quit',   // 退出
+                // url: '/VueHandler/AdminHandler?action=lockuser',   // 冻结和解冻 学员列表
+                // url: '/VueHandler/CourseHandler?action=getpower',  // 获取权限
+                url: '/VueHandler/CourseHandler?action=getcategory',  // 获取课程权限
+                type:"GET", //请求方式
+                async:false,    // 同步 异步
+                data:{
+                    // 我就要查看第一个的数据是怎么样的
+                    // searchText: '',
+                    // pageStart: '1'
+                    // veri: '1256'
+
+                    // 删除接口
+                    // tokenId: 1
+                   
+                    // 冻结和解冻 学员列表
+                    // tokenId: 1
+
+
+                },
+                success: function (data) {
+                    $("#theShow").html(data);
+                    // 将请求的结果放在#theShow的html里面
+                    var msg = eval('(' + data + ')');
+                    if(typeof msg.success)
+                    {
+                        // alert(1);
+                       // window.location = "Test_courseShow.html";
+                    }
+                }
+            })
+        });
+        $("#thePost").click(function () {
+            $.ajax({
+                // url: '/VueHandler/AdminLoginAndRegHandler?action=add',//注册
+                // url: '/VueHandler/AdminLoginAndRegHandler?action=login',// 登陆
+                // url: '/VueHandler/AdminHandler?action=update',// 修改
+                // url: '/VueHandler/AdminHandler?action=returnuserinfo',// 返回登录的用户信息
+                // url: '/VueHandler/AdminHandler?action=updatepass',// 修改密码
+                // url: '/VueHandler/AdminHandler?action=adduser',// 添加学员信息
+                // url: '/VueHandler/VideoHandler?action=add',  // 添加视频信息
+                url: '/VueHandler/VideoHandler?action=update',  // 更新视频信息
+                
+                type:"POST",
+                async:false,
+                data:{
+                    // 注册
+                    // userName: 'aaa',
+                    // password: '123456',
+                    // trueName: '葫芦娃a',
+                    // phone: '12345678912',
+                    // power: '系统管理人员'
+                    // 登录功能要求前端发送什么数据，看后天
+
+                    // 登陆
+                    // userName: 'aaa',
+                    // password: '123456',
+
+                    // 修改
+                    // tokenId: 1,
+                    // userName: "admin110",
+                    // trueName: "qqqq",
+                    // phone: "14725836912",
+                    // power: "课程管理人员"
+
+                    // 修改密码
+                    // userPwd: '123456new',
+                    // newPwd: '123456777'
+
+                    // 添加学员信息
+                    // userName: 'hellobb', 
+                    // addphone: '12345678902',
+                    // addemail: '12345678bb@qq.com'
+
+                    // 添加视频信息
+                    // Vname: '测试视频',
+                    // Vtime: '1',
+                    // Vurl: '测试视频的url'
+                    
+                    // 更新视频信息
+                    ID: 1,
+                    Vname: '去你妹的',
+                    Vtime: '998',
+                    Vurl: '校aaa区'
+                    
+                },
+                success: function (data) {
+                    $("#theShow").html(data);
+                    var msg = eval('(' + data + ')');
+                    if(msg.success)
+                    {
+                        // alert(1);
+                        //window.location = "Test_courseShow.html";
+                    }
+                }
+            })
+        });
+    })
+//     $.ajax({
+//         url: '',
+//         type:"POST",
+//         async:false,
+//         data:{
+
+
+//         },
+//         success: function (data) {
+//             $("#theShow").html(data);
+// //            var msg = eval('(' + data + ')');
+// //            if(msg.success)
+// //            {
+// //                alert(1);
+// //                //window.location = "Test_courseShow.html";
+// //            }
+//         }
+//     });
+
+// 预加载*******************************************************************//
+$.ajax({
+    url: '/VueHandler/AdminLoginAndRegHandler?action=verification',// 生成验证码
+    type:"GET", //请求方式
+    async:false,    // 同步 异步
+    data:{
+
+    },
+    success: function (data) {
+        $("#theShow").html(data);
+        var msg = eval('(' + data + ')');
+        if(typeof msg.success)
+        {
+
+        }
+    }
+})
+$.ajax({
+    url: '/VueHandler/AdminLoginAndRegHandler?action=login',// 登陆
+    type:"POST",
+    async:false,
+    data:{
+        userName: 'aaa',
+        password: '123456new'
+    },
+    success: function (data) {
+        $("#theShow").html(data);
+        var msg = eval('(' + data + ')');
+        if(msg.success)
+        {
+            
+        }
+    }
+})
+
+
+
+
+</script>
+</body>
+</html>

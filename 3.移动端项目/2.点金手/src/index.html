@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/public/reset.css">
+	<link rel="stylesheet" href="style/public/public.css">
+	<link rel="stylesheet" href="style/public/swiper.css">
+	<link rel="stylesheet" href="style/public/swiper_user.css">
+	<link rel="stylesheet" href="style/home/index.css">
+	<script src="js/public/pixel.js"></script>
+</head>
+<body>
+	<header id="index">
+		<h1 class="logo">
+			<a href="#"></a>
+		</h1>
+		<div class="loginBar">
+			<!-- 注册 -->
+			<a class="register" href="register.html">注册</a>
+			<!-- zhuce.png -->
+			<!-- 登录 -->
+			<a class="login" href="login.html">登录</a>
+		</div>
+	</header>
+	<header id="user" style="display: none;">
+		<div class="user_one">
+			<span><img src="/img/zhuanqian.png" alt="">我赚的钱</span>
+			<span><img src="/img/shouyi.png" alt="">今日收益+5.00</span>
+		</div>
+		<div class="user_two">
+			<span><b>5.15</b>元</span>
+			<a href="details.html">查看明细</a>
+		</div>
+	</header>
+	<div class="banner">
+		<!-- Swiper -->
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="/img/banner1.jpg" alt=""></div>
+	            <div class="swiper-slide"><img src="/img/banner2.jpg" alt=""></div>
+	            <div class="swiper-slide"><img src="/img/banner3.jpg" alt=""></div>
+	            <div class="swiper-slide"><img src="/img/banner4.jpg" alt=""></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <!-- <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div> -->
+	    </div>
+		<!-- Swiper JS -->
+		<script src="js/public/swiper.js"></script>
+		<!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.banner .swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        centeredSlides: true,
+	        autoplay: 2500,
+	        autoplayDisableOnInteraction: false,
+			loop: true//无限轮播
+	    });
+	    </script>
+	</div>
+	<div class="container clearFloat">
+		<!-- 邀请好友 -->
+		<section class="secSmall inviteFriend">
+			<img src="img/yaoqinghaoyou.png" alt="">
+			<dl>
+				<dt>邀请新好友</dt>
+				<dd><span>+3.0</span>元</dd>
+			</dl>
+		</section>
+		<!-- 每日砸金蛋 -->
+		<section class="secBig shareIt">
+			<dl>
+				<dt>分享赚钱</dt>
+				<dd>拉流量赚现金</dd>
+				<dd>奖金无上限</dd>
+			</dl>
+			<img src="img/fenxiangzhuanqian.png" alt="">
+		</section>
+		<!-- 分享赚钱 -->
+		<section class="secBig bagsmokEggs">
+			<dl>
+				<dt>每日砸金蛋</dt>
+				<dd>收益翻倍</dd>
+			</dl>
+			<img src="img/zadan.png" alt="">
+		</section>
+		<!-- 完善个人资料 -->
+		<section class="secSmall improveInfo">
+			<img src="img/gerenxinxi.png" alt="">
+			<dl>
+				<dt>完善个人资料</dt>
+				<dd><span>+2.0</span>元</dd>
+			</dl>
+		</section>
+	</div>
+	<div class="popUp">
+		<!-- 邀请好友 -->
+		<div class="pp_inviteFriend">
+			<p>邀请1个好友奖励<span class="cash">现金<b>3.0</b>元</span></p>
+			<p>赶紧推荐朋友拿现金</p>
+			<div class="inviteList">
+				<div class="list_one">
+					<dl><a href="#">
+						<dt><img src="img/invite_01.png" alt=""></dt>
+						<dd>微信</dd>
+					</a></dl>
+					<dl><a href="#">
+						<dt><img src="img/invite_02.png" alt=""></dt>
+						<dd>QQ</dd>
+					</a></dl>
+					<dl><a href="#">
+						<dt><img src="img/invite_03.png" alt=""></dt>
+						<dd>新浪微博</dd>
+					</a></dl>
+				</div>
+				<div class="list_two">
+					<dl><a href="#">
+						<dt><img src="img/invite_04.png" alt=""></dt>
+						<dd>微信朋友圈</dd>
+					</a></dl>
+					<dl><a href="#">
+						<dt><img src="img/invite_05.png" alt=""></dt>
+						<dd>QQ空间</dd>
+					</a></dl>
+					<dl><a href="#">
+						<dt><img src="img/invite_06.png" alt=""></dt>
+						<dd>复制地址</dd>
+					</a></dl>
+				</div>
+			</div>
+			<button class="close">关闭</button>
+		</div>
+	</div>
+	<footer>
+		<a href="index.html">
+			<img src="img/shouye.png" alt="">
+			<p>首页</p>
+		</a>
+		<a class="money" href="money.html">
+			<img src="img/qianbao.png" alt="">
+			<p>赚钱</p>
+		</a>
+		<a href="todayList.html">
+			<img src="img/bangdan.png" alt="">
+			<p>榜单</p>
+		</a>
+		<a href="me.html">
+			<img src="img/wode.png" alt="">
+			<p>我的</p>
+		</a>
+	</footer>
+	<script src="js/public/public.js"></script>
+	<script src="js/home/index.js"></script>
+	<script type="text/javascript">
+		var header = document.querySelectorAll('header');
+		for (var i = 0; i < header.length; i++) {
+			header[i].style.display = 'none';
+		}
+		if(sessionStorage.getItem('username')) {
+			header[1].style.display = 'block';
+		}else {
+			header[0].style.display = 'block';
+		}
+
+		var bagsmokEggs = document.querySelector('.bagsmokEggs');
+		bagsmokEggs.onclick = function() {
+			location.href = 'hidGolden.html';
+		}
+		// console.log($('.money')[0]);
+		$('.money')[0].onclick = function() {
+			location.href="money.html";
+		}
+	</script>
+</body>
+</html>

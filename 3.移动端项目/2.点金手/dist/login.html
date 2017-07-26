@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>登录</title><link rel=stylesheet href=style/public/reset.css><link rel=stylesheet href=style/public/public.css><script src=js/public/pixel.js></script><link rel=stylesheet href=style/loginBar/login.css></head><body><header class=common><a href="javascript: history.go(-1);"></a><p>帐号登录</p></header><div class=container><form class=loginForm action=#><input class=username type=text placeholder=手机号/用户名/邮箱> <input class=password type=password placeholder=登录密码> <button id=passwordEye class=eyeClose></button> <input type=submit class=submit value=登录><p class=reginterBar><a href=#>忘记密码</a> <span>|</span> <a href=register.html>快速注册</a></p></form></div><script src=js/public/public.js></script><script src=js/loginBar/loginBar.js></script><script type=text/javascript>
+		var oForm = document.querySelector('.loginForm'),
+			submit = document.querySelector('.submit'),
+			txt = document.querySelector('.username'),
+			pass = document.querySelector('.password');
+		submit.onclick = function(ev) {
+			ev.preventDefault();
+			if(txt.value.length>0 && pass.value.length>0) {
+				sessionStorage.setItem('username', txt.value);
+				sessionStorage.setItem('password', pass.value);
+				location.href = "index.html";
+			}
+			// alert(12);
+		}
+
+	</script></body></html>

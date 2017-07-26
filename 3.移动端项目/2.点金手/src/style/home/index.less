@@ -1,0 +1,252 @@
+@rem: 30rem;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	width: (750-45*2)/@rem;
+	height: (206-46*2)/@rem;
+	background: #FFDA44;
+	padding: 46/@rem 45/@rem;
+	border-bottom: 1/@rem solid #fff1b6;
+	.logo {
+		float: left;
+		width: 292/@rem;
+		height: 123/@rem;
+		background: url(../../img/logo.png) no-repeat;
+
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+	.loginBar {
+		float: right;
+		display: flex;
+		justify-content: space-between;
+
+		width: 260/@rem;
+		height: 43/@rem;
+		margin-top: 52/@rem;
+
+		a {
+			width: 119/@rem;
+			height: 41/@rem;
+			border: 1px solid #333;
+			font-size: 24px;
+			color: #333;
+			text-align: center;
+			line-height: 41/@rem;
+			text-indent: 21/@rem;
+		}
+		// 注册
+		.register {
+			background: url(../../img/zhuce.png) 17/@rem center no-repeat;
+		}
+		// 登录
+		.login {
+			background: url(../../img/denglu.png) 17/@rem center no-repeat;
+		}
+	}
+
+}
+header#user {
+	position: relative;
+	padding-top: 36/@rem!important;
+	height: 171/@rem!important;
+	img {
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+	width: 690/@rem;
+	height: 145/@rem;
+	padding: 25/@rem 30/@rem 0;
+	font-size: 30/@rem;
+	color: #333;
+	span:nth-child(2) {
+		float: right;
+	}
+	.user_two {
+		span {
+			font-size: 30/@rem;
+			b {
+				font-size: 86/@rem;
+				font-weight: normal;
+			}
+		}
+		a {
+			position: absolute;
+			right: 30/@rem;
+			bottom: 40/@rem;
+			width: 119/@rem;
+			height: 41/@rem;
+			border: 1px solid #333;
+			font-size: 24/@rem;
+			text-align: center;
+			line-height: 41/@rem;
+			color: #333;
+
+		}
+	}
+
+}
+// banner
+.banner {
+	width: 750/@rem;
+	height: 322/@rem;
+}
+.banner img {
+	width: 750/@rem;
+	// height: 322/@rem;
+}
+
+
+// .container
+.container {
+	padding: 22/@rem 31/@rem 16/@rem 30/@rem;
+	// 邀请好友
+	.inviteFriend {
+		width: (338-40*2)/@rem;
+	    height: (174-44-40)/@rem;
+	    padding: 44/@rem 40/@rem 40/@rem;
+	    margin-right: 13/@rem;
+		dt {
+			line-height: 29/@rem;
+		}
+		dd {
+			font-size: 32/@rem;
+			color: #ffa53c;
+		}
+		span {
+			font-size: 50/@rem;
+		}
+	}
+	// 每日砸金蛋
+	.bagsmokEggs {
+	    height: (358-34*2)/@rem;
+	    padding: 34/@rem 0;
+		margin: -163/@rem 13/@rem 0 0;
+		dd {
+			font-size: 30/@rem;
+			color: #ff4041;
+		}
+		img {
+			margin-top: 17/@rem;
+		}
+	}
+	// 分享赚钱
+	.shareIt {
+		height: (357-39*2)/@rem;
+		padding: 39/@rem 0;
+		dd {
+			font-size: 36/@rem;
+			color: #6bd2f5;
+		}
+		img {
+			margin-top: 33/@rem;
+		}
+	}
+	// 完善个人资料
+	.improveInfo {
+		width: (338-32*2)/@rem;
+	    height: (174-44-40)/@rem;
+	    padding: 44/@rem 32/@rem 40/@rem;
+		margin-top: 20/@rem;
+		dd {
+			font-size: 32/@rem;
+			color: #4ad3a9;
+		}
+		span {
+			font-size: 50/@rem;
+		}
+	}
+}
+
+// 弹出窗口
+.popUp {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 689/@rem;
+	height: 1041/@rem;
+	padding: 0 30/@rem 0/@rem 31/@rem;
+	height: 100%;
+	z-index: 10;
+	background: rgba(0,0,0,0.3);
+	> div {
+		width: 473/@rem;
+		height: 658/@rem;
+		margin: (149+81)/@rem 99/@rem 0 117/@rem;
+		text-align: center;
+	}
+}
+// 弹出窗口之邀请好友
+.pp_inviteFriend {
+	display: none;
+	p {
+		font-size: 34/@rem;
+		color: #FFF;
+		white-space: nowrap;
+	}
+	span.cash {
+		color: #ffda44;
+		b {
+			font-size: 80/@rem;
+			font-weight: normal;
+		}
+	}
+	.list_one,.list_two {
+		display: flex;
+		justify-content: space-between;
+		font-size: 24/@rem;
+	}
+	.list_one {
+		margin-top: 60/@rem;
+	}
+	.list_two {
+		margin-top: 50/@rem;
+	}
+	dl {
+		width: 110/@rem;
+		height: 130/@rem;
+		text-align: center;
+		white-space: nowrap;
+		a {
+			color: #FFF;
+		}
+	}
+	button {
+		display: block;
+		width: 473/@rem;
+		height: 59/@rem;
+		margin-top: 89/@rem;
+		background: #ffc600;
+		font-size: 28/@rem;
+	}
+}
+// footer
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 93/@rem;
+	background: #ffda44 url(../../img/footerBorder.png) left top repeat-x;
+	text-align: center;
+	a {
+		float: left;
+		display: inline-block;
+		width: (750/4)/@rem;
+		height: 90/@rem;
+		margin-top: 3/@rem;
+		font-size: 0;
+		color: #333;
+		img {
+			margin-top: 13/@rem;
+		}
+		p {
+			font-size: 20/@rem;
+		}
+	}
+}

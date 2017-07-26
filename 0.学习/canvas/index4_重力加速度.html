@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<canvas id="canvas" style="display: block;margin: 0 auto;border: 1px solid #CCC;"></canvas>
+<script>
+  var ball = {
+    x:500,  //小球的x坐标
+    y:100,  //小球的y坐标
+    r:15,   //小球的半径
+    g:1.2,    //重力加速度
+    vx:-20,  //向量，表示向x轴方向行的速度，负数表示速度向左
+    vy:-20,   //向量，表示向y周方向的速度
+    color:"#005858"
+  }
+  window.onload = function(){
+    var canvas = document.getElementById("canvas");
+    canvas.width = 400;
+    canvas.height = 400;
+
+    var context = canvas.getContext("2d");
+
+    setInterval(function(){
+      render(context);
+      update(context);
+    },29);
+  }
+  function render(cxt){
+    cxt.clearRect(0,0,cxt.canvas.width,cxt.canvas.height);
+
+    cxt.fillStyle = ball.color;
+    cxt.beginPath();
+    cxt.arc(ball.x,ball.y,ball.r,0,2*Math.PI);
+    cxt.closePath();
+
+    cxt.fill();
+  }
+  var index = 1;
+  function update(cxt){
+    ball.x += ball.vx;
+    ball.y += ball.vy;
+    ball.vy += ball.g;
+
+//-10 -8 -6 -4 -3.3333
+
+    if(ball.y>=cxt.canvas.height-ball.r){//下边缘碰撞检测
+      ball.y = cxt.canvas.height-ball.r;
+      if(index>0){
+        index *= 0.75;
+      }
+
+      // ball.vy = -ball.vy*index;
+      ball.vy = -ball.vy;
+    }
+    if(ball.x<=ball.r){//左边缘碰撞检测
+      ball.x = ball.r;
+      ball.vx = -ball.vx;
+    }
+    if(ball.x>=cxt.canvas.width-ball.r){//右边缘碰撞检测
+      ball.x = cxt.canvas.width-ball.r;
+      ball.vx = -ball.vx;
+    }
+    if(ball.y<=ball.r){//上边缘碰撞检测
+      ball.y = ball.r;
+      ball.vy = -ball.vy;
+
+    }
+  }
+</script>
+
+</body>
+</html>

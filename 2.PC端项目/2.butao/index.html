@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>步淘网-更懂您的特卖网站，正品、安全、品牌、特价！-步淘商城</title>
+        <link rel="shortcut icon" href="http://www.butao.com/static/icon/favicon.ico">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper.min.css">
+
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <style>
+        .swiper-container {
+            width: 1000px;
+            height: 284px;
+
+        }
+        .swiper-container img {
+            width: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="top_bar wrap" id="top">
+                <ul class="top_bar_l">
+                    <li>
+                        <a class="collect" href="#">收藏步淘</a>
+                    </li>
+                    <li class="line">线</li>
+                    <li>
+                        您好，欢迎来到步淘生活商城！ <a href="login.html">请登录</a>
+                    </li>
+                    <li class="line">线</li>
+                    <li>
+                        <a href="regist.html">注册有礼</a>
+                    </li>
+                    <li class="line">线</li>
+                    <li class="login">
+                        <a id="login_in" href="#">快捷登陆</a>
+                        <span class="i_drop">
+                            <ul class="drop_content">
+                                <li class="l_baidu">百度登录</li>
+                                <li class="l_zhifubao">支付宝登录</li>
+                                <li class="l_weibo">微博登录</li>
+                                <li class="l_qq">QQ登录</li>
+                            </ul>
+                        </span>
+
+
+                    </li>
+                </ul>
+                <ul class="top_bar_r">
+                    <li>400-680-2212</li>
+                    <li class="line">线</li>
+                    <li class="header_cart">
+                        <a href="cart.html">购物车：
+                            <span style="color: red;">2</span>件商品
+                        </a>
+                        <a class="my_cart" href="#">我的步淘</a>
+                        <span class="i_drop">
+                            <ul class="drop_content drop_content2">
+                                <li>签到换礼</li>
+                                <li>我的积分</li>
+                                <li>我的订单</li>
+                                <li>账户信息</li>
+                                <li>我的淘币</li>
+                            </ul>
+                        </span>
+
+                    </li>
+                    <li class="line">线</li>
+                    <li class="head_about"><a class="about_us" href="#">关注我们</a>
+                        <span class="i_drop">
+                            <ul class="drop_content">
+                                <li class="l_tenxun">腾讯微博</li>
+                                <li class="l_xinlang">新浪微博</li>
+                            </ul>
+                        </span>
+
+                    </li>
+                    <li class="check_in"></li>
+                </ul>
+            </div>
+            <div class="logo_bar wrap">
+                <h1><a href="index.html">步淘生活商城</a></h1>
+                <div class="search_area">
+                    <form action="#">
+                        <span class="i_search"></span>
+                        <input class="ipt" type="text" placeholder="关键字">
+                        <input class="btn" type="submit" value="">
+                    </form>
+                    <span>
+                        <a href="#">森马</a>
+                        <a href="#">巴拉巴拉</a>
+                        <a href="#">迪士尼</a>
+                        <a href="#">外套</a>
+                        <a href="#">针织衫</a>
+                        <a href="#">羽绒服</a>
+                        <a href="#">牛仔裤</a>
+                        <a href="#">女鞋</a>
+                        <a href="#">男鞋</a>
+                    </span>
+                </div>
+                <a href="#" class="img_1"><img src="imgs/hd_safe.jpg"></a>
+                <a href="#" class="img_2"><img src="imgs/hd_wap.jpg"></a>
+            </div>
+            <div class="nav">
+                <ul class="wrap">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="line"></li>
+                    <li><a href="brand_sale.html">品牌特卖</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">女装折扣</a></li>
+                    <li class="line"></li>
+                    <li><a href="brand_man_cloth.html">品牌男装</a></li>
+                    <li class="line"></li>
+                    <li class="nav_title">
+                        <a href="#">积分抽奖</a>
+                        <img src="imgs/iPhone.png" alt="iPhone_title">
+                    </li>
+                    <li class="line"></li>
+                    <li class="nav_title">
+                        <a href="#">特价商品</a>
+                        <img src="imgs/hot.png" style="right:4px;" alt="hot_title">
+                    </li>
+                    <li class="line"></li>
+                    <li class="line"></li>
+                    <li class="nav_active"><a href="#">签到换礼</a></li>
+                </ul>
+            </div>
+            <div class="home_qq">
+                <a href="#">订单查询</a>
+                <a href="#">在线客服</a>
+                <a href="#">快递信息</a>
+                <a href="#">收藏我们</a>
+                <a href="#">签到换礼</a>
+                <a href="#top">回到顶部</a>
+            </div>
+            <div class="side_nav">
+                <a href="#"><i class="icon_user"></i>我的</a>
+                <a href="#"><i class="icon_message"></i>消息</a>
+                <a href="#"><i class="icon_service"></i>客服</a>
+                <a href="#"><i class="icon_cart"></i>购物车<span class="side_count">0</span></a>
+            </div>
+        </div>
+        <div class="banner">
+            <!-- <img src="imgs/chaye.jpg" alt="banner"> -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imgs/chaye.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/imgs (2).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/imgs (3).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/imgs (4).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/imgs (5).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/imgs (6).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/imgs (7).jpg" alt="">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="js/swiper.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+        </script>
+
+
+        <div class="container wrap">
+            <div class="ix_crumb">
+                <a class="ixc_01" href="#">返回首页</a>
+                <a class="ixc_02" href="#ix_1">热门商品</a>
+                <a class="ixc_03" href="#ix_2">精品女装</a>
+                <a class="ixc_04" href="#ix_3">精品男装</a>
+                <a class="ixc_05" href="#ix_4">精品鞋靴</a>
+                <a class="ixc_06" href="#ix_5">家居家纺</a>
+                <a class="ixc_07" href="#ix_6">美食特产</a>
+                <a class="ixc_08" href="#top">返回顶部</a>
+            </div>
+            <!-- 热卖商品 -->
+            <div class="ix_one clear_float" id="ix_1">
+                <div class="ix_title">
+                    <h2>热卖商品</h2>
+                    <ul>
+                        <li class="font_red"><a href="#">服装配饰</a></li>
+                        <li class="font_red"><a href="#">箱包鞋靴</a></li>
+                        <li><a href="#">化妆护理</a></li>
+                        <li class="font_red"><a href="#">母婴玩具</a></li>
+                        <li><a href="#">食物保健</a></li>
+                        <li class="font_red"><a href="#">家居百货</a></li>
+                        <li><a href="#">运动户外</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </div>
+                <div class="ix_sec">
+                    <a class="ix_sec_img" href="commodity_page.html"><img src="imgs/shoes_liebao.png" alt=""></a>
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+
+            </div>
+            <!-- 热卖女装 -->
+            <div class="ix_two clear_float" id="ix_2">
+                <div class="ix_title">
+                    <h2>热卖女装</h2>
+                    <ul>
+                        <li class="font_red"><a href="#">T恤</a></li>
+                        <li class="font_red"><a href="#">连衣裙</a></li>
+                        <li class="font_red"><a href="#">衬衫</a></li>
+                        <li class="font_red"><a href="#">牛仔裤</a></li>
+                        <li class="font_red"><a href="#">裤子</a></li>
+                    </ul>
+                </div>
+                <ul class="ix_top_sec clear_float">
+                    <li class="top_sec_one">
+                        <img src="imgs/index_49.jpg" alt="">
+                    </li>
+                    <li class="top_sec_two">
+                        <p>夏装新款清凉T恤</p>
+                        <span>森马打底衫简约情侣装百搭T恤</span>
+                        <img src="imgs/14645986319640.jpg" alt="">
+                    </li>
+                    <li class="ix_top_line"></li>
+                    <li class="top_sec_three">
+                        <p>夏装新款氧气衬衫</p>
+                        <span>森马短袖韩版娃娃领蕾丝花纹衬衣</span>
+                        <img src="imgs/14645990914134.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+            </div>
+            <!-- 热卖男装 -->
+            <div class="ix_three clear_float" id="ix_3">
+                <div class="ix_title">
+                    <h2>热卖男装</h2>
+                    <ul>
+                        <li class="font_red"><a href="#">T恤</a></li>
+                        <li class="font_red"><a href="#">牛仔裤</a></li>
+                        <li class="font_red"><a href="#">休闲衫</a></li>
+                        <li class="font_red"><a href="#">衬衫</a></li>
+                    </ul>
+                </div>
+                <ul class="ix_top_sec clear_float">
+                    <li class="top_sec_one">
+                        <img src="imgs/index_49.jpg" alt="">
+                    </li>
+                    <li class="top_sec_two">
+                        <p>夏装新款清凉T恤</p>
+                        <span>森马打底衫简约情侣装百搭T恤</span>
+                        <img src="imgs/14645986319640.jpg" alt="">
+                    </li>
+                    <li class="ix_top_line"></li>
+                    <li class="top_sec_three">
+                        <p>夏装新款氧气衬衫</p>
+                        <span>森马短袖韩版娃娃领蕾丝花纹衬衣</span>
+                        <img src="imgs/14645990914134.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+            </div>
+            <!-- 精品鞋包 -->
+            <div class="ix_four clear_float" id="ix_4">
+                <div class="ix_title">
+                    <h2>精品鞋包</h2>
+                    <ul>
+                        <li class="font_red"><a href="#">流行男鞋</a></li>
+                        <li class="font_red"><a href="#">时尚女鞋</a></li>
+                        <li class="font_red"><a href="#">雪地鞋</a></li>
+                        <li>|</li>
+                        <li><a href="#">功能箱包</a></li>
+                        <li><a href="#">旅行箱包</a></li>
+                        <li><a href="#">精品男包</a></li>
+                        <li class="font_red"><a href="#">潮流女包</a></li>
+                    </ul>
+                </div>
+                <ul class="ix_top_sec clear_float">
+                    <li class="top_sec_one">
+                        <img src="imgs/index_49.jpg" alt="">
+                    </li>
+                    <li class="top_sec_two">
+                        <p>夏装新款清凉T恤</p>
+                        <span>森马打底衫简约情侣装百搭T恤</span>
+                        <img src="imgs/14645986319640.jpg" alt="">
+                    </li>
+                    <li class="ix_top_line"></li>
+                    <li class="top_sec_three">
+                        <p>夏装新款氧气衬衫</p>
+                        <span>森马短袖韩版娃娃领蕾丝花纹衬衣</span>
+                        <img src="imgs/14645990914134.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <!-- 家居家纺 -->
+            <div class="ix_five clear_float" id="ix_5">
+                <div class="ix_title">
+                    <h2>家居家纺</h2>
+                    <ul>
+                        <li class="font_red"><a href="#">精品家纺</a></li>
+                        <li><a href="#">居家日用</a></li>
+                        <li><a href="#">居家饰品</a></li>
+                    </ul>
+                </div>
+                <ul class="ix_top_sec clear_float">
+                    <li class="top_sec_one">
+                        <img src="imgs/index_49.jpg" alt="">
+                    </li>
+                    <li class="top_sec_two">
+                        <p>夏装新款清凉T恤</p>
+                        <span>森马打底衫简约情侣装百搭T恤</span>
+                        <img src="imgs/14645986319640.jpg" alt="">
+                    </li>
+                    <li class="ix_top_line"></li>
+                    <li class="top_sec_three">
+                        <p>夏装新款氧气衬衫</p>
+                        <span>森马短袖韩版娃娃领蕾丝花纹衬衣</span>
+                        <img src="imgs/14645990914134.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="ix_sec">
+                    <img src="http://www.butao.com/static/js/grey.gif" alt="">
+                    <a class="ix_sec_name" href="#">【全国包邮】仅19.9元，享原价139元可爱女人2014春夏新品鱼嘴欧洲时尚内增...</a>
+                    <span class="price"><b>&yen;</b>19.90</span>
+                    <span class="sub_price">
+                        <del class="del">￥139.00</del><span class="discount">(1.4折)</span>
+                        <span class="status">新品上市</span>
+                    </span>
+                    <button>立即购买</button>
+                </div>
+            </div>
+            <!-- 美食特产 -->
+            <div class="ix_sex clear_float" id="ix_6">
+                <div class="ix_title">
+                    <h2>美食特产</h2>
+                    <ul>
+                        <li class="font_red"><a href="#">休闲零食</a></li>
+                        <li><a href="#">鲜活肉类</a></li>
+                        <li><a href="#">特产</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="ix_top_sec clear_float">
+                <li class="top_sec_one">
+                    <img src="imgs/index_49.jpg" alt="">
+                </li>
+                <li class="top_sec_two">
+                    <p>夏装新款清凉T恤</p>
+                    <span>森马打底衫简约情侣装百搭T恤</span>
+                    <img src="imgs/14645986319640.jpg" alt="">
+                </li>
+                <li class="ix_top_line"></li>
+                <li class="top_sec_three">
+                    <p>夏装新款氧气衬衫</p>
+                    <span>森马短袖韩版娃娃领蕾丝花纹衬衣</span>
+                    <img src="imgs/14645990914134.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- 商品分类 -->
+        <div class="ix_classify wrap clear_float">
+            <h2>商品分类</h2>
+            <ul>
+                <li>
+                    <p>服装配饰</p>
+                    <img src="imgs/12s.jpg" alt="">
+                    <div class="bottom_nav">
+                        <a href="#">精品男装</a>
+                        <a href="#">品牌女装</a>
+                        <a href="#">精致内衣</a>
+                        <a href="#">服装配件</a>
+                    </div>
+                </li>
+                <li>
+                    <p>箱包鞋靴</p>
+                    <img src="imgs/index_141.jpg" alt="">
+                    <div class="bottom_nav">
+                        <a href="#">流行男鞋</a>
+                        <a href="#">时尚女鞋</a>
+                        <a href="#">功能箱包</a>
+                        <a href="#">潮流女鞋</a>
+                    </div>
+                </li>
+                <li>
+                    <p>母婴玩具</p>
+                    <img src="imgs/muying.jpg" alt="">
+                    <div class="bottom_nav">
+                        <a href="#">童装童鞋</a>
+                        <a href="#">玩具</a>
+                        <a href="#">孕妇用品</a>
+                        <a href="#">幼婴用品</a>
+                    </div>
+                </li>
+                <li>
+                    <p>食品保健</p>
+                    <img src="imgs/shipin.jpg" alt="">
+                    <div class="bottom_nav">
+                        <a href="#">休闲零食</a>
+                        <a href="#">鲜活肉类</a>
+                        <a href="#">特产</a>
+                        <a href="#">保健食品</a>
+                    </div>
+                </li>
+                <li>
+                    <p>家居百货</p>
+                    <img src="imgs/jiaju.jpg" alt="">
+                    <div class="bottom_nav">
+                        <a href="#">厨卫用品</a>
+                        <a href="#">居家日用</a>
+                        <a href="#">生活电器</a>
+                        <a href="#">家纺</a>
+                    </div>
+                </li>
+                <li>
+                    <p>运动户外</p>
+                    <img src="imgs/huwai.jpg" alt="">
+                    <div class="bottom_nav">
+                        <a href="#">户外装备</a>
+                        <a href="#">运动用品</a>
+                        <a href="#">运动鞋服</a>
+                        <a href="#">其他</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer clear_float">
+            <ul class="wrap clear_float">
+                <li class="footer_one">
+                    <p><span></span>用户帮助</p>
+                    <ul class="footer_item">
+                        <li><a href="#">玩转步淘商城</a></li>
+                        <li><a href="#">生活商城常见问题</a></li>
+                        <li><a href="#">网站保障计划</a></li>
+                        <li><a href="#">本站意见建议</a></li>
+                    </ul>
+                </li>
+                <li class="footer_two">
+                    <p><span></span>购物相关</p>
+                    <ul class="footer_item">
+                        <li><a href="#">网站购物向导</a></li>
+                        <li><a href="#">本站订单操作</a></li>
+                        <li><a href="#">汇款&转账</a></li>
+                        <li><a href="#">验收与签收</a></li>
+                    </ul>
+                </li>
+                <li class="footer_three">
+                    <p><span></span>商务合作</p>
+                    <ul class="footer_item">
+                        <li><a href="#">本站商户入驻</a></li>
+                        <li><a href="#">本站商户登陆</a></li>
+                        <li><a href="#">本站合作案例</a></li>
+                        <li><a href="#">步淘友情链接</a></li>
+                    </ul>
+                </li>
+                <li class="footer_four">
+                    <p><span></span>关于步淘</p>
+                    <ul class="footer_item">
+                        <li><a href="#">关于生活商城</a></li>
+                        <li><a href="#">步淘网诚聘英才</a></li>
+                        <li><a href="#">联系步淘网</a></li>
+                        <li><a href="#">生活商城用户协议</a></li>
+                    </ul>
+                </li>
+                <li class="footer_five">
+                    <p><span></span>客服热线<i>（免长途费）</i></p>
+                    <div class="phone">
+                        <span>QQ在线客服：<i></i></span>
+                    </div>
+                    <div class="time">(周一到周日：8:30-18:00)</div>
+                </li>
+            </ul>
+            <div class="footer_nav">
+                <a href="#">关于步淘网</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站诚聘英才</a>
+                <a href="#">友情链接</a>
+                <a href="#">隐私条款</a>
+                <a href="#">网站地图</a>
+            </div>
+            <p class="copyright">Copyright @ 2010-2012 butao.com All Rights Reserved 版权所有 浙B2-20090126-17</p>
+            <div class="footer_link">
+                <img src="imgs/rzl.png" alt="">
+                <img src="imgs/zfb.png" alt="">
+                <img src="http://img.webscan.360.cn/status/pai/hash/dc8a3de75c1c3443cebd83dd7d195273" alt="">
+                <img src="imgs/360green.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>

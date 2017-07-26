@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<input id="num" type="text" placeholder="请输入数字" />
+<button id="btn">计算阶层</button>
+<p id="txt"></p>
+<script>
+window.onload = function(){
+  var btn = document.getElementById("btn");
+  var txt = document.getElementById("txt");
+
+  btn.onclick = function(){
+    var num = parseInt(document.getElementById("num").value);
+    txt.innerHTML = cal(num);
+  };
+  function cal(num){
+    if(num>1){
+      return num*cal(num-1);
+    }else if(num == 1 || num == 0){
+      return 1;
+    }else {
+      txt.innerHTML = "请输入非负的数字";
+    }
+  }
+}
+</script>
+</body>
+</html>

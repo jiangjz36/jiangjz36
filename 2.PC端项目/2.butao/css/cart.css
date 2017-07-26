@@ -1,0 +1,145 @@
+.ct_container {
+    background: #F7F7F7;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.ct_step {
+    position: relative;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    background: url(../imgs/ct_bg.png) repeat-x;
+}
+.ct_step_1,
+.ct_step_2,
+.ct_step_3 {
+    float: left;
+    width: 333px;
+    text-align: center;
+}
+.ct_step_1 i,
+.ct_step_2 i,
+.ct_step_3 i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    background: url(../imgs/shop_menu_li.png);
+}
+.ct_step_2 i {
+    background-position: 0 -60px;
+}
+.ct_step_3 i {
+    background-position: 0 -120px;
+}
+.ct_step_4 i {
+    background-position: 0 -180px;
+}
+.ct_cart {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+.ct_cart th,
+.ct_cart td {
+    border: 1px solid #CCC;
+    padding: 9px 13px;
+}
+    /*商品*/
+    .ct_hd_commodity {
+        width: 474px;
+    }
+    /*数量*/
+    .ct_hd_quantity {
+        width: 91px;
+    }
+    /*单价*/
+    .ct_hd_univalent {
+        width: 76px;
+    }
+    /*优惠*/
+    .ct_hd_preferential {
+        width: 69px;
+    }
+    /*小计*/
+    .ct_hd_subtotal {
+        width: 73px;
+    }
+    /*操作*/
+    .ct_hd_operating {
+        width: 52px;
+    }
+
+    .ct_td_commodity img {
+        display: block;
+        float: left;
+        margin-right: 22px;
+    }
+    .ct_td_commodity p {
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+    .ct_td_commodity span {
+        margin-left: 20px;
+        color: #D41F2B;
+    }
+
+    .ct_td_quantity fieldset {
+        float: left;
+        display: inline-block;
+        width: 72px;
+        height: 22px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .ct_td_quantity button {
+        float: left;
+        width: 12px;
+        height: 22px;
+        background: #CCC;
+        cursor: pointer;
+    }
+    .ct_td_quantity button:active {
+        background: red;
+    }
+    .ct_td_quantity span {
+        float: left;
+        margin-left: 6px;
+        line-height: 22px;
+    }
+    .ct_count {
+        float: left;
+        width: 46px;
+        height: 20px;
+        border: 1px solid #CCC;
+    }
+
+    .ct_td_univalent p,
+    .ct_td_preferential p,
+    .ct_td_subtotal p,
+    .ct_td_operating a {
+        display: block;
+        text-align: center;
+    }
+
+    /*继续购买*/
+    .ct_btn_continue,
+    .ct_btn_settle {
+        display: inline-block;
+        float: right;
+        width: 140px;
+        height: 39px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        font-size: 0;
+        background-image: url(../imgs/ct_btn.png);
+    }
+    /*立即结算*/
+    .ct_btn_settle {
+        margin-right: 40px;
+        background-position: 0 -41px;
+    }

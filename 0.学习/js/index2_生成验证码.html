@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #verify {
+      letter-spacing: 4px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="txt" />
+  <input id="verify" type="button" value="点击生成验证码" /><br>
+  <input id="btn" type="button" value="验证是否相同"/>
+  <!-- <button id="btn">生成随机数</button> -->
+<script>
+window.onload = function(){
+  var txt = document.getElementById("txt");
+  var verify = document.getElementById("verify");
+  var btn = document.getElementById("btn");
+  getVerify();
+  verify.onclick = function(){
+    getVerify();
+  }
+  btn.onclick = function(){
+    if(txt.value == verify.value){
+      alert("正确");
+    }else{
+      alert("错误");
+      getVerify();
+    }
+  }
+}
+function getVerify(){
+  var str = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+  var n1 = Math.floor(Math.random()*(str.length-1));
+  var n2 = Math.floor(Math.random()*(str.length-1));
+  var n3 = Math.floor(Math.random()*(str.length-1));
+  var n4 = Math.floor(Math.random()*(str.length-1));
+
+  verify.value = str.charAt(n1)+str.charAt(n2)+str.charAt(n3)+str.charAt(n4);
+  //return str.charAt(n1)+str.charAt(n2)+str.charAt(n3)+str.charAt(n4);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="txt" />
+  <input type="button" id="btn" value="判断是平年还是闰年" />
+  <p id="result"></p>
+<script>
+window.onload = function(){
+  var btn = document.getElementById("btn");
+  var result = document.getElementById("result");
+  btn.onclick = function(){
+    var txt = document.getElementById("txt").value;
+    txt = parseInt(txt);
+    if(txt%4==0 && txt%100!=0 || txt%400==0){
+      result.innerHTML = "闰年";
+    }else{
+      result.innerHTML = "平年";
+    }
+  }
+}
+
+
+</script>
+</body>
+</html>

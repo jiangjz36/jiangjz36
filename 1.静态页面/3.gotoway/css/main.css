@@ -1,0 +1,86 @@
+/*
+.wrap 最外面的包裹层
+  .header 头部
+    .head_nav 主链接
+      .logo
+      .nav
+    .banner  横幅图片
+  .content 主题内容
+    .services 服务套餐
+    .cases 图片展示
+    hr  分割线
+    .about_us 关于我们
+    .news 新闻中心
+    .activity 活动
+    .info 信息栏
+  .footer 页脚
+    .foot_nav 链接
+    .address 地址
+    .copy 版权
+ */
+
+body,h1,h2,h3,p,ul,li,dl,dt,dd,hr { padding: 0;margin: 0;}
+li { list-style: none;}
+a { text-decoration: none; color: #000;}
+/*reset end *****************************/
+
+.wrap { width: 1100px; margin: 0 auto; background: #F2F2F2;}
+
+.header .head_nav { width: 1000px; height: 50px; padding: 15px 50px 0 50px;}
+        .head_nav .logo { float: left; width:16.8%;height: 40px; font-size: 0; background: url(../images/sprites.png); }
+        .head_nav ul.nav { float: right; margin-top: 20px; font-family: "黑体";}
+        .head_nav .nav li { float: left; margin-left: 40px;}
+        .head_nav .nav a { display: inline-block; color: #4B4B4B; }
+.header .banner { font-size: 0;}
+
+/*header end ******************************************/
+
+.content { position: relative; padding: 0 50px 145px; overflow: hidden; clear: both;}
+.content h2 { display: inline-block; padding: 0 5px; line-height: 50px; background: #00B5EC; color: #FFF; text-transform: uppercase;}
+.content h3 { margin-bottom: 40px; font: normal 18px "黑体"; color: #232323; }
+.content p { width: 254px; font-size: 12px;color: #7E7E7E;}
+.content .about_us,.content .news,.content .activity { position: relative;float: left;}
+.content .more { position: absolute; top: 30px;right: 10px; text-transform: uppercase; font: 10px "微软雅黑"; color: #959595;}
+.content .divide_line { float: left; width: 0;height: 190px;margin-top: 32px;margin-right: 24px;border-left: 1px solid #E4E4E4;border-right: 1px solid #FFF;}
+
+.content .services { float: left; width: 470px;}
+.content .services dl { margin: 8px 0 80px;font-size: 14px; overflow: hidden;clear: both;}
+         .services dl:last-child { margin-bottom: 0;}
+         .services dl dt { float: left; width: 125px;}
+         .services dl dt a { color: #00B4E9;}
+         .services dl dd { float: left; width: 340px; line-height: 1.8;font-size: 12px;color: #636363;}
+.content .cases { float: right; width: 490px;}
+         .cases ul { margin-top: 8px; padding-top: 14px;}
+         .cases li { float: left; width: 153px;height: 216px;margin-right: 7px; background: url(../images/sprites.png);}
+         .cases li.cases_1 { background-position: 0 -80px;}
+         .cases li.cases_2 { background-position: -157px -80px;}
+         .cases li.cases_3 { margin-right: 0; background-position: -319px 80px;}
+.content hr { margin-bottom: 65px; border: none; overflow: hidden; clear: both; }
+.content .about_us { width: 300px; }
+         .about_us p { margin-top: 30px; line-height: 1.8; }
+.content .news { width: 270px;}
+         .news .news_img { width: 246px;height: 67px; background: url(../images/sprites.png); background-position: -180px 0;}
+         .news p {margin-top: 24px; line-height: 2;}
+.content .activity { width: 378px;}
+         .activity li { width: 378px; font-size: 12px; color: #7C7C7C; margin-bottom: 15px;}
+         .activity li .activity_date { float: right; margin-right: 20px; font-size: 10px;line-height: 14px;}
+.content .blue_square { position: absolute; bottom: 0;left: 50px;width: 50px;height: 48px; background: #00B5EE;}
+.content .info { position: absolute; bottom: 0;right: 50px; width: 630px; height: 36px; border: 1px solid #CFCFCF; padding: 7px; }
+         .info dl { display: inline-block;margin-right: 30px;}
+         .info dl:last-child { margin-right: 0;}
+         .info dt { float: left; padding-right: 10px;margin-right: 10px;border-right: 1px solid #B7B7B7;line-height: 38px; font-size: 14px;color: #7C7C7C;}
+         .info dt i { display: inline-block; width: 32px; height: 26px; margin-right: 6px; background: url(../images/sprites.png);background-position: 0px -46px; vertical-align: middle;}
+         .info dt i.i-email { background-position: -34px -46px;}
+         .info dt i.i-call { background-position: -68px -46px;}
+         .info dd { float: left;}
+         .info dd a { font-size: 10px; color: #7D7D7D;}
+
+/*content end******************************/
+
+.footer { position: relative; width: 985px; height: 180px; padding: 50px 65px 0 50px; background: #383838;font: 14px "黑体"; }
+.footer a { float: left; padding-right: 25px;margin-right: 25px;border-right: 2px solid #979797; color: #BBBBBB;}
+.footer p { margin-bottom: 5px;color: #909090;   font-size: 14px;}
+.footer .address { margin-bottom: 0; clear: both; line-height: 35px;}
+.footer .copy { margin-top:25px; font-size: 10px;text-align: center;}
+.footer dl { position: absolute; top:50px;right: 70px;color: #BEBEBE;}
+.footer dl dd { font-size: 24px; }

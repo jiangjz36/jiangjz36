@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>header页头</title>
+        <link rel="stylesheet" href="css/common.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <!-- 头部可以关闭的广告 -->
+        <div id="head_top_banner">
+            <div class="wrap">
+                <img src="img/50.jpg" alt="全球好奶粉，全场低至6.8折">
+                <span>关闭</span>
+            </div>
+        </div>
+        <!-- 顶部登陆条 -->
+        <div class="nav_top">
+            <div class="wrap clear_float">
+                <ul class="nt_login_bar">
+                    <li class="nt_lb_index">
+                        <a href="#"><i></i>麦乐购首页</a>
+                        <a class="nt_lb_login" href="login.html">请登录</a>
+                        <a class="nt_lb_regin" href="register.html">免费注册</a>
+                    </li>
+                    <li class="nt_lb_other">
+                        <span>其他登录方式:</span>
+                        <a href="#" class="icon_qq" title="使用QQ帐号登录"></a>
+                        <a href="#" class="icon_alipay"></a>
+                        <a href="#" class="icon_360"></a>
+                        <a href="#" class="icon_sina"></a>
+                    </li>
+                    <li class="nt_lb_service">
+                        联系客服:
+                        <span>400-666-6600</span>
+                    </li>
+                </ul>
+                <div class="nt_user_bar">
+                    <!-- 我的麦乐购 -->
+                    <div id="nt_ub_my">
+                        <a href="#">我的麦乐购<i class="icon_drop"></i></a>
+                        <ul>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的账户</a></li>
+                            <li><a href="#">麦豆兑换</a></li>
+                            <li><a href="#">我的优惠券</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                        </ul>
+                    </div>
+                    <span>|</span>
+                    <!-- 收藏麦乐购 -->
+                    <div class="bt_ub_collect">
+                        <i class="icon_collect"></i>
+                        <a href="#">收藏麦乐购</a>
+                    </div>
+                    <span>|</span>
+                    <!-- 赚钱计划 -->
+                    <div class="bt_ub_plan">
+                        <a href="#">妈妈赚钱计划</a>
+                    </div>
+                    <span>|</span>
+                    <!-- 手机麦乐购 -->
+                    <div id="bt_ub_phone">
+                        <i class="icon_phone"></i>
+                        <a href="#">手机麦乐购</a>
+                        <div id="phone_sub">
+                            <img src="img/kASE5wkAWOMPY2Cqn9e-r-.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logo和搜索框 -->
+        <div class="logo_bar wrap">
+            <h1 class="lb_logo">麦乐购
+                <a href="index.html"><img src="img/50 (1).jpg" alt=""></a>
+            </h1>
+            <div class="lb_search">
+                <form action="#" class="lb_form">
+                    <input id="lb_text" type="text" value="发现全球好品牌~~">
+                    <input class="lb_submit" type="submit" value="搜索">
+                </form>
+                <span>热门关键词:</span>
+                <span class="color_red">防晒</span>
+                <span class="color_red">牛栏</span>
+                <span>花王</span>
+                <span>美素</span>
+                <span>爱他美</span>
+                <span>karicare</span>
+                <span>喜宝</span>
+                <span>swisse</span>
+            </div>
+            <div class="ad_top">
+                <img src="img/fe32gebCV-QGjVKcWySnxq.jpg" alt="ad">
+            </div>
+        </div>
+        <!-- 菜单栏 主题导航 -->
+        <div class="nav_bar wrap">
+            <div id="nb_menu">
+                <span class="nb_menu_main">全部商品分类<i class="icon_down"></i></span>
+                <ul>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_milk"></i>
+                            <a class="menu_main" href="list.html">宝宝奶粉</a>
+                            <p class="menu_sub">
+                                <a href="#">牛奶粉</a>
+                                <a href="#">羊奶粉</a>
+                            </p>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#">荷兰牛栏Nutrilon</a>
+                            <a href="#" class="color_sub_red">德国爱他美Aptamil</a>
+                            <a href="#" class="color_sub_red">德国喜宝Hipp</a>
+                            <a href="#">荷兰美素Hero Baby</a>
+                            <a href="#">英国牛栏Cow＆Gate Baby</a>
+                            <a href="#">新西兰爱他美Aptamil</a>
+                            <a href="#">德国特福芬Topfer</a>
+                            <a href="#">英国爱他美Aptamil</a>
+                            <a href="#">新西兰Karicare</a>
+                            <a href="#">澳洲a2</a>
+                            <a href="#">德国凯莉泓乐Holle</a>
+                            <a href="#">日本明治</a>
+                            <a href="#">英国Nannycare</a>
+                            <a href="#">澳洲贝拉米Bellamy's</a>
+                            <a href="#">英国纽康特Neocate</a>
+                            <a href="#">卡洛塔妮Karihome</a>
+                            <a href="#">美国美赞臣Meadjohnson</a>
+                            <a href="#">美国雅培Similac</a>
+                            <a href="#">日本固力果</a>
+                            <a href="#">新西兰惠氏Wyeth</a>
+                            <hr>
+                            <p>优惠套餐</p>
+                            <a href="#" class="color_sub_red">买7送1</a>
+                            <a href="#">4灌优惠</a>
+                            <a href="#">2灌优惠</a>
+                            <hr>
+                            <p>适用年龄</p>
+                            <a href="#">0-6个月</a>
+                            <a href="#">0-12个月</a>
+                            <a href="#">1-2岁</a>
+                            <a href="#">1-3岁</a>
+                            <a href="#">2-6岁</a>
+                            <a href="#">2-儿童奶粉</a>
+                            <a href="#" class="color_sub_red">2-儿童奶粉（直邮）</a>
+                            <hr>
+                            <p>奶粉分类</p>
+                            <a href="#" class="color_sub_red">牛奶粉</a>
+                            <a href="#" class="color_sub_red">羊奶粉</a>
+                            <a href="#" class="color_sub_red">有机粉</a>
+                            <a href="#">益生菌奶粉</a>
+                            <a href="#">牛乳蛋白过敏奶粉</a>
+                            <a href="#" class="color_sub_red">乳糖不耐受奶粉</a>
+                            <a href="#">早产儿奶粉</a>
+                            <a href="#">孕妇奶粉</a>
+                            <a href="#" class="color_sub_red">宝宝奶粉（直邮）</a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_food"></i>
+                            <a class="menu_main" href="#">宝宝辅食</a>
+                            <p class="menu_sub">
+                                <a href="#">米粉</a>
+                                <a href="#">宝宝零食</a>
+                            </p>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#" class="color_sub_red">德国喜宝Hipp</a>
+                            <a href="#">美国嘉宝Gerber</a>
+                            <a href="#" class="color_sub_red">美国世界美好Earth's Best</a>
+                            <a href="#">美国禧贝Happybaby</a>
+                            <a href="#">德国长发公主Rapunzel</a>
+                            <a href="#">意大利美林Mellin</a>
+                            <a href="#">日本和光堂Wakodo</a>
+                            <a href="#">日本贝亲Pigeon</a>
+                            <a href="#">美国Yummy Earth</a>
+                            <a href="#">亨氏Heinz</a>
+                            <a href="#">韩国海地村</a>
+                            <a href="#">美国优格曼Dremz</a>
+                            <a href="#">美国谷百Plum</a>
+                            <a href="#">伊威Eastwes</a>
+                            <a href="#">荷兰牛栏</a>
+                            <a href="#">方广</a>
+                            <a href="#">德国贝唯他Bebivita</a>
+                            <a href="#">韩国宝宝福德Baby food</a>
+                            <a href="#">韩国宝噜噜</a>
+                            <a href="#">意大利黛乐Dalla Costa</a>
+                            <hr>
+                            <p>辅食分类</p>
+                            <a href="#" class="color_sub_red">米粥/麦粉/粥</a>
+                            <a href="#" class="color_sub_red">肉泥/果泥/菜泥</a>
+                            <a href="#">饮料/果汁</a>
+                            <a href="#">调味/拌饭/油</a>
+                            <a href="#">鱼肠/肉肠</a>
+                            <a href="#">面条类</a>
+                            <a href="#">宝宝零食</a>
+                            <a href="#">宝宝辅食（直邮）</a>
+                            <hr>
+                            <p>月龄</p>
+                            <a href="#">辅食添加初期</a>
+                            <a href="#">4-6月</a>
+                            <a href="#">7-9月</a>
+                            <a href="#">10-12月</a>
+                            <a href="#">12至36个月</a>
+                            <a href="#">4至36个月</a>
+                            <a href="#">6至36个月</a>
+                            <hr>
+                            <p>优惠套餐</p>
+                            <a href="#">2瓶优惠</a>
+                            <a href="#" class="color_sub_red">4盒优惠</a></a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_health"></i>
+                            <a class="menu_main" href="#">营养保健</a>
+                            <p class="menu_sub">
+                                <a href="#">宝宝营养</a>
+                                <a href="#">成人营养</a>
+                            </p>
+                        </div>
+                        <div class="nb_item">
+                            <p>宝宝营养热门品牌</p>
+                            <a href="#" class="color_sub_red">美国Childlife</a>
+                            <a href="#">澳洲Bio Island</a>
+                            <a href="#" class="color_sub_red">美国康萃乐Culturelle's Best</a>
+                            <a href="#">加拿大Ddrops</a>
+                            <a href="#">挪威小鱼Nordic naturals</a>
+                            <a href="#">美国安利Amway</a>
+                            <a href="#">美国熊宝宝l'il Critters</a>
+                            <hr>
+                            <p>功效</p>
+                            <a href="#" class="color_sub_red">DHA/鱼油</a>
+                            <a href="#" class="color_sub_red">钙镁锌铁</a>
+                            <a href="#">维生素/VD</a>
+                            <a href="#">益生菌</a>
+                            <a href="#">补脑益智</a>
+                            <a href="#">提高免疫力</a>
+                            <a href="#">调节肠胃</a>
+                            <a href="#">清火降火</a>
+                            <hr>
+                            <p>营养人群</p>
+                            <a href="#">父母健康</a>
+                            <a href="#">男士保健</a>
+                            <a href="#">魅力女士</a>
+                            <a href="#">青少年营养</a>
+                            <a href="#">孕妈营养</a>
+                            <a href="#">宝宝营养</a>
+                            <a href="#">宝宝营养（直邮）</a>
+                            <a href="#">成人保健品（直邮）</a>
+                            <hr>
+                            <p>成人营养热门品牌</p>
+                            <a href="#">澳洲Swisse</a>
+                            <a href="#">新西兰好健康Goodhealth</a></a>
+                            <a href="#">美国康宝莱Herbalife</a></a>
+                            <a href="#">澳洲澳佳宝Blackmores</a></a>
+                            <a href="#">澳洲Healthy Care</a></a>
+                            <a href="#">德国铁元</a></a>
+                            <a href="#">日本宝丽POLA</a></a>
+                            <a href="#">美国安利Amway</a></a>
+                            <hr>
+                            <p>功效</p>
+                            <a href="#">美容养颜</a>
+                            <a href="#">瘦身排毒</a></a>
+                            <a href="#">提高免疫力</a></a>
+                            <a href="#">补脑益智</a></a>
+                            <a href="#">调节内分泌</a></a>
+                            <a href="#">调节三高</a></a>
+                            <a href="#">眼疲劳/明目</a></a>
+                            <a href="#">胃肠调节</a></a>
+                            <a href="#">改善睡眠</a></a>
+                            <a href="#">改善贫血</a></a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_tackle"></i>
+                            <a class="menu_main" href="#">宝宝用品</a>
+                            <p class="menu_sub">
+                                <a href="#">纸尿裤</a>
+                                <a href="#">喂养</a>
+                                <a href="#">洗护</a>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#" class="color_sub_red">日本花王Merries</a>
+                            <a href="#">日本尤妮佳Moony</a>
+                            <a href="#" class="color_sub_red">日本大王GOO.N</a>
+                            <a href="#">日本帮宝适</a>
+                            <a href="#">美国小蜜蜂</a>
+                            <a href="#">美国加州宝宝CaliforniaBaby</a>
+                            <a href="#">美国艾维诺Aveeno</a>
+                            <a href="#">日本贝亲Pigeon</a>
+                            <a href="#">德国博朗</a>
+                            <a href="#">德国NUK</a>
+                            <a href="#">美国布朗博士</a>
+                            <a href="#">日本贝塔Betta</a>
+                            <a href="#">美国可么多么</a>
+                            <hr>
+                            <p>纸尿裤/湿巾</p>
+                            <a href="#" class="color_sub_red">纸尿裤</a>
+                            <a href="#" class="color_sub_red">拉拉裤</a>
+                            <a href="#">湿巾</a>
+                            <a href="#">NB号</a>
+                            <a href="#">S号</a>
+                            <a href="#">M号</a>
+                            <a href="#">L号</a>
+                            <a href="#">XL/XXL号</a>
+                            <hr>
+                            <p>喂养用品</p>
+                            <a href="#">奶瓶/奶嘴</a>
+                            <a href="#">水杯/水壶</a>
+                            <a href="#">牙胶/安抚</a>
+                            <a href="#">儿童餐具</a>
+                            <a href="#">消毒/暖奶/调奶</a>
+                            <a href="#">围兜/防溅衣</a>
+                            <a href="#">辅食料理机</a>
+                            <a href="#">奶瓶清洁/配件</a>
+                            <a href="#">宝宝用品（直邮）</a>
+                            <hr>
+                            <p>洗护/护理</p>
+                            <a href="#">防蚊驱蚊</a>
+                            <a href="#" class="color_sub_red">沐浴护肤</a></a>
+                            <a href="#" class="color_sub_red">护肤系列</a></a>
+                            <a href="#" class="color_sub_red">护臀系列</a></a>
+                            <a href="#" class="color_sub_red">牙刷/牙膏</a></a>
+                            <a href="#" class="color_sub_red">洗浴用具</a></a>
+                            <a href="#" class="color_sub_red">坐便器</a></a>
+                            <a href="#" class="color_sub_red">理发器</a></a>
+                            <a href="#" class="color_sub_red">医护用品</a></a>
+                            <a href="#" class="color_sub_red">防护用品</a></a>
+                            <a href="#" class="color_sub_red">指甲钳</a></a>
+                            <a href="#" class="color_sub_red">洗手液</a></a>
+                            <a href="#" class="color_sub_red">洗衣液/皂</a></a>
+                            <a href="#" class="color_sub_red">奶瓶/果蔬清洗液</a></a>
+                            <hr>
+                            <p>车床座椅/日常用品</p>
+                            <a href="#">安全座椅</a>
+                            <a href="#" class="color_sub_red">手推车</a></a>
+                            <a href="#" class="color_sub_red">婴儿床/童床</a></a>
+                            <a href="#" class="color_sub_red">餐椅</a></a>
+                            <a href="#" class="color_sub_red">儿童行李箱</a></a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_cloth"></i>
+                            <a class="menu_main" href="#">宝宝服饰</a>
+                            <p class="menu_sub">
+                                <a href="#">婴幼服饰</a>
+                                <a href="#">童装</a>
+                                <a href="#">童鞋</a>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#" class="color_sub_red">麦菲熊</a>
+                            <a href="#">BabyBanz</a>
+                            <a href="#" class="color_sub_red">马克珍妮</a>
+                            <a href="#">盈泰</a>
+                            <a href="#">妙菲登</a>
+                            <a href="#">lambkin kids</a>
+                            <a href="#">意婴堡</a>
+                            <a href="#">怡妍宝贝</a>
+                            <a href="#">麦西西</a>
+                            <a href="#">花笙糖</a>
+                            <a href="#">海绵泡泡</a>
+                            <a href="#">欢乐熊Huanlexiong</a>
+                            <a href="#">娃娃舒</a>
+                            <a href="#">班杰威尔</a>
+                            <hr>
+                            <p>童装</p>
+                            <a href="#" class="color_sub_red">T恤/衬衫</a>
+                            <a href="#" class="color_sub_red">裤子</a>
+                            <a href="#">裙子</a>
+                            <a href="#">亲子装</a>
+                            <a href="#">毛衣/针织衫</a>
+                            <a href="#">卫衣/外套</a>
+                            <a href="#">套装</a>
+                            <a href="#">内衣家居服</a>
+                            <a href="#">马甲/背心</a>
+                            <a href="#">棉服/羽绒服</a>
+                            <a href="#">宝宝服饰（直邮）</a>
+                            <hr>
+                            <p>童鞋</p>
+                            <a href="#">学步/机能鞋</a>
+                            <a href="#">短靴/雪地靴</a>
+                            <a href="#">皮鞋/公主鞋</a>
+                            <a href="#">运动/休闲鞋</a>
+                            <hr>
+                            <p>寝居配饰</p>
+                            <a href="#">婴儿枕</a>
+                            <a href="#" class="color_sub_red">睡袋</a>
+                            <a href="#">毛毯被褥</a>
+                            <a href="#">床上用品</a>
+                            <a href="#">浴巾毛巾</a>
+                            <a href="#">新生儿手脚套</a>
+                            <a href="#">帽子手套</a>
+                            <a href="#">宝宝口罩</a>
+                            <a href="#">袜子</a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_toy"></i>
+                            <a class="menu_main" href="#">宝宝玩具</a>
+                            <p class="menu_sub">
+                                <a href="#">婴幼玩具</a>
+                                <a href="#">遥控/电动</a>
+                            </p>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#" class="color_sub_red">德国Hape</a>
+                            <a href="#">乐高LEGO</a>
+                            <a href="#" class="color_sub_red">美国费雪Fisherprice</a>
+                            <a href="#">英国jellycat</a>
+                            <a href="#">奥迪双钻</a>
+                            <a href="#">优贝比Yobee</a>
+                            <a href="#">贝博氏</a>
+                            <a href="#">迪士尼</a>
+                            <a href="#">美国小泰克Little</a>
+                            <hr>
+                            <p>积木/绘画/DIY</p>
+                            <a href="#" class="color_sub_red">积木/拼插</a>
+                            <a href="#" class="color_sub_red">磁力片</a>
+                            <a href="#">拼图</a>
+                            <a href="#">彩泥/绘画</a>
+                            <a href="#">情景玩具</a>
+                            <hr>
+                            <p>爬行健身/毛绒公仔</p>
+                            <a href="#">爬行垫/毯</a>
+                            <a href="#">沙滩/戏水</a>
+                            <a href="#">户外玩具</a>
+                            <a href="#">滑板车/轮滑</a>
+                            <a href="#">芭比娃娃</a>
+                            <a href="#">卡通娃娃</a>
+                            <a href="#">毛绒玩具</a>
+                            <a href="#">抱枕/靠垫</a>
+                            <hr>
+                            <p>动漫/卡通玩具</p>
+                            <a href="#">疯狂动物城</a>
+                            <a href="#" class="color_sub_red">变形金刚</a>
+                            <a href="#">超级飞侠</a>
+                            <a href="#">飓风战魂/陀螺</a>
+                            <a href="#">海底小纵队</a>
+                            <a href="#">巨神战击队</a>
+                            <a href="#">巴拉拉小魔仙</a>
+                            <a href="#">铠甲勇士</a>
+                            <a href="#">机甲兽神/爆裂飞车</a>
+                            <a href="#">奇积乐园</a>
+                            <a href="#">魔幻车神</a>
+                            <a href="#">其他卡通</a>
+                            <hr>
+                            <p>乐器玩具</p>
+                            <a href="#">钢琴/电子琴</a>
+                            <a href="#" class="color_sub_red">吉他/贝斯</a>
+                            <a href="#">其他乐器</a>
+                            <hr>
+                            <p>书籍文具</p>
+                            <a href="#">绘本</a>
+                            <a href="#" class="color_sub_red">百科探索</a>
+                            <a href="#">儿童文学</a>
+                            <a href="#">有声读物</a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_puerpera"></i>
+                            <a class="menu_main" href="#">孕产妇用品</a>
+                            <p class="menu_sub">
+                                <a href="#">孕妈营养</a>
+                                <a href="#">产前产后</a>
+                            </p>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#" class="color_sub_red">安满Anmum</a>
+                            <a href="#">百洛Bio-Oil</a>
+                            <a href="#" class="color_sub_red">美国palmer's</a>
+                            <a href="#">日本三洋DACCO</a>
+                            <a href="#">德国舒氏Snug</a>
+                            <a href="#">神豆Simdoo</a>
+                            <a href="#">美国Lansinoh</a>
+                            <a href="#">瑞士美德乐Medela</a>
+                            <a href="#">德国喜宝Hipp</a>
+                            <a href="#">碧缇丝</a>
+                            <hr>
+                            <p>孕妈营养</p>
+                            <a href="#" class="color_sub_red">孕妇奶粉</a>
+                            <a href="#" class="color_sub_red">DHA/叶酸/备孕</a>
+                            <a href="#">孕期营养</a>
+                            <a href="#">产后调理</a>
+                            <a href="#">催奶茶</a>
+                            <hr>
+                            <p>孕妈护肤</p>
+                            <a href="#">面部护理</a>
+                            <a href="#">妊娠纹/去疤</a>
+                            <a href="#">身体护理</a>
+                            <a href="#">乳房护理</a>
+                            <a href="#">口腔护理</a>
+                            <a href="#">洗发护发</a>
+                            <hr>
+                            <p>孕妇穿着</p>
+                            <a href="#">防辐射服</a>
+                            <a href="#" class="color_sub_red">哺乳文胸</a>
+                            <a href="#">长裤/托腹裤</a>
+                            <a href="#">孕妇装</a>
+                            <a href="#">孕妇内裤</a>
+                            <hr>
+                            <p>产前产后</p>
+                            <a href="#">防溢乳垫</a>
+                            <a href="#" class="color_sub_red">吸奶器</a>
+                            <a href="#">母乳储存</a>
+                            <a href="#">护腰枕</a>
+                            <a href="#">待产包</a>
+                            <a href="#">塑身/束腹带</a>
+                            <a href="#">托腹带</a>
+                            <a href="#">产妇卫生巾</a>
+                            <a href="#">产妇垫</a>
+                            <a href="#">妈咪包</a>
+                            <a href="#">背婴带</a>
+                            <a href="#">胎心仪</a>
+                            <a href="#">孕产用品（直邮）</a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_makeup"></i>
+                            <a class="menu_main" href="#">个人化妆</a>
+                            <p class="menu_sub">
+                                <a href="#">面部护肤</a>
+                                <a href="#">女性护肤</a>
+                            </p>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#" class="color_sub_red">兰蔻Lancome</a>
+                            <a href="#">韩国SNP</a>
+                            <a href="#" class="color_sub_red">韩国可莱丝Clinie</a>
+                            <a href="#">九朵云Cloud 9</a>
+                            <a href="#">资生堂Shiseido</a>
+                            <a href="#">蓝蜥蜴BLUE LIZARD</a>
+                            <a href="#">兰芝Laneige</a>
+                            <a href="#">美国水宝宝Coppertone</a>
+                            <a href="#">雅诗兰黛Estée Lauder</a>
+                            <a href="#">倩碧Clinique</a>
+                            <a href="#">韩国爱茉莉Amore</a>
+                            <a href="#">日本花王Laurier</a>
+                            <hr>
+                            <p>面部护肤</p>
+                            <a href="#" class="color_sub_red">卸妆</a>
+                            <a href="#" class="color_sub_red">洁面</a>
+                            <a href="#">化妆/爽肤水</a>
+                            <a href="#">面霜/乳液</a>
+                            <a href="#">精华</a>
+                            <a href="#">眼部护理</a>
+                            <a href="#">防晒/隔离</a>
+                            <a href="#">面膜</a>
+                            <a href="#">护肤套装</a>
+                            <a href="#">剃须</a>
+                            <a href="#">美妆个护（直邮）</a>
+                            <hr>
+                            <p>香水彩妆</p>
+                            <a href="#">粉底/BB霜/遮瑕</a>
+                            <a href="#">眉笔/眉粉</a>
+                            <a href="#">睫毛膏</a>
+                            <a href="#">眼线/眼影</a>
+                            <a href="#">唇膏/唇彩</a>
+                            <a href="#">腮红</a>
+                            <a href="#">美妆工具</a>
+                            <a href="#">女士香水</a>
+                            <a href="#">男士香水</a>
+                            <hr>
+                            <p>洗发护发/身体护肤/口腔护理</p>
+                            <a href="#">洗发护发</a>
+                            <a href="#" class="color_sub_red">直发器/卷发器/电吹风</a>
+                            <a href="#">身体乳/沐浴露</a>
+                            <a href="#">美体塑身</a>
+                            <a href="#">颈部护理</a>
+                            <a href="#">手足护理</a>
+                            <a href="#">美胸丰胸</a>
+                            <a href="#">牙膏/牙刷</a>
+                            <a href="#">漱口水</a>
+                            <hr>
+                            <p>卫生巾/护垫</p>
+                            <a href="#">私密护理</a>
+                            <a href="#" class="color_sub_red">脱毛膏</a>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div class="sub_menu">
+                            <i class="icon_lift"></i>
+                            <a class="menu_main" href="#">居家生活</a>
+                            <p class="menu_sub">
+                                <a href="#">食品饮料</a>
+                                <a href="#">生活日用</a>
+                            </p>
+                        </div>
+                        <div class="nb_item">
+                            <p>热门品牌</p>
+                            <a href="#" class="color_sub_red">澳洲德运devondale</a>
+                            <a href="#">">安佳</a>
+                            <a href="#" class="color_sub_red">德国碧然德Brita</a>
+                            <a href="#">新西兰康维他</a>
+                            <a href="#">泉林本色</a>
+                            <a href="#">北欧欧慕Nathome</a>
+                            <a href="#">惠人Hurom</a>
+                            <hr>
+                            <p>成人奶粉/食品饮料</p>
+                            <a href="#" class="color_sub_red">全脂奶粉</a>
+                            <a href="#" class="color_sub_red">脱脂奶粉</a>
+                            <a href="#">高钙奶粉</a>
+                            <a href="#">羊奶粉</a>
+                            <a href="#">休闲食品</a>
+                            <a href="#">坚果/果仁</a>
+                            <a href="#">蜂蜜</a>
+                            <a href="#">冲调饮品</a>
+                            <a href="#">酸奶/冰淇淋</a>
+                            <a href="#">成人奶粉（直邮）</a>
+                            <a href="#">食品饮料（直邮）</a>
+                            <hr>
+                            <p>生活日用/居家/布艺</p>
+                            <a href="#">安全检测</a>
+                            <a href="#">家居收纳</a>
+                            <a href="#">净化除味</a>
+                            <a href="#">口罩</a>
+                            <a href="#">家庭清洁</a>
+                            <a href="#">衣架/晾晒</a>
+                            <a href="#">雨伞/雨具</a>
+                            <a href="#">水杯/水壶</a>
+                            <a href="#">内衣/睡衣</a>
+                            <a href="#">毛巾浴巾</a>
+                            <a href="#">床上用品</a>
+                            <a href="#">居家用品（直邮）</a>
+                            <a href="#">轻奢生活（直邮）</a>
+                            <hr>
+                            <p>个护健康</p>
+                            <a href="#">按摩器/瘦腿仪</a>
+                            <a href="#" class="color_sub_red">体重秤/血压计</a>
+                            <a href="#" class="color_sub_red">足浴器/浴桶</a>
+                            <a href="#" class="color_sub_red">磨毛器/粘毛器</a>
+                            <hr>
+                            <p>麦乐购礼品卡</p>
+                            <a href="#">500元</a>
+                            <a href="#" class="color_sub_red">1000元</a>
+                            <a href="#" class="color_sub_red">2000元</a>
+                            <a href="#">5000元</a>
+                            <a href="#" class="color_sub_red">10000元</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="nb_nav">
+                <span><a href="#">首页</a></span>
+                <span><a href="#">进口奶粉</a></span>
+                <span>
+                    <a href="#">发现好货</a>
+                    <i class="icon_new"></i>
+                </span>
+                <span><a href="#"><b>整</b><b>点</b><b>抢</b></a></span>
+                <span>
+                    <a href="active.html">天天特卖</a>
+                    <i class="icon_hot"></i>
+                </span>
+                <span><a href="#">正品保证</a></span>
+                <span><a href="#">海外直购</a></span>
+                <span><a href="#">国家馆</a></span>
+                <div id="nb_underline">
+                    <i id="triangle"></i>
+                </div>
+            </div>
+            <a href="#" class="shop_btn"><i class="icon_shop"></i>去购物车结算</a>
+        </div>
+        <!-- 侧边栏 -->
+        <div id="sidebar">
+            <!-- 侧边功能按钮列表 -->
+            <div class="s_btn_list">
+                <!-- 侧边logo -->
+                <img class="s_bl_logo" src="img/bearCart.png" alt="">
+                <!-- 用户图标 -->
+                <i id="icon_s_user" class="s_bl"></i>
+                <!-- 侧边购物车 -->
+                <span id="s_cart" class="s_bl">
+                    <!-- 购物车图标 -->
+                    <i class="icon_s_cart"></i>
+                    <b>购物车</b>
+                    <!-- 购物车数量 -->
+                    <span class="s_cart_count">0</span>
+                </span>
+                <!-- 客户经理和客服 -->
+                <span id="s_customer" class="s_bl">
+                    <!-- 客户经理 -->
+                    <i class="icon_s_manager"></i>
+                    <span class="s_bl_manager">客户经理</span>
+                    <!-- 客服 -->
+                    <i class="icon_s_customer"></i>
+                    <span class="s_bl_customer">客服</span>
+                    <div class="s_c_sub">
+                        <img src="img/loginBefore.png" alt="">
+                        <a href="#"><i class="icon_sub_customer"></i>联系客服</a>
+                    </div>
+                </span>
+                <!-- 我的收藏 -->
+                <span id="s_collection" class="s_bl">
+                    <i class="icon_s_collection"></i>
+                    <a href="login.html" class="s_co_sub">
+                        我的收藏
+                    </a>
+                </span>
+                <!-- 浏览历史 -->
+                <span id="s_history" class="s_bl">
+                    <i class="icon_s_history"></i>
+                    <a href="login.html" class="s_h_sub">
+                        浏览历史
+                    </a>
+                </span>
+                <!-- 二维码 -->
+                <span id="s_qr" class="s_bl">
+                    <i class="icon_s_qr"></i>
+                    <div class="s_q_sub">
+                        <img src="img/kASE5wkAWOMPY2Cqn9e-r-.jpg" alt="">
+                    </div>
+                </span>
+                <!-- 反馈 -->
+                <span id="s_feedback" class="s_bl">
+                    <i class="icon_s_feedback"></i>
+                    <a href="#" class="s_f_sub">
+                        浏览历史
+                    </a>
+                </span>
+                <!-- 返回顶部 -->
+                <span id="s_go_top" class="s_bl">
+                    <a href="#"><img src="img/backTop.png" alt=""></a>
+                </span>
+            </div>
+            <!-- 侧边主体部分 -->
+            <div class="s_content">
+                <!-- 侧边用户的主题内容 -->
+                <div id="s_bl_user" class="s_bl_content">
+                    <form action="#">
+                        <!-- 用户名 -->
+                        <input class="sbu_user" type="text" placeholder="用户名/手机号">
+                        <!-- 用户名图标 -->
+                        <i class="icon_sub_user"></i>
+                        <!-- 密码 -->
+                        <input class="sbu_pass" type="password" placeholder="请输入密码">
+                        <!-- 密码图标 -->
+                        <i class="icon_sub_pass"></i>
+                        <!-- 验证码 -->
+                        <input id="sbu_verify" type="text" placeholder="验证码">
+                        <span id="sbu_verify_txt"></span>
+                        <span id="sbu_change" href="#">换一张</span>
+                        <!-- 登录按钮 -->
+                        <input class="sbu_btn" type="submit" value="登录">
+                        <a class="sbu_register" href="register.html">免费注册</a>
+                    </form>
+                </div>
+                <!-- 侧边购物车主题内容 -->
+                <div id="s_bl_cart" class="s_bl_content">
+                    <p class="suc_p1">喔，亲，您还没有添加过任何商品</p>
+                    <p class="suc_p2">哦！<a href="#">去逛逛</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/common.js"></script>
+    </body>
+</html>

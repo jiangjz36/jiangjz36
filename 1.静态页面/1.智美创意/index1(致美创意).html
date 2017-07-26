@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /*
+      wrap
+        header
+          top_phone
+          logo_nav
+            logo
+            main_nav
+          bar
+        contenter
+          side_nav
+          exhibition
+          about us
+          service process
+        footer
+     */
+    body,p,ul,li,dl,dt,dd,h1,h2,h3 { margin:0;padding: 0;}
+    body { font-family: "黑体",sans-serif; font-size: 1em;}
+    i { display: inline-block;}
+    li { list-style: none;}
+    a { text-decoration: none;}
+    /*reset end*/
+    .wrap { width: 950px;height: auto;min-height: 100px;margin: 0 auto;}
+
+    .top_phone { width: 100%;height: 35px; background: linear-gradient(to bottom, #F6F6F6, #DADADA); }
+    .top_phone p { float: right; height: 100%; margin-right: 10px; line-height: 35px; }
+    .top_phone p i { width: 20px;height: 20px; margin-right: 8px; background: url(img/sprites.png);background-position: -656px -5px;vertical-align: text-top;}
+    .top_phone p span { font-weight: bold; font-size: 1em; font-family: "georgia",sans-serif;}
+
+    .logo_nav { width: 100%;height: 100px;}
+      .logo { display: inline-block; width: 195px;height: 42px; margin: 42px 0 0 10px; background: url(img/sprites.png);background-position: -20px -16px; background-size: 450%; font-size: 0; }
+      .logo a { display: block; width: 100%;height: 100%;}
+      .main_nav { float: right; margin: 47px 68px 0 0;  text-align: center;}
+      .main_nav li { float: left; width: 100px;}
+      .main_nav a { display: block; border-left: 1px solid #CCC; font-weight: bold; color:#4B5161;}
+      .main_nav li:first-child a { border: none; color: #000;}
+      .main_nav li:hover a { color: #000;}
+
+    .bar { position: relative; width: 100%;height: 400px; background: url(img/2017-02-07_173537.png);}
+    .bar a { display: block; position: absolute; top: 50%; left: 50%; width: 368px;height: 68px; margin: -43px 0 0 -186px; border: 2px solid #942C29;}
+    .bar .logo { position: absolute; left: 5px;top: 5px; width: 57px;height: 57px; margin: 0;background: url(img/sprites.png); background-position: -255px 0;}
+    .bar h2 { display: inline-block; font: bolder 3.125em/70px "黑体";text-indent: 70px;}
+    .bar span { display: inline-block; width: 77px;height: 47px; font-size: 1.125em; font-weight: 400;color: red;}
+    /*header end*/
+
+    .side_nav { width: 100%;height: 224px;}
+    .side_nav li { float: left; position: relative; top: 42px; width: 20%; text-align: center;}
+    .side_nav li .nav_caption { position: absolute; top: -4px;left: 35%; padding: 0 4px; background: #FFF; font-size: 0.75em; color: #444645;}
+    .side_nav .circle { width: 109px;height: 109px; margin: 0 auto; border: 1px solid #3D3D3D; border-radius: 50%;}
+    .side_nav .circle span { position: relative; display: inline-block; width: 80px;height: 80px; margin: 13% auto 0; border: 1px solid #382C36; border-radius: 50%; background: #2D3236;}
+    .side_nav .circle a { display: block; height: 100%;}
+    .side_nav .circle:hover { box-shadow: 0 2px 5px rgba(200,200,200,0.9);}
+      .circle span i { position: absolute; top: 16px; left: 18px; width: 44px;height: 44px;background: url(img/sprites.png);}
+      .circle .circle_i1 { background-position: -326px -2px;}
+      .circle .circle_i2 { left: 20px; width: 40px; background-position: -394px -2px;}
+      .circle .circle_i3 { background-position: -457px -4px;}
+      .circle .circle_i4 { background-position: -585px -4px;}
+      .circle .circle_i5 { left: 20px; width: 40px; height: 43px; background-position: -525px -4px;}
+
+    .column { position: relative; width: 100%; height: 32px; margin-bottom: 20px;font: bold 1.125em/32px "黑体"; color: #E90F06;text-align: center; text-transform: uppercase; background: #2D3236;}
+    .column h2 { border-bottom: 1px solid #000; padding-bottom: 10px;}
+    .column h2 b { color: #FFF;}
+    .column span { display: inline-block; position: absolute; top: 110%; left: 50%; width: 75px;margin: 0;padding: 0; margin-left: -37.5px; font: 0.625em "黑体"; color:#000; background: #FFF;}
+
+    .exhibition { overflow: hidden; clear: both;}
+    .exhibition li { float: left; width: 174px;height: 300px; margin: 40px 0 60px 20px; background: url(img/sprites.png);background-size: 521%;}
+    .exhibition a { display: block; height: 100%;}
+    .exhibition li:hover { box-shadow: 3px 3px 4px #CCC;}
+    .exhibition .ex_1 { margin-left: 0; background-position: 0 -78px;  }
+    .exhibition .ex_2 { background-position: -549px -78px;  }
+    .exhibition .ex_3 { background-position: -732px -78px;  }
+    .exhibition .ex_4 { background-position: -366px -78px;  }
+    .exhibition .ex_5 { background-position: -180px -78px;  }
+
+    .about_us { text-align: center;font-family: "黑体"; color: #5D6567;}
+    .about_us h3 { display: inline-block; margin: 25px 0 10px; font-weight: normal;}
+    .about_us p { line-height: 1.8;}
+    .ellipsis { width: 590px; margin: 0 auto; overflow: hidden;text-overflow: ellipsis; white-space: nowrap; }
+    .about_us p:last-child { padding-bottom: 90px;}
+
+    .flow { width: 770px; heihgt: 40px; padding: 35px 0 130px; margin: 0 auto; font-size: 0.75em;color: #637372; }
+    .flow i { display: inline-block; width: 24px;height: 25px; margin-right: 20px;background: url(img/sprites.png); vertical-align: middle;}
+    i.block_1 { background-position: -870px -7px;}
+    i.block_2 { background-position: -827px -7px;}
+    i.block_3 { background-position: -780px -7px;}
+    i.block_4 { background-position: -738px -5px;}
+    i.ico_arrow { margin: 0 10px; background-position: -696px -4px;}
+
+    /*contenter end*/
+
+    .footer { width: 100%; height: 118px; border-top: 1px solid #B5B5B5; font: 0.75em "微软雅黑"; background: #EAEAEA;}
+    .footer ul { width: 220px; margin: 25px auto 0;}
+    .footer li { float: left; }
+    .footer li a { display: inline-block; padding: 0 4px; color: #000;vertical-align: middle;}
+    .footer li:last-child a { border: none;}
+      .address,.technical_support { padding-top: 10px;}
+      .address { clear: left;text-align: center;}
+      .technical_support { width: 175px; margin: 0 auto;}
+      .technical_support dt,.technical_support dd { float: left; }
+      .technical_support dd a { padding: 0 5px; color: #000;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="top_phone">
+        <p>
+          <i></i><span>联系电话：186-7038-9670</span>
+        </p>
+      </div>
+      <div class="logo_nav">
+        <h1 class="logo"><a href="javascript:;">致美创意</a></h1>
+        <ul class="main_nav">
+          <li><a href="javascript:;">首页</a></li>
+          <li><a href="javascript:;">关于致美</a></li>
+          <li><a href="javascript:;">成功案例</a></li>
+          <li><a href="javascript:;">新闻动态</a></li>
+          <li><a href="javascript:;">在线咨询</a></li>
+          <li><a href="javascript:;">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="bar">
+        <a href="javascript:;">
+          <i class="logo"></i>
+          <!-- <h2>标志设计</h2>
+          <span>
+            更多案例<br>
+            点击查询
+          </span> -->
+        </a>
+      </div>
+    </div>
+    <div class="contenter">
+      <div class="side_nav">
+        <ul>
+          <li>
+            <span class="nav_caption">品牌设计</span>
+            <div class="circle">
+              <a href="javascript:;">  <span><i class="circle_i1"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <span class="nav_caption">平面设计</span>
+            <div class="circle">
+              <a href="javascript:;"><span><i class="circle_i2"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <span class="nav_caption">网页设计</span>
+            <div class="circle">
+              <a href="javascript:;"><span><i class="circle_i3"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <span class="nav_caption">电子商城</span>
+            <div class="circle">
+              <a href="javascript:;"><span><i class="circle_i4"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <span class="nav_caption">空间/建筑</span>
+            <div class="circle">
+              <a href="javascript:;"><span><i class="circle_i5"></i></span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="exhibition">
+        <div class="column">
+          <h2>exhibition</h2>
+          <span>案列专栏</span>
+        </div>
+        <ul>
+          <li class="ex_1"><a href="javascript:;"></a></li>
+          <li class="ex_2"><a href="javascript:;"></a></li>
+          <li class="ex_3"><a href="javascript:;"></a></li>
+          <li class="ex_4"><a href="javascript:;"></a></li>
+          <li class="ex_5"><a href="javascript:;"></a></li>
+        </ul>
+      </div>
+      <div class="about_us">
+        <div class="column">
+          <h2>about <b>us</b></h2>
+          <span>关于我们</span>
+        </div>
+        <h3>
+          致美创意，因为<b>专注</b>，所以<b>专注</b>
+        </h3>
+        <p class="ellipsis">
+          无论您是创业路上的文艺青年、店面商铺的老板、需要强化品牌的企业家，网店店主
+        </p>
+        <p>我们都能为您提供高端、低价的设计，我们以最有效、最快速的方式为您提供最合适的设计方案</p>
+      </div>
+      <div class="service_process">
+        <div class="column">
+          <h2>service <b>process</b></h2>
+          <span>服务流程</span>
+        </div>
+        <div class="flow">
+          <span><i class="block_1"></i>项目洽谈，根据需求报价</span>
+          <i class="ico_arrow"></i>
+          <span><i class="block_2"></i>预付定金，开始设计</span>
+          <i class="ico_arrow"></i>
+          <span><i class="block_3"></i>修改定稿，完成设计</span>
+          <i class="ico_arrow"></i>
+          <span><i class="block_4"></i>签收付尾款</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <ul>
+        <li><a href="javascript:;">首页</a>|</li>
+        <li><a href="javascript:;">关于致美</a>|</li>
+        <li><a href="javascript:;">成功案例</a>|</li>
+        <li><a href="javascript:;">在线咨询</a></li>
+      </ul>
+      <div class="address">
+        Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2014-2015&nbsp;&nbsp;致美创意工作室
+      </div>
+      <dl class="technical_support">
+        <dt>技术支持 : </td>
+          <dd><a href="javascript:;">凡科建站</a>|</dd>
+          <dd><a href="javascript:;">管理登录</a></dd>
+      </dl>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>活动页</title>
+	<link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/active.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class="header">
+        <script type="text/javascript">
+        var nbMenuSwitch = true;
+        $(document).ready(function() {
+			$.get('header.html', function(e) {
+				$('.header').prepend(e)
+			});
+        });
+    	</script>
+    </div>
+
+	<div class="container">
+		<div class="wrap">
+			<div class="banner">
+				<!-- Swiper -->
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            	<img src="img/0azUHF-tVOQwwDk3S82mBc.jpg" alt="">
+			            </div>
+                        <div class="swiper-slide">
+                        	<img src="img/FiHAROaYx4qCBZIpZM1sDK.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img src="img/eP29-OAaZ4iCuXwJHCziYr.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img src="img/TBexzCkfd-A6E0ofOC_JZN.jpg" alt="">
+                        </div>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			    </div>
+
+			    <!-- Swiper JS -->
+			    <script src="js/swiper.js"></script>
+
+			    <!-- Initialize Swiper -->
+			    <script>
+			    var swiper = new Swiper('.swiper-container', {
+			        pagination: '.swiper-pagination',
+			        paginationClickable: true,
+			        paginationBulletRender: function (swiper, index, className) {
+			            return '<span class="' + className + '">' + (index + 1) + '</span>';
+			        }
+			    });
+			    </script>
+			</div>
+		</div>
+		<div class="selling wrap clear_float">
+			<h3><i class="icon_selling"></i>正在特卖</h3>
+			<div class="sel_sec">
+				<div class="sel_sec_img">
+					<img src="img/qIxEFNOFT4mZni-9hAQBLa.jpg" alt="">
+				</div>
+				<p>韩国碧芝莱专场 <span><b>6.7</b>折起</span></p>
+				<span class="countdown"><i class="icon_time"></i>剩余2天22小时09分47秒</span>
+			</div>
+			<div class="sel_sec">
+				<div class="sel_sec_img">
+					<img src="img/qIxEFNOFT4mZni-9hAQBLa.jpg" alt="">
+				</div>
+				<p>韩国碧芝莱专场 <span><b>6.7</b>折起</span></p>
+				<span class="countdown"><i class="icon_time"></i>剩余2天22小时09分47秒</span>
+			</div>
+			<div class="sel_sec">
+				<div class="sel_sec_img">
+					<img src="img/qIxEFNOFT4mZni-9hAQBLa.jpg" alt="">
+				</div>
+				<p>韩国碧芝莱专场 <span><b>6.7</b>折起</span></p>
+				<span class="countdown"><i class="icon_time"></i>剩余2天22小时09分47秒</span>
+			</div>
+			<div class="sel_sec">
+				<div class="sel_sec_img">
+					<img src="img/qIxEFNOFT4mZni-9hAQBLa.jpg" alt="">
+				</div>
+				<p>韩国碧芝莱专场 <span><b>6.7</b>折起</span></p>
+				<span class="countdown"><i class="icon_time"></i>剩余2天22小时09分47秒</span>
+			</div>
+			<div class="sel_sec">
+				<div class="sel_sec_img">
+					<img src="img/qIxEFNOFT4mZni-9hAQBLa.jpg" alt="">
+				</div>
+				<p>韩国碧芝莱专场 <span><b>6.7</b>折起</span></p>
+				<span class="countdown"><i class="icon_time"></i>剩余2天22小时09分47秒</span>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="footer">
+        <script type="text/javascript">
+        $(document).ready(function() {
+			$.get('footer.html', function(e) {
+				$('.footer').prepend(e)
+			});
+        });
+    	</script>
+    </div>
+    <script src="js/active.js"></script>
+</body>
+</html>

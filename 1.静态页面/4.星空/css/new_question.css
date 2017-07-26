@@ -1,0 +1,18 @@
+body { background: #EDEDED;}
+
+.header { margin-bottom: 37px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
+
+.content .m_title ul li:last-child { border-color: #E21326;}
+.content .m_section { width: 950px; padding: 50px 25px 60px 25px; margin: 0 auto;   background: #FFF; text-align: center; font-family: "微软雅黑";}
+         .m_section h2 {margin-bottom: 10px; font-weight: normal;}
+         .m_section span { font-size: 14px;}
+         .m_section .article { border-top: 1px dotted #848484;border-bottom: 1px dotted #848484; }
+         .m_section .article p {margin: 25px 0;text-align: left; line-height: 1.5; font-weight: normal; color: #6F6F6F;}
+
+         .m_section .page_btn { padding-top: 47px;color: #3F3F3F; text-align: left;}
+         .m_section .page_btn:after { content: '';clear: both; display: block;}
+                    .page_btn p { margin-bottom: 12px;}
+                    .page_btn p,.page_btn p span { font-size: 10px;}
+                    .page_btn .share { float: left; margin-top: 10px; font-size: 10px;}
+                    .page_btn .share img { vertical-align: -8px;}
+                    .page_btn button { float: right; width: 75px;height: 34px; color: #FFF;background-color: #B3B3B3; text-transform: uppercase;}

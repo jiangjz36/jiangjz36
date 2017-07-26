@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  var arr = new Array(4);
+  var col,row;
+  for(var i=0;i<arr.length;i++){
+    arr[i] = new Array(4);
+    for(var j=0;j<arr[i].length;j++){
+      arr[i][j] = j;
+      col = i+1;
+      row = arr[i][j]+1;
+      if(j%4==0&&i!=0){
+        document.write("</br>");
+      }
+      document.write("第"+col+"行第"+row+"列 ");
+    }
+  }
+  document.write("<br />");
+  document.write('<table border="1" cellspacing="0" cellpadding="5">');
+  for(var i=0;i<arr.length;i++){
+    document.write('<tr>');
+      for(var j=0;j<arr[i].length;j++){
+        col = i+1;
+        row = arr[i][j]+1;
+        document.write("<td>第"+col+"行第"+row+"列</td>");
+      }
+    document.write('</tr>');
+  }
+  document.write('</table>');
+</script>
+</body>
+</html>

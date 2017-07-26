@@ -1,0 +1,47 @@
+.container {
+  padding: 1.33333333rem 1rem 0 1.03333333rem;
+  width: 22.96666667rem;
+}
+.container form {
+  position: relative;
+}
+.container input {
+  width: 22.96666667rem;
+  height: 2.23333333rem;
+  margin-bottom: 1.06666667rem;
+  text-indent: 1.3rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+.container #passwordEye {
+  position: absolute;
+  right: 0.73333333rem;
+  top: 4.03333333rem;
+  width: 1.26666667rem;
+  height: 0.8rem;
+}
+.container .eyeClose {
+  background: url(../../img/yanjing2.png) center / 98% no-repeat;
+}
+.container .eyeOpen {
+  background: url(../../img/yanjing.png) center / 98% no-repeat;
+}
+.container .submit {
+  width: 22.9rem;
+  height: 1.9rem;
+  margin-left: 1px;
+  margin-bottom: 1.43333333rem;
+  border: 1px solid #ffc600;
+  background: #ffda44;
+  font-size: 0.93333333rem;
+  color: #000;
+}
+.container .reginterBar {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #666;
+}
+.container .reginterBar a {
+  color: #666;
+  margin: 0 1.93333333rem;
+}

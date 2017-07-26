@@ -1,0 +1,62 @@
+.search-bar{
+  background: #12d5b5;
+  height:40/@rem;
+  line-height: 40/@rem;
+  position: fixed;
+  left:0;
+  right:0;
+  text-align: center;
+  button{
+    background: #12d5b5;
+    border:none;
+    &:first-child{
+      color:#fff;
+    }
+    &:last-child{
+      color:#9f9e9d;
+      background-image: url(../image/search.png);
+      background-repeat: no-repeat;
+      background-size: 15px 15px;
+      padding-left:20px;
+      margin-left: 10px;
+    }
+  }
+  input{
+    width:190/@rem;
+    height:25/@rem;
+    border-radius: 80px;
+    border:none;
+    background: #eee;
+    padding-left:20px;
+  }
+}
+
+
+//城市  薪水  公司规模
+.search-tab{
+  position: fixed;
+  left:0;
+  right:0;
+  top:40px;
+  background: #eee;
+  li{
+    display: inline-block;
+    width:33.33%;
+    float: left;
+    height: 40/@rem;
+    line-height: 40/@rem;
+    text-align: center;
+    font-size: 14/@rem;
+    border-bottom:2px solid #f7f7f7 ;
+    &.active{
+      border-bottom: 2px solid #12d5b5;
+    }
+  }
+}
+
+//职位部分的定位
+.position-search{
+  width:100%;
+  position: absolute;
+  top:82px;
+}

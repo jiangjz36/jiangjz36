@@ -1,0 +1,42 @@
+body {
+  background: #e94838;
+}
+.container {
+  text-align: center;
+}
+.container h1 {
+  margin-top: 2.16666667rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: #ffda44;
+}
+.container p.subtitle {
+  font-size: 1.33333333rem;
+  color: #ffda44;
+  line-height: 2.46666667rem;
+}
+.container .picture {
+  position: relative;
+  margin: 3.33333333rem auto 1.5rem;
+}
+.container .picture .picHammer {
+  position: absolute;
+  right: 4rem;
+  top: -1.66666667rem;
+}
+.container .p {
+  font-size: 1.13333333rem;
+  color: #FFF;
+  text-indent: 0.83333333rem;
+}
+.container .p span {
+  color: #ffcc00;
+}
+.container button {
+  width: 17.06666667rem;
+  height: 1.96666667rem;
+  margin: 1.33333333rem 0 0 0.83333333rem;
+  font-size: 0.93333333rem;
+  color: #FFF;
+  background: #c62717;
+}

@@ -1,0 +1,226 @@
+/*header*/
+.header {
+    position: relative;
+    width: 1000px;
+    height: 83px;
+    padding-top: 20px;
+    margin: 0 auto 40px;
+}
+    .head_right_img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+/*container*/
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+    /*注册*/
+    .register_area {
+        float: right;
+        width: 290px;/*370*/
+        height: 432px;/*472*/
+        border: 1px solid #CCC;
+        margin-right: 80px;
+        padding: 20px 40px 20px 40px;
+        border-top: 2px solid #EA3918;
+    }
+        /*标题*/
+        .ra_head {
+            float: left;
+            font-size: 20px;
+        }
+        /*小标题*/
+        .ra_h_sub {
+            margin-top: 6px;
+            float: right;
+            font-size: 12px;
+        }
+            /*小标题中的文字*/
+            .ra_h_sub a {
+                color: #999;
+            }
+            .ra_h_sub a:hover {
+                color: #128CFF;
+            }
+
+        /*注册表单*/
+        .register_area form,.login_area form {
+            float: left;
+            margin-top: 20px;
+        }
+            .user_name,.user_pass,.user_pass_r {
+                width: 278px;/*288*/
+                height: 14px;/*30*/
+                padding: 8px 5px;
+                font-size: 14px;
+                border: 1px solid #DEDEDE;
+                color: #A9A9A9;
+            }
+            .err_un,.err_up,.err_up_r,.err_rv,.err_sms {
+                line-height: 24px;
+                font-size: 12px;
+                color: #FF6B52;
+                height: 24px;
+            }
+            .user_verify,.user_sms {
+                width: 92px;/*108*/
+                height: 14px;/*30*/
+                padding: 8px;
+                font-size: 14px;
+                border: 1px solid #DEDEDE;
+                color: #A9A9A9;
+            }
+            /*二维码*/
+            #verify_img {
+                display: inline-block;
+                width: 85px;
+                height: 25px;
+                text-align: center;
+                line-height: 25px;
+                /*文本不可选中，鼠标为默认箭头*/
+                cursor: default;
+                -webkit-user-select:none;
+                -moz-user-select:none;
+                -ms-user-select:none;
+                user-select:none;
+            }
+                #verify_img i {
+                    font-style: normal;
+                }
+            #verify_btn {
+                font-size: 12px;
+                color: #999;
+            }
+            #verify_btn:hover {
+                color: #128CFF;
+            }
+            /*获取短信校验码*/
+            .sms_btn {
+                width: 110px;
+                height: 30px;
+                border: 1px solid #CCC;
+                color: #444;
+                cursor: pointer;
+            }
+            /*条款*/
+            .terms {
+                font-size: 12px;
+            }
+                .terms a {
+                    color: #999;
+                }
+                .terms a:hover {
+                    color: #128CFF;
+                }
+            /*立即注册*/
+            .user_submit {
+                width: 290px;
+                height: 40px;
+                font-size: 20px;
+                background: #E83917;
+                color: #FDFFDA;
+                margin-top: 6px;
+                margin-bottom: 21px;
+                cursor: pointer;
+            }
+            /*收不到短信*/
+            .user_voice {
+                text-align: center;
+                font-size: 12px;
+            }
+                .user_voice a {
+                    color: #128CFF;
+                }
+
+            /*使用其他账号登录*/
+            .other {
+                font-size: 12px;
+            }
+    /*登录*/
+    .login_container {
+        margin-bottom: 264px;
+    }
+    .login_area {
+        float: right;
+        width: 290px;/*370*/
+        height: 313px;/*353*/
+        border: 1px solid #CCC;
+        margin-right: 80px;
+        padding: 20px 40px 20px 40px;
+        border-top: 2px solid #EA3918;
+    }
+        .login_area form {
+            position: relative;
+        }
+        /*用户名，密码登录*/
+        .login_name,.login_pass {
+            width: 278px;/*288*/
+            height: 14px;/*30*/
+            padding: 8px 5px;
+            font-size: 14px;
+            border: 1px solid #DEDEDE;
+            color: #A9A9A9;
+            text-indent: 35px;
+        }
+        .icon_login_name,.icon_login_pass {
+            position: absolute;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            background-image: url(../img/tegPng.png);
+            background-position: 0 -52px;
+        }
+        .icon_login_pass {
+            top: 56px;
+        }
+        /*忘记密码*/
+        .la_forget {
+            display: block;
+            font-size: 12px;
+            float: right;
+            color: #999;
+        }
+            .la_forget:hover {
+                color: #128CFF;
+            }
+        .err_ln,.err_lp,.err_lv {
+            line-height: 24px;
+            font-size: 12px;
+            color: #FF6B52;
+            height: 24px;
+        }
+        /*使用其他账号登录*/
+        .other {
+            font-size: 12px;
+            color: #999;
+        }
+            .other a {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                background-image: url(../img/tegPng.png);
+                vertical-align: middle;
+            }
+            .icon_l_qq {
+                background-position: -26px -128px;
+            }
+            .icon_l_alipay {
+                background-position: -106px -128px;
+            }
+            .icon_l_360 {
+                background-position: -147px -382px;
+            }
+            .icon_l_sina {
+                background-position: -66px -128px;
+            }
+/*footer 底部*/
+.footer {
+    margin-top: 145px;
+}
+.f_promise,.f_related {
+    display: none;
+}

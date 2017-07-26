@@ -1,0 +1,36 @@
+<!--头部-->
+<div class="position-head">
+    <span class="btn-left" ng-click="back()">&lt;</span>
+    <span class="title">职位详情</span>
+</div>
+
+<!--职位-->
+<div class="position-info">
+    <p><span ng-bind="pos.name"></span><span class="info-a info-color" >{{pos.salaryName}}</span></p>
+    <p><span ng-bind="pos.cityName"></span><span class="info-a" ng-bind="pos.experience"></span><span class="info-a" ng-bind="pos.education"></span></p>
+    <p ng-bind="pos.benefit"></p>
+    <img src="image/star.png" alt="">
+</div>
+
+<!--公司描述-->
+<div class="company-info" ui-sref="company({id:1})">
+    <img src="image/company-1.png" alt="">
+    <p>
+        <span>慕课网</span>
+    </p>
+    <p>
+        <span>移动互联网/A轮/50-150人</span>
+    </p>
+</div>
+
+<!--职位描述-->
+<div class="position-desc">
+    <h5>职位描述</h5>
+    <pre>
+        岗位职责：
+        1.销售产品
+    </pre>
+</div>
+
+<!--投个简历-->
+<button class="position-botton-btn">投个简历</button>

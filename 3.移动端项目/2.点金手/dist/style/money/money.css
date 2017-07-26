@@ -1,0 +1,128 @@
+body {
+  background: #FFF;
+}
+.topNav {
+  padding: 0.96666667rem 0 1rem;
+  background: #FFF;
+}
+.topNav div {
+  float: left;
+}
+.topNav div p {
+  font-size: 1.16666667rem;
+  color: #333;
+}
+.topNav div span {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: --3 / 30rem;
+}
+.topNav div:not(:last-child) {
+  border-right: 1px solid #efefef;
+}
+.topNav .tn_1 {
+  width: 5.26666667rem;
+  text-indent: 1.16666667rem;
+}
+.topNav .tn_2 {
+  width: 7rem;
+  text-indent: 1.96666667rem;
+}
+.topNav .tn_3 {
+  width: 6.3rem;
+  text-indent: 1.56666667rem;
+}
+.topNav .tn_4 {
+  width: 6.23333333rem;
+  text-indent: 1.5rem;
+}
+.loginBar {
+  background: #333;
+  font-size: 0;
+}
+.loginBar img {
+  margin: 0.56666667rem 0.6rem 0.56666667rem 1.03333333rem;
+  vertical-align: -1.13333333rem;
+}
+.loginBar .computer {
+  display: inline-block;
+  font-size: 0.66666667rem;
+  color: #7e7e7e;
+}
+.loginBar .loginArea {
+  float: right;
+  border-left: 1px solid #3b3b3b;
+}
+.loginBar .loginArea li {
+  float: left;
+  height: 2.93333333rem;
+  border-left: 1px solid #272727;
+}
+.loginBar .loginArea li:not(:last-child) {
+  border-right: 1px solid #3b3b3b;
+}
+.loginBar .loginArea a {
+  display: block;
+  font-size: 1rem;
+  padding: 0 1rem;
+  line-height: 2.93333333rem;
+  color: #FFF;
+}
+.nav {
+  width: 100%;
+  text-align: center;
+  background: #cd1d1d;
+}
+.nav p {
+  display: inline-block;
+  line-height: 2.7rem;
+  color: #FFF;
+  font-size: 0.96666667rem;
+}
+.nav .btnBack {
+  float: left;
+  font-size: 0;
+  margin: 0.73333333rem 0 0 1.03333333rem;
+}
+.nav .moreMenu {
+  float: right;
+  font-size: 0;
+  margin: 0.73333333rem 1.03333333rem 0 0;
+}
+.imgList {
+  width: 24.33333333rem;
+  padding-top: 1.33333333rem;
+  margin: 0 auto;
+  padding-bottom: 1.96666667rem;
+}
+.imgList dl {
+  float: left;
+  margin: 0 0.33333333rem 0.66666667rem;
+  width: 11.5rem;
+}
+.imgList img {
+  display: block;
+}
+.imgList dd {
+  font-size: 0.6rem;
+  background: #ededed;
+  text-align: center;
+  line-height: 1.56666667rem;
+}
+.shareBtn {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1.9rem;
+  border-top: 1px solid #ffc600;
+  border-bottom: 1px solid #ffc600;
+  background: #ffda44;
+  font-size: 0.83333333rem;
+  text-align: center;
+  line-height: 1.9rem;
+}
+.shareBtn a {
+  color: #000;
+}

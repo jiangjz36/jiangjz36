@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  //公鸡每只5元，母鸡每只3元，小鸡每3只1元
+  var z,f1,f2;
+  for(var i=0;i<=20;i++){
+    for(var j=0;j<=33;j++){
+      z=100-i-j;
+      f2 = 5*i+3*j+z/3;
+      if(z%3==0&&f2==100){
+        document.write("公鸡 "+i+" 母鸡 "+j+" 小鸡 "+z+"<br>");
+      }
+    }
+  }
+</script>
+</body>
+</html>

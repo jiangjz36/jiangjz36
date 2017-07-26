@@ -1,0 +1,876 @@
+.header {
+    width: 100%;
+}
+/*广告栏*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: #FEE6ED;
+}
+.banner .wrap {
+    position: relative;
+}
+    #carousel {
+        float: left;
+        width: 810px;
+        height: 480px;
+        position: relative;
+        left: 225px;
+        overflow: hidden;
+    }
+        #carousel img {
+            position: absolute;
+            display: none;
+            width: 850.5px;/*1.02*/
+            height: 504px;
+            margin-left: -20.25px;
+            margin-top: -12px;
+        }
+    #sub_carousel {
+        position: absolute;
+        left: 235px;
+        bottom: 12px;
+    }
+        #sub_carousel a {
+            position: relative;
+            display: inline-block;
+            float: left;
+            margin-right: 1px;
+            font-size: 0;
+        }
+
+    /*右侧图片广告栏*/
+    .side_banner {
+        float: right;
+        width: 200px;
+        margin-right: 45px;
+    }
+        .side_banner img {
+            display: block;
+            margin-bottom: 1px;
+        }
+
+
+
+/*container 主体部分*/
+.container {
+    background: #F3F3F3;
+}
+.container .wrap {
+    width: 1190px;
+    padding-top: 20px;
+}
+.container h2 {
+    float: left;
+    font-size: 18px;
+    /*margin-top: 20px;*/
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+    .icon_one {
+        width: 38px;
+        height: 38px;
+        margin-right: 5px;
+        vertical-align: -10px;
+        background: url('../img/icon_index.png') -58px -45px;
+    }
+    .container h2 span {
+        font-size: 12px;
+        color: #999;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+
+/*整点抢*/
+.sec_1 {
+    position: relative;
+}
+    .countdown {
+        float: left;
+    }
+    .countdown span {
+        float: left;
+        font-size: 12px;
+        color: #999;
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+    .countdown b:not(.colon) {
+        display: inline-block;
+        width: 19px;
+        height: 28px;
+        background: #FFF;
+        box-shadow: 2px 2px 0 0 #D1D1D1;
+        line-height: 28px;
+        text-align: center;
+        font-size: 20px;
+    }
+    #hour_1 {
+        margin-left: 5px;
+    }
+    .countdown .colon {
+        display: inline-block;
+        background: #F3F3F3;
+    }
+    #millisecond {
+        width: 14px;
+        height: 23px;
+        font-size: 16px;
+        line-height: 23px;
+        position: relative;
+        bottom: -1px;
+    }
+
+.s1_bar {
+    clear: left;
+}
+    .s1_bar ul {
+        margin-bottom: 33px;
+    }
+    .s1_bar li {
+        float: left;
+        width: 238px;
+        height: 42px;
+        background: #444851;
+        text-align: center;
+        color: #E2E2D8;
+        cursor: pointer;
+    }
+    .s1_bar li:hover {
+        background: #666;
+    }
+    #s1_b_active {
+        background: #CB351A;
+        position: relative;
+    }
+    #s1_b_active:after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        border: 6px solid transparent;
+        border-top-color: #CB351A;
+    }
+    .s1_bar li .s1_time {
+        margin-top: 2px;
+    }
+    .s1_bar li .s1_txt {
+        font-size: 12px;
+    }
+    /*商品栏*/
+    .s1_product_bar {
+        position: relative;
+        width: 1190px;
+        height: 345px;
+        margin-bottom: 27px;
+        overflow: hidden;
+    }
+        .s_product {
+            float: left;
+            width: 290px;
+            height: 345px;
+            background: #FFF;
+        }
+        .s_product:not(:last-child) {
+            margin-right: 10px;
+        }
+            /*商品图片*/
+            .sp_img {
+                width: 240px;
+                height: 240px;
+                display: block;
+                margin: 10px auto 10px;
+            }
+            /*商品文字*/
+            .sp_p {
+                display: block;
+                font-size: 14px;
+                color: #666;
+            }
+            .s1_p {
+                width: 250px;
+                margin: 0 auto 8px;
+            }
+            /*现在价格*/
+            .price {
+                font-size: 18px;
+                color: #E02200;
+            }
+            .price_1 {
+                float: left;
+                margin-left: 20px;
+                font-weight: bold;
+            }
+                .price sub {
+                    position: relative;
+                    top: -3px;
+                    font-weight: normal;
+                }
+            /*原来的价格*/
+            .del_price {
+                font-size: 12px;
+                color: #A3A6A6;
+            }
+            .del_price_1 {
+                margin-left: 10px;
+            }
+            /*马上抢*/
+            .sp_btn {
+                color: #FFF;
+                background: #F95D5E;
+                text-align: center;
+            }
+            .s1_btn {
+                float: right;
+                width: 90px;
+                height: 30px;
+                margin-right: 10px;
+                line-height: 30px;
+                border-radius: 5px;
+            }
+            /*按钮*/
+            .s_btn_prev,.s_btn_next {
+                position: absolute;
+                width: 27px;
+                height: 82px;
+                background-image: url(../img/icon_index.png);
+                top: 50%;
+                margin-top: -42px;
+                cursor: pointer;
+            }
+                .s_btn_prev {
+                    background-position: -200px -125px;
+                    left: 2px;
+                }
+                .s_btn_next {
+                    background-position: -258px -125px;
+                    right: 2px;
+                }
+            #s1_btn_index {
+                position: absolute;
+                top: 110px;
+                right: 0;
+                font-size: 12px;
+            }
+                .bi_prev,.bi_next {
+                    width: 12px;
+                    height: 14px;
+                    display: inline-block;
+                    background-image: url(../img/icon_index.png);
+                    vertical-align: bottom;
+                    cursor: pointer;
+                    float: left;
+                }
+                .bi_prev {
+                    background-position: -336px 0;
+                }
+                .bi_next {
+                    background-position: -350px 0;
+                }
+                .bi_index {
+                    float: left;
+                    position: relative;
+                    bottom: 2px;
+                }
+                .bi_ix {
+                    color: #F85D7E;
+                }
+        .s1_img_banner img {
+            display: block;
+        }
+        .s1_img_banner img:first-child {
+            float: left;
+        }
+        .s1_img_banner img:last-child {
+            float: right;
+        }
+
+
+    /*今日半价*/
+    .icon_two {
+        width: 38px;
+        height: 38px;
+        margin-right: 5px;
+        vertical-align: -10px;
+        background: url('../img/icon_index.png') -105px -45px;
+    }
+    .s2_product_area {
+        clear: left;
+        border-top: 1px solid #E0E0E0;
+        border-left: 1px solid #E0E0E0;
+    }
+    .s2_pa_sec {
+        float: left;
+        width: 395px;
+        height: 190px;
+        border-right: 1px solid #E0E0E0;
+        border-bottom: 1px solid #E0E0E0;
+        background: #FFF;
+    }
+        .s2_pa_sec img {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 20px 0 20px 20px;
+        }
+        .s2_ps {
+            float: right;
+            width: 180px;
+            height: 130px;
+            margin: 30px 35px 30px 0;
+        }
+            .s2_p {
+                margin-bottom: 25px;
+            }
+            .price_2 {
+                font-size: 22px;
+                margin-right: 5px;
+            }
+            .del_price_2 {
+                margin-right: 80px;
+            }
+            .sold {
+                font-size: 12px;
+                color: #999;
+                margin-top: 15px;
+            }
+            .s2_btn {
+                float: right;
+                width: 68px;
+                height: 22px;
+                font-size: 14px;
+                line-height: 22px;
+                border-radius: 3px;
+            }
+                .icon_arrow {
+                    border: 5px solid transparent;
+                    border-left-color: #FFF;
+                    margin-right: -5px;
+                }
+    /*天天特卖*/
+    .icon_three {
+        width: 38px;
+        height: 38px;
+        margin-right: 5px;
+        vertical-align: -10px;
+        background: url('../img/icon_index.png') -152px -45px;
+    }
+        #s3_h2 {
+            color: #C53616;
+        }
+            #s3_h2 span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            #s3_h2 b {
+                font-weight: normal;
+                float: left;
+                position: relative;
+            }
+        .more_btn {
+            float: right;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            margin-top: 15px;
+            color: #666;
+        }
+    /*s3_produce_area*/
+    .s3_produce_area {
+        clear: left;
+        float: left;
+    }
+        .s3_pa_sec {
+            float: left;
+            width: 290px;
+            height: 290px;
+            margin: 0 10px 10px 0;
+            background: #FFF;
+        }
+        .s3_pa_sec:nth-child(4n) {
+            margin-right: 0;
+        }
+            .s3_ps_img {
+                width: 290px;
+                height: 230px;
+                display: inline-block;
+                overflow: hidden;
+            }
+            .s3_pa_sec img {
+                position: relative;
+                display: block;
+            }
+            .s3_ps {
+                width: 270px;
+                height: 40px;
+                padding: 5px 10px;
+            }
+                .s3_p1,.s3_p2 {
+                    width: 180px;
+                    float: left;
+                }
+                .s3_p2 {
+                    margin-top: 5px;
+                }
+                .icon_time {
+                    display: inline-block;
+                    width: 20px;
+                    height: 22px;
+                    background: url(../img/icon_index.png) -520px 2px;
+                    vertical-align: middle;
+                }
+                #s3_time {
+                    font-size: 12px;
+                }
+                .discount {
+                    float: right;
+                    font-size: 25px;
+                    margin-top: -10px;
+                    font-weight: bold;
+                    color: #E02200;
+                }
+                    .discount sub {
+                        font-size: 14px;
+                        position: relative;
+                        bottom: 6px;
+                        right: 5px;
+                        font-weight: normal;
+                    }
+    /*猜你喜欢*/
+    .sec_4 {
+        position: relative;
+    }
+        .icon_four {
+            width: 38px;
+            height: 38px;
+            margin-right: 5px;
+            vertical-align: -10px;
+            background: url('../img/icon_index.png') -200px -43px;
+        }
+        #s4_btn_index {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            font-size: 12px;
+        }
+        .s4_product_bar {
+            position: relative;
+            float: left;
+            clear: left;
+            width: 1190px;
+            height: 450px;
+            overflow: hidden;
+        }
+            .s4_product {
+                display: inline-block;
+                float: left;
+                width: 210px;
+                height: 200px;
+                padding: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                background: #FFF;
+                text-align: center;
+            }
+            .s4_product:nth-child(5n) {
+                margin-right: 0;
+            }
+            .s4_product:hover .s4_p {
+                color: #CB3415;
+            }
+                .s4_product img {
+                    width: 150px;
+                    height: 150px;
+                }
+            .s4_p {
+                width: 210px;
+                font-size: 12px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                margin-bottom: 5px;
+            }
+            .price_4 {
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+    /*楼层导航*/
+    #floor_nav {
+        display: none;
+        position: fixed;
+        left: 0px;
+        top: 0;
+        width: 35px;
+        height: 333px;
+    }
+        .icon_floor {
+            display: block;
+            width: 35px;
+            height: 35px;
+            margin: 0!important;
+            background: url(../images/icon_index.png?v=2016051301) no-repeat;
+            border-bottom: 1px solid #CCC;
+        }
+        .icon_floor1 {
+            background-position: -518px -58px;
+        }
+        .icon_floor2 {
+            background-position: -518px -102px;
+        }
+        .icon_floor3 {
+            background-position: -518px -276px;
+        }
+        .icon_floor4 {
+            background-position: -518px -145px;
+        }
+        .icon_floor5 {
+            background-position: -518px -191px;
+        }
+        .icon_floor6 {
+            background-position: -518px -235px;
+        }
+        .icon_floor7 {
+            background-position: -518px -319px;
+        }
+        .icon_floor8 {
+            background-position: -518px -404px;
+        }
+        .icon_floor9 {
+            background-position: -518px -359px;
+        }
+
+    /*楼层1：宝宝奶粉*/
+    .floor {
+        width: 100%;
+        height: 490px;
+        margin-top: 20px!important;
+    }
+        .floor img {
+            display: block;
+        }
+        .f_side_label {
+            position: relative;
+            float: left;
+            width: 178px;
+            height: 490px;
+            background: #FFF;
+            border: 1px solid #EDEDED;
+        }
+            .f_side_label h3 {
+                position: relative;
+                width: 180px;
+                height: 42px;
+                left: -1px;
+                top: -1px;
+                /*text-indent: 40px;*/
+                line-height: 42px;
+                font-weight: normal;
+                font-size: 15px;
+                color: #FFF;
+            }
+            .icon_floor {
+                width: 30px;
+                height: 40px;
+                margin-left: 28px;
+                margin-top: -15px;
+                background-image: url(../img/icon_index.png);
+                vertical-align: middle;
+                text-align: center;
+                font: normal bold 18px/50px '微软雅黑';
+                margin-right: 11px;
+            }
+            .floor_1 .icon_floor {
+                background-position: -59px -411px;
+            }
+        .f_main_list_1,.f_main_list_2,.f_main_list_3 {
+            float: left;
+            height: 100%;
+            margin-left: 11px;
+        }
+        .f_main_list_1 {
+            width: 520px;
+        }
+        .f_main_list_2 {
+            width: 228px;
+        }
+        .f_main_list_3 {
+            width: 228px;
+        }
+
+
+
+            .floor h3 {
+                background: #03A4FE;
+                border-bottom: 3px solid #C9EBFF;
+            }
+            .label_area {
+                padding: 20px 0 0 25px;
+                width: 155px;
+            }
+
+                .label_area a {
+                    float: left;
+                    width: 70px;
+                    margin-bottom: 15px;
+                    font-size: 12px;
+                    color: #666;
+                }
+                .floor_1 a:hover {
+                    color: #03A4FE;
+                }
+            /*小轮播图*/
+            .f_carousel {
+                position: absolute;
+                width: 90px;
+                height: 200px;
+                margin: 0 auto;
+                overflow: hidden;
+                bottom: 10px;
+                left: 50%;
+                margin-left: -45px;
+            }
+                .f_btn_prev,.f_btn_next {
+                    position: absolute;
+                    bottom: 65px;
+                    width: 30px;
+                    height: 82px;
+                    background-image: url(../img/icon_index.png);
+                    cursor: pointer;
+                }
+                    .f_btn_prev {
+                        left: 5px;
+                        background-position: -305px -120px;
+                    }
+                    .f_btn_next {
+                        right: 5px;
+                        background-position: -350px -120px;
+                    }
+                .f_carousel ul {
+                    list-style: none;
+                    width: 360px;
+                    height: 200px;
+                    position: absolute;
+                    left: -90px;
+                }
+                .f_carousel li {
+                    float: left;
+                    width: 90px;
+                    height: 200px;
+                }
+                .f_carousel a {
+                    display: block;
+                    margin-bottom: 15px;
+                }
+
+            .f_main_list_1 a,
+            .f_main_list_2 a,
+            .f_main_list_3 a  {
+                display: block;
+                border: 1px solid #EDEDED;
+            }
+            .f_main_list_1 a:first-child,
+            .f_main_list_2 a:first-child,
+            .f_main_list_3 a:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            .f_main_list_2 a:first-child {
+                height: 322px;
+                background: #FFF;
+            }
+
+
+        .floor_2 h3 {
+            background: #FB5D5C;
+        }
+        .floor_2 .icon_floor {
+            background-position: -109px -411px;
+        }
+        .floor_2 a:hover {
+            color: #FB5D5C;
+        }
+        .floor_3 h3 {
+            background: #32B16A;
+        }
+        .floor_3 .icon_floor {
+            background-position: -159px -411px;
+        }
+        .floor_3 a:hover {
+            color: #32B16A;
+        }
+        .floor_4 h3 {
+            background: #50D4D9;
+        }
+        .floor_4 .icon_floor {
+            background-position: -209px -411px;
+        }
+        .floor_4 a:hover {
+            color: #50D4D9;
+        }
+
+        .floor_5 h3 {
+            background: #F362B3;
+        }
+        .floor_5 .icon_floor {
+            background-position: -259px -411px;
+        }
+        .floor_5 a:hover {
+            color: #F362B3;
+        }
+        .floor_6 h3 {
+            background: #7863DE;
+        }
+        .floor_6 .icon_floor {
+            background-position: -309px -411px;
+        }
+        .floor_6 a:hover {
+            color: #7863DE;
+        }
+        .floor_7 h3 {
+            background: #FC9B61;
+        }
+        .floor_7 .icon_floor {
+            background-position: -359px -411px;
+        }
+        .floor_7 a:hover {
+            color: #FC9B61;
+        }
+        .floor_8 h3 {
+            background: #A4CC4E;
+        }
+        .floor_8 .icon_floor {
+            background-position: -409px -411px;
+        }
+        .floor_8 a:hover {
+            color: #A4CC4E;
+        }
+        .floor_9 h3 {
+            background: #C173D8;
+        }
+        .floor_9 .icon_floor {
+            background-position: -459px -411px;
+        }
+        .floor_9 a:hover {
+            color: #C173D8;
+        }
+
+    .sec_5 {
+        margin-bottom: 15px;
+        float: left;
+        width: 950px;
+    }
+    .sec_5 h2 {
+        width: 100%;
+        font-weight: normal;
+    }
+        .s5_sec {
+            float: left;
+            width: 470px;
+            height: 314px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background: #FAFAFA;
+        }
+        .s5_sec:nth-child(odd) {
+            margin-right: 0;
+        }
+        .s5_sec p {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 10px 0 10px 10px;
+        }
+        .s5_p {
+            display: block;
+            width: 450px;
+            margin-left: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        .s5_p:hover {
+            color: #CB3415;
+        }
+
+    .drying_list {
+        float: right;
+        width: 230px;
+        height: 674px;
+    }
+
+.c1_footer {
+    width: 1190px;
+    height: 190px;
+    border-bottom: 1px solid #DDD;
+    background: #FAFAFA;
+    margin: 0 auto;
+}
+    .icon_cf {
+        display: block;
+        width: 41px;
+        height: 41px;
+        padding-bottom: 15px;
+        background-image: url(../img/icon_index.png);
+        margin: 0 auto;
+    }
+    .cf_sec {
+        float: left;
+        width: 198.33px;
+        height: 160px;
+        padding: 15px 0 15px 0;
+    }
+        .cf_label {
+            float: left;
+            width: 70px;
+            height: 25px;
+            font-size: 12px;
+            color: #666;
+        }
+            .cf_label:hover {
+                color: #CB3415;
+            }
+        .cf_sec a:nth-child(even) {
+            margin-left: 35px;
+        }
+
+    .cf_sec_btn {
+        clear: left;
+        display: block;
+        width: 90px;
+        height: 22px;
+        margin: 0 auto;
+        background: url(../img/icon_index.png) -59px -307px;
+        position: relative;
+        top: 10px;
+    }
+        .cf_btn {
+            display: block;
+            width: 74px;
+            text-align: center;
+            line-height: 22px;
+            font-size: 12px;
+            color: #FFF;
+            text-indent: 5px;
+        }
+        .icon_cf1 {
+            background-position: -59px -244px;
+        }
+        .icon_cf2 {
+            background-position: -110px -244px;
+        }
+        .icon_cf3 {
+            background-position: -161px -244px;
+        }
+        .icon_cf4 {
+            background-position: -212px -244px;
+        }
+        .icon_cf5 {
+            background-position: -263px -244px;
+        }
+        .icon_cf6 {
+            background-position: -315px -244px;
+        }
+.c2_footer {
+    width: 1280px;
+    height: 380px;
+    background: url(../img/footBg.jpg) no-repeat center;
+    margin: 0 auto;
+}

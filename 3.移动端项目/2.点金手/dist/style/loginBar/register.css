@@ -1,0 +1,62 @@
+.container {
+  padding: 0 1rem 0 1.03333333rem;
+  width: 22.96666667rem;
+}
+.container form {
+  position: relative;
+}
+.container .radioArea {
+  height: 5.16666667rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .radioArea div {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 11.48333333rem;
+  line-height: 5.16666667rem;
+  font-size: 0.93333333rem;
+  color: #333;
+}
+.container .radioArea span {
+  display: inline-block;
+  width: 1.56666667rem;
+  height: 1.56666667rem;
+  margin-right: 20px;
+  vertical-align: middle;
+  background: url(../../img/duigou3.png);
+}
+.container .radioArea .checked span {
+  background: url(../../img/duigou2.png) center center no-repeat;
+}
+.container .txt {
+  display: inline-block;
+  width: 22.96666667rem;
+  height: 2.23333333rem;
+  margin-bottom: 1.13333333rem;
+  font-size: 0.8rem;
+  text-indent: 0.96666667rem;
+}
+.container .submit {
+  width: 22.9rem;
+  height: 1.9rem;
+  margin-left: 1px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ffc600;
+  background: #ffda44;
+  font-size: 0.93333333rem;
+  color: #000;
+}
+.container p {
+  font-size: 0.8rem;
+  color: #999;
+}
+.container p a {
+  color: #333;
+  text-decoration: underline;
+}

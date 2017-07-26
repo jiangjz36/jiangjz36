@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .area {
+      position: relative;
+      width: 280px;
+      height: 240px;
+      border: 1px solid #CCC;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    p { margin: 0;padding: 0;}
+  </style>
+</head>
+<body>
+  <div class="area"></div>
+  <input id="txt" type="text" />
+  <input id="btn" type="button" value="吐槽" />
+<script type="text/javascript">
+window.onload = function(){
+  var oBtn = document.getElementById("btn");
+  var oArea = document.getElementsByClassName("area")[0];
+  oBtn.onclick = function(){
+    var oTxt = document.getElementById("txt");
+    var txt = document.createElement("p");
+    txt.style.position = "absolute";
+    txt.style.width = "200%";
+    txt.style.left = "282px";
+    txt.style.color = getColor();
+
+    // txt.style.top = "20px"; 随机
+    txt.style.top = getRandom((240-18),0)+"px";
+    txt.innerHTML = filter(oTxt);
+    oTxt.value = "";
+    oArea.appendChild(txt);
+
+    var oP = document.getElementsByTagName("p");
+    console.log(oP);
+    startMove(oP[oP.length-1]);
+  }
+  /**
+   * [getRandom 生成随机数]
+   * @param  {[type]} maxNum [最大值]
+   * @param  {[type]} mixNum [最小值]
+   * @return {[type]}        [返回从最小值到最大值的随机数]
+   */
+  function getRandom(maxNum,mixNum){
+    return Math.floor(Math.random()*maxNum+mixNum);
+  }
+  /**
+   * [startMove 弹幕移动]
+   * @param  {[type]} obj [需要实现移动的目标]
+   * @return {[type]}     [实现移动]
+   */
+  function startMove(obj){
+    var speed = -getRandom(3,1);
+    // console.log(obj.clientWidth);
+    setInterval(function(){
+
+      obj.style.left = obj.offsetLeft+speed+"px";
+      if(obj.offsetLeft < -obj.clientWidth){
+        obj.innerHTML = "";
+        obj.parentNode.removeChild(obj);
+      }
+    },30);
+  }
+  /**
+   * [getColor 返回颜色随机数]
+   * @return {[type]} [返回颜色随机数]
+   */
+  function getColor(){
+    return "rgb("+getRandom(255,0)+","+getRandom(255,0)+","+getRandom(255,0)+")";
+  }
+
+  function filter(obj){
+    var patt = /[法轮功,共产党,国民党]/;
+    if(obj.value.match(patt) != null){
+
+      obj.value = obj.value.replace(/法轮功/,"河蟹");
+      obj.value = obj.value.replace(/共产党/,"河蟹");
+      obj.value = obj.value.replace(/国民党/,"河蟹");
+      return obj.value;
+    }else{
+      return obj.value;
+    }
+
+  }
+}
+
+
+</script>
+</body>
+</html>

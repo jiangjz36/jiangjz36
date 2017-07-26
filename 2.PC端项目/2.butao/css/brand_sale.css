@@ -1,0 +1,189 @@
+.be_container {
+    width: 976px;
+    height: auto;
+    margin: 0 auto;
+}
+/*顶部的商品列表项*/
+.be_cr_head {
+    position: relative;
+    margin-top: 10px;
+    border-top: 1px solid #E2E2E2;
+    border-left: 1px solid #E2E2E2;
+    font-size: 0;
+    text-align: center;
+}
+    .be_cr_head li{
+        float: left;
+        width: 138px;
+        height: 65px;
+        padding-top: 5px;
+        border-right: 1px solid #E2E2E2;
+        border-bottom: 1px solid #E2E2E2;
+    }
+    /*上一页、下一页*/
+    li.bd_previous_page,
+    li.bd_next_page {
+        font-family: 宋体;
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 40px;
+        line-height: 40px;
+        padding-top: 0;
+        margin-top: -20px;
+        border: none;
+        font-size: 12px;
+        background: #FFF;
+        cursor: pointer;
+    }
+    .bd_previous_page {
+        left: 0;
+    }
+    .bd_next_page {
+        right: 3px;
+    }
+
+
+.be_cr_sec {
+    width: 970px;
+    margin: 0 auto;
+}
+.be_cr_sec:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+    .br_cc_head {
+        padding: 25px 0 1px;
+        border-bottom: 1px solid #CFCFCF;
+        margin-bottom: 25px;
+    }
+    .br_cc_head:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .br_cc_head h2 {
+        float: left;
+        height: 39px;
+        line-height: 39px;
+        background-image: url(../imgs/bd_img_list_01.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 21px;
+        font-weight: normal;
+        text-indent: 90px;
+    }
+    .br_cc_head a {
+        float: right;
+        line-height: 39px;
+        font-size: 12px;
+        color: #000;
+    }
+    /*每个商品链接*/
+    .br_cc_sec {
+        float: left;
+        padding: 10px;
+        width: 290px;
+        height: 267px;
+        margin-right: 17px;
+        margin-bottom: 10px;
+        border: 1px solid #E2E0E0;
+    }
+    .br_cc_sec:hover {
+        box-shadow: 0px 0px 10px rgba(100, 107, 83, 0.75);
+        border-color: #AA001B; 
+    }
+    .br_cc_sec:nth-child(3n+1) {
+        margin-right: 0;
+    }
+    .br_cc_sec img {
+        display: block;
+    }
+    .br_cc_sec p {
+        margin: 10px 0 10px;
+    }
+    .br_cc_sec button {
+        position: relative;
+        top: -5px;
+        left: 20px;
+        width: 61px;
+        height: 23px;
+        color: #FFF;
+        background: #FF0000;
+        font-weight: bold;
+        border-radius: 5px;
+        padding-bottom: 3px;
+        cursor: pointer;
+    }
+    /*价格*/
+    .bc_price {
+        float: left;
+        font-size: 30px;
+        color: #FF0000;
+        font-weight: bold;
+    }
+    .bc_price sub {
+        position: relative;
+        bottom: 8px;
+        font-size: 19px;
+    }
+    .bc_sub_price {
+        float: left;
+        font-size: 12px;
+    }
+    .bc_del {
+        float: left;
+        color: #A49E9E;
+    }
+    .bc_discount {
+        float: left;
+
+    }
+    .bc_status {
+        float: left;
+        color: #A49EB6;
+        font-weight: bold;
+        clear: left;
+    }
+
+    /*森马*/
+    .be_cr_two h2 {
+        background-image: url(../imgs/bd_img_list_02.png);
+    }
+    /*童年不同样*/
+    .be_cr_three h2 {
+        background-image: url(../imgs/bd_img_list_03.png);
+    }
+    /*迪士尼*/
+    .be_cr_four h2 {
+        background-image: url(../imgs/bd_img_list_04.png);
+    }
+    /*雪中飞*/
+    .be_cr_five h2 {
+        background-image: url(../imgs/bd_img_list_05.png);
+    }
+    /*京特*/
+    .be_cr_sex h2 {
+        background-image: url(../imgs/bd_img_list_06.png);
+    }
+    /*柠都*/
+    .be_cr_seven h2 {
+        background-image: url(../imgs/bd_img_list_07.png);
+    }
+    /*南极人*/
+    .be_cr_eight h2 {
+        background-image: url(../imgs/bd_img_list_08.png);
+    }
+    /*水晶寝室*/
+    .be_cr_nine h2 {
+        background-image: url(../imgs/bd_img_list_09.png);
+    }
+    /*JANFIR展风*/
+    .be_cr_ten h2 {
+        background-image: url(../imgs/bd_img_list_10.png);
+    }
+    /*美洲象*/
+    .be_cr_eleven h2 {
+        background-image: url(../imgs/bd_img_list_11.png);
+    }

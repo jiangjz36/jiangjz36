@@ -1,0 +1,30 @@
+<div class="search-bar">
+    <button ng-click="name='';search()">取消</button>
+    <input ng-model="name" type="text" placeholder="搜索职位/公司/城市">
+    <button ng-click="search()">搜索</button>
+</div>
+
+<!--城市 公司规模-->
+<div app-tab list="tabList" tab-click="tClick(id,name)"></div>
+
+<!--中间职位-->
+<ul class="position-list position-search">
+    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in list">
+        <img ng-src="{{item.imageUrl}}" alt="">
+        <h3 class="title" ng-bind="item.job"></h3>
+        <p class="text">
+            {{item.companyName}}[{{item.cityName}}]{{item.industryName}}<br>
+            {{item.date}}
+        </p>
+    </li>
+</ul>
+
+<!--尾部-->
+<ul class="foot">
+    <li ui-sref-active="select" ui-sref="main"><i class="icon-document"></i><span>职位</span></li>
+    <li ui-sref-active="select" ui-sref="search"><i class="icon-search"></i><span>搜索</span></li>
+    <li ui-sref-active="select" ui-sref="my"><i class="icon-my"></i><span>我的</span></li>
+</ul>
+
+<!---->
+<div app-sheet list="sheet.list" visible="sheet.visible"></div>

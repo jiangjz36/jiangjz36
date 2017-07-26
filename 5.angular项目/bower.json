@@ -1,0 +1,21 @@
+{
+  "name": "web",
+  "authors": [
+    "jziaen <1029546984@qq.com>"
+  ],
+  "description": "angular.js web",
+  "main": "",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

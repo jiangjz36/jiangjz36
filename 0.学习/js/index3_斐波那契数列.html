@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //斐波那契数列，黄金比例数列
+    //1,1,2,3,5,8,13,21
+    //从第三项开始，其值等于前两项之和
+    /*
+    输出第12项的数值
+     */
+    function golden(item){
+      var num1 = 1;
+      var num2 = 1;
+      var result;
+      for(var i=2;i<item;i++){
+        // result = num1 + num2;
+        // num1 = num2;
+        // num2 = result;
+        cache = num2;
+        num2 = num1+num2;
+        num1 = cache;
+      }
+      // return result;
+      return num2;
+    }
+    document.write(golden(4));
+  </script>
+</body>
+</html>

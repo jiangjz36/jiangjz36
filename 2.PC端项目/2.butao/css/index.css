@@ -1,0 +1,224 @@
+/*.banner*/
+.banner,.banner img {
+    width: 100%;
+    display: block;
+}
+
+/*container*/
+li.font_red a {
+    font-weight: bold;
+    color: red;
+}
+    /*标题*/
+    .ix_title {
+        width: 100%;
+        height: 40px;
+        margin: 20px 0;
+
+    }
+    .ix_title h2 {
+        float: left;
+        margin-right: 10px;
+        line-height: 42px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #FFF;
+        text-indent: 50px;
+    }
+    .ix_title ul,.ix_title li {
+        float: left;
+        line-height: 42px;
+        text-indent: 13px;
+        font-size: 13px;
+    }
+    .ix_title a {
+        color: #494747;
+    }
+    /*商品区*/
+    .ix_sec {
+        position: relative;
+        float: left;
+        width: 298px;
+        height: 277px;
+        padding: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: 1px solid #D7D3D3;
+        border-radius: 5px;
+    }
+    .ix_sec:hover {
+        box-shadow: 0 0 10px 1px rgba(74, 74, 57, 0.2);
+    }
+    /*商品图片*/
+    .ix_sec_img {
+        display: block;
+        /*font-size: 0;*/
+        margin-bottom: 5px;
+    }
+    .ix_sec_img img {
+        height: 190px;
+    }
+    /*商品名称*/
+    .ix_sec_name {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #000;
+    }
+    .ix_sec_name:hover {
+        color: #E8390D;
+    }
+    .ix_sec .price {
+        float: left;
+        font-size: 24px;
+        color: red;
+    }
+    .ix_sec .sub_price {
+        float: left;
+        width: 110px;
+        font-size: 13px;
+        color: #A49E9E;
+    }
+    .ix_sec .status {
+        display: inline-block;
+        font-weight: bold;
+        margin-top: 3px;
+    }
+    .ix_sec button {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 81px;
+        height: 27px;
+        background: url(http://www.butao.com/static/theme/eb_120531/1115/images/index_41.jpg);
+        font-size: 0;
+    }
+    /*商品图片区*/
+    .ix_top_sec {
+        height: 288px;
+        margin-bottom: 20px;
+    }
+    .ix_top_sec img {
+        display: block;
+    }
+    .ix_top_sec li {
+        float: left;
+        height: 100%;
+    }
+    .ix_top_sec p,.ix_top_sec span {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 6px;
+    }
+    .ix_top_sec p {
+        font-size: 16px;
+    }
+    .ix_top_sec span {
+        font-size: 13px;
+        color: #757575;
+        margin-bottom: 4px;
+    }
+    .top_sec_one img {
+        width: 534px;
+    }
+    .top_sec_two {
+        padding: 0 2px 0 6px;
+    }
+    .top_sec_two img,.top_sec_three img {
+        width: 228px;
+    }
+    .ix_top_line {
+        height: 100%;
+        border-right: 1px solid #E1E1E1;
+    }
+
+    /*热卖商品*/
+    .ix_one .ix_title {
+        background: url(../imgs/hot_18.jpg);
+    }
+    .ix_one .ix_sec:nth-child(3n+1){
+        margin-right: 0;
+    }
+
+    /*热卖女装*/
+    .ix_two .ix_title {
+        background: url(../imgs/index_45.jpg);
+    }
+    .ix_two .ix_sec:nth-child(3n+2){
+        margin-right: 0;
+    }
+    /*热卖男装*/
+    .ix_three .ix_title {
+        background: url(../imgs/index_61.jpg);
+    }
+    .ix_three .ix_sec:nth-child(3n+2){
+        margin-right: 0;
+    }
+    /*热卖商品*/
+    .ix_four .ix_title {
+        background: url(../imgs/index_63.jpg);
+    }
+    .ix_four .ix_sec:nth-child(3n+2){
+        margin-right: 0;
+    }
+    /*热卖商品*/
+    .ix_five .ix_title {
+        background: url(../imgs/index_65.jpg);
+    }
+    .ix_five .ix_sec:nth-child(3n+2){
+        margin-right: 0;
+    }
+    /*热卖商品*/
+    .ix_sex .ix_title {
+        background: url(../imgs/index_67.jpg);
+    }
+    .ix_sex .ix_sec:nth-child(3n+2){
+        margin-right: 0;
+    }
+
+/*.ix_classify 商品分类*/
+.ix_classify {
+    margin-top: 75px;
+}
+.ix_classify h2 {
+    height: 24px;
+    background: url(../imgs/index_124.jpg) no-repeat 0 12px;
+    background-size: contain;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    text-indent: 20px;
+}
+.ix_classify {
+    margin-bottom: 40px;
+}
+.ix_classify li {
+    padding: 0 10px 0;
+    margin-top: 40px;
+    float: left;
+    text-align: center;
+    background: url(../imgs/index_138.jpg) no-repeat right 110px;
+}
+.ix_classify li p {
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.bottom_nav {
+    width: 130px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+.bottom_nav a {
+    float: left;
+    width: 65px;
+    height: 24px;
+    color: #5F5E5F;
+}
+.bottom_nav a:hover {
+    color: #000;
+    text-decoration: underline;
+}

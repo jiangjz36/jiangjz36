@@ -1,0 +1,43 @@
+body,
+html {
+  font-family: "微软雅黑";
+  height: 100%;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dd,
+p,
+a,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+i {
+  /* 图标i */
+  display: inline-block;
+}
+body {
+  font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}

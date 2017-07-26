@@ -1,0 +1,326 @@
+/*index.html start********************************/
+/*sub_nav start*/
+.sub_nav {
+  width: 890px;
+  margin: 0 auto;
+  padding-bottom: 34px;
+  overflow: hidden;
+}
+.sub_nav dl {
+  float: left;
+  width: 148px;
+  margin-top: 30px;
+  text-align: center;
+}
+.sub_nav dl dt { /*sub_nav 的图标*/
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: url(../imgs/index_nav.png);
+}
+.sub_nav dl:nth-child(2) dt {
+  background-position: -80px 0;
+}
+.sub_nav dl:nth-child(3) dt {
+  background-position: -160px 0;
+}
+.sub_nav dl:nth-child(4) dt {
+  background-position: -240px 0;
+}
+.sub_nav dl:nth-child(5) dt {
+  background-position: -320px 0;
+}
+.sub_nav dl:nth-child(6) dt {
+  background-position: -400px 0;
+}
+
+.sub_nav dd a {
+  color: #000;
+}
+/*sub_nav end*/
+
+/*.container start*/
+.container {
+  width: 100%;
+  padding-top: 34px;
+  border-top: 1px solid #E2E2E2;
+}
+/*全流程服务 板块*/
+.container_title { /*板块的标题*/
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+  .container_title span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #A6A6A6;
+    text-transform: uppercase;
+  }
+  .container_title h2 {
+    float: left;
+    font-family: "微软雅黑";
+  }
+  .container_title a {
+    float: left;
+    margin: 10px 0 0 20px;
+    text-transform: uppercase;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #000;
+  }
+  .container_title a b {
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #F00;
+  }
+
+.business {
+  float: left;
+  width: 680px;
+  margin-left: 118px;
+}
+.business dl {
+  float: left;
+  width: 212px;
+  margin-right: 10px;
+  text-align: center;
+}
+.business dl img {
+  display: block;
+  width: 100%;
+}
+/*最新信息 板块*/
+.information {
+  float: left;
+  width: 324px;
+  margin-left: 40px;
+}
+.information h3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  font-size: 18px;
+}
+.artical_time { /*文章时间样式*/
+  font-size: 13px;
+  color: #666;
+}
+.information ul {
+  margin-top: 14px;
+  border-top: 1px dashed #AEAEAE;
+}
+.information ul li {
+  width: 100%;
+  margin-top: 12px;
+  list-style-image: url(../imgs/list_img.png);
+  list-style-position: inside;
+  font-size: 13px;
+  color: #666;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*典型客户 板块*/
+.curtomer {
+  clear: both;
+  width: 100%;
+  height: 294px;
+  margin-top: 20px;
+  border: 1px solid #E4E4E4;
+  background: url(../imgs/index_customer_bg.png);
+  font-family: "微软雅黑";
+}
+.curtomer span {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ABABAB;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+.curtomer h2 {
+  margin-bottom: 18px;
+  font-size: 23px;
+  text-align: center;
+}
+.curtomer ul {
+  width: 1006px;
+  margin: 0 auto;
+  border-top: 1px dotted #AFAFAF;
+}
+.curtomer ul li {
+  float: left;
+  width: 166px;
+  height: 90px;
+  border-right: 1px dotted #AFAFAF;
+  border-bottom: 1px dotted #AFAFAF;
+  text-align: center;
+}
+.curtomer ul img {
+  margin-top: 14px;
+}
+/*.container end*/
+
+
+
+/*index.html end********************************/
+
+/*products.html start*/
+.container_products {
+  padding-bottom: 46px;
+  overflow: hidden;
+}
+.location {  /*当前位置样式*/
+  display: block;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 25px;
+  line-height: 4.5;
+  text-indent: 120px;
+  font-size: 13px;
+  background: url(../imgs/products_line.png) right bottom repeat-x;
+}
+.location a {
+  color: #000;
+}
+
+.products_sec {
+  float: left;
+  width: 320px;
+  padding-bottom: 25px;
+  margin: 0 20px 20px 0;
+  background: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(100,100,100,.3);
+}
+.sec_title {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(120deg,#EEB900 60%, #E9A400 80%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sec_title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -2px;
+  border: 5px solid transparent;
+  border-top-color: #EEB900;
+}
+.sec_title h2 {
+  float: left;
+  font-size: 30px;
+  line-height: 80px;
+  color: #B35203;
+  text-indent: 25px;
+}
+.sec_title img {
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.products_sec p {
+  font-family: "微软雅黑";
+  margin: 10px 0 0 20px;
+  font-size: 14px;
+}
+
+.products_sec_02 {
+  margin-bottom: 180px;
+}
+.products_sec_02 .sec_title {
+  background: linear-gradient(120deg, #9CC101 60%, #84A401 80%);
+}
+.products_sec_02 .sec_title:after {
+  border-top-color: #9CC101;
+}
+.products_sec_02 .sec_title h2 {
+  color: #566B04;
+}
+
+.products_sec_03 {
+  float: right;
+  margin: 0;
+}
+
+.products_sec_04 {
+  margin-top: -10px;
+}
+.products_sec_04 .sec_title {
+  background: linear-gradient(120deg, #739BD8 60%, #6088C6 80%);
+}
+.products_sec_04 .sec_title:after {
+  border-top-color: #739BD8;
+}
+.products_sec_04 .sec_title h2 {
+  color: #2E599D;
+}
+
+.products_sec_05 {
+  margin-top: -160px;
+}
+.products_sec_05 .sec_title {
+  background: linear-gradient(120deg, #CC68A6 60%, #B85494 80%);
+}
+.products_sec_05 .sec_title:after {
+  border-top-color: #CC68A6;
+}
+.products_sec_05 .sec_title h2 {
+  color: #8F4173;
+}
+
+.products_sec_06 {
+  margin-right: 0;
+  margin-top: -270px;
+}
+.products_sec_06 .sec_title {
+  background: linear-gradient(120deg, #A4A4BE 60%, #8F8EAE 80%);
+}
+.products_sec_06 .sec_title:after {
+  border-top-color: #A4A4BE;
+}
+.products_sec_06 .sec_title h2 {
+  color: #606083;
+}
+/*products.html end*/
+
+/*solution.html start*/
+.container_solutions .sub_wrap {
+  overflow: hidden;
+}
+.solutions_sec {
+  float: left;
+  width: 310px;
+  height: 310px;
+  padding-bottom: 54px;
+  margin-right: 30px;
+}
+.solutions_sec:nth-child(3),
+.solutions_sec:nth-child(6) {
+  margin-right: 0;
+}
+
+.solutions_sec dt {
+  width: 170px;
+  height: 155px;
+  text-align: center;
+}
+.solutions_sec h2 {
+  margin: 16px 0 0 0;
+  font-size: 15px;
+}
+.solutions_sec p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #494949;
+}
+/*solution.html end*/

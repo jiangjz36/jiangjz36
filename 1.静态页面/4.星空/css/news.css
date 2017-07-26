@@ -1,0 +1,8 @@
+body { background: #EDEDED;}
+
+.header { margin-bottom: 37px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
+.content .m_title ul li:first-child { border-color: #E21326;}
+.content .m_section {width: 920px; padding: 30px 40px;margin: 0 auto 27px;background: #FFF;}
+         .m_section h4 { font-size: 14px; font-weight: normal; margin-bottom: 28px;}
+         .m_section p { font-size: 12px; color: #616161; margin-bottom: 28px;}
+         .m_section span { font-size: 10px; color: #616161;}

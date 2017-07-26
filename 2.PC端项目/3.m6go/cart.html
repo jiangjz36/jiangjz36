@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的购物车</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <script>
+                var nbMenuSwitch = false;
+                $.get('header.html',function(e) {
+                    $('.header').prepend(e);
+                });
+            </script>
+        </div>
+        <div class="container">
+            <div class="c_head">
+                <div class="wrap">
+                    <!-- 商标 -->
+                    <a href="index.html">
+                        <img src="img/logo.gif" alt="">
+                    </a>
+                    <!-- 购物车流程图 -->
+                    <div class="ch_process">
+                        <div class="ch_pro ch_pro1 ch_pro_active">
+                            <span>1</span>
+                            <p>我的购物车</p>
+                        </div>
+                        <div class="ch_pro ch_pro2">
+                            <span>2</span>
+                            <p>我的购物车</p>
+                        </div>
+                        <div class="ch_pro ch_pro3">
+                            <span>3</span>
+                            <p>我的购物车</p>
+                        </div>
+                        <div class="ch_pro ch_pro4">
+                            <span>4</span>
+                            <p>我的购物车</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop_cart_area">
+                <h3 class="sca_head">购物车</h3>
+                <form action="#">
+                    <!-- <p class="sca_all_checked">
+                        <input type="checkbox">全选
+                    </p> -->
+                    <div class="sca_sec">
+                        <div class="ss_head">
+                            <!-- 发货 -->
+                            <div class="sh_delivery">
+                                <input checked="checked" type="checkbox">
+                                <span>由麦乐购发货</span>
+                            </div>
+                            <!-- 单价 -->
+                            <div class="sh_price">单价</div>
+                            <!-- 数量 -->
+                            <div class="sh_count">数量</div>
+                            <!-- 小计 -->
+                            <div class="sh_total">小计</div>
+                            <!-- 操作 -->
+                            <div class="sh_action">操作</div>
+                        </div>
+                        <div id="ss_body">
+                            <!-- <div class="sb_sec clear_float">
+                                <div class="ss_delivery">
+                                    <input class="ss_select" type="checkbox">
+                                    <img src="img/40.jpg" alt="">
+                                    <a href="#">荷兰牛栏奶粉Nutrilon 3段（10个月以上）800g（海外版）</a>
+                                </div>
+                                <div class="ss_price">￥1684.00</div>
+                                数量
+                                <div class="ss_count">
+                                    <div class="ss_btn">
+                                        <button class="ss_b_prev">-</button>
+                                        <input class="ss_b_txt" type="text" value="1">
+                                        <button class="ss_b_next">+</button>
+                                    </div>
+                                </div>
+                                小计
+                                <div class="ss_total">￥1684.00</div>
+                                操作
+                                <div class="ss_action"><a href="#">删除</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="settement_bar">
+                        <input checked="checked" type="checkbox">
+                        <span>全选</span>
+                        <div class="total_bar">
+                            <span id="tb_count">1</span>
+                            <span>件商品总计:</span>
+                            <span id="tb_total">3292.00</span>
+                            <input type="submit" value="去结算">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <script>
+                $.get('footer.html',function(e) {
+                    $('.footer').prepend(e);
+                });
+            </script>
+        </div>
+        <script src="js/cart.js"></script>
+    </body>
+</html>

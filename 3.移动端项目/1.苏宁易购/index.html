@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/pixel.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_user.css">
+</head>
+<body>
+	<!-- header -->
+	<header id="header">
+		<a class="icon_drop_more"></a>
+		<div class="search_area">
+			<a>
+				<form class="search" action="#">
+					<i class="icon_search"></i>
+					<input type="text" placeholder="老板每千减百">
+				</form>
+			</a>
+		</div>
+		
+		<a class="cart_link"></a>
+	</header>
+	<!-- banner -->
+	<div class="banner">
+   		<!-- Swiper -->
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149552201386057541.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149569239483421643.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149570339859119356.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149570354555611627.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149570439368587540.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149570484008872135.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149570507089431871.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149579304637456616.jpg" alt="">
+					</a>
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <!-- <div class="swiper-button-next"></div> -->
+	        <!-- <div class="swiper-button-prev"></div> -->
+	    </div>
+
+	    <!-- Swiper JS -->
+	    <script src="js/swiper.js"></script>
+
+	    <!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.banner .swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        paginationClickable: true,
+	        spaceBetween: 0,//图片之间的间隔
+	        loop: true,//无限轮播
+	        centeredSlides: true,
+	        autoplay: 2500,
+	        autoplayDisableOnInteraction: false
+	    });
+	    </script>
+	</div>
+	<nav>
+		<a>
+			<img src="imgs/149509116613823720.png" alt="">
+			<p>分类</p>
+		</a>
+		<a>
+			<img src="imgs/149509118773170078.png" alt="">
+			<p>大聚惠</p>
+		</a>
+		<a>
+			<img src="imgs/149509122274426626.png" alt="">
+			<p>苏宁超市</p>
+		</a>
+		<a>
+			<img src="imgs/149509123858318946.png" alt="">
+			<p>红孩儿母婴</p>
+		</a>
+		<a>
+			<img src="imgs/149509134514834638.png" alt="">
+			<p>爆款手机</p>
+		</a>
+		<a>
+			<img src="imgs/149509137040236465.png" alt="">
+			<p>服装城</p>
+		</a>
+		<a>
+			<img src="imgs/149509138688947866.png" alt="">
+			<p>赚钱</p>
+		</a>
+		<a>
+			<img src="imgs/149509140132565782.png" alt="">
+			<p>领云钻</p>
+		</a>
+		<a>
+			<img src="imgs/149509141756818022.png" alt="">
+			<p>身边苏宁</p>
+		</a>
+		<a>
+			<img src="imgs/149578253670486638.png" alt="">
+			<p>生活家电</p>
+		</a>
+	</nav>
+	<!-- 特卖 -->
+	<section class="sale">
+		<div class="sale_head">
+			<img src="imgs/149570223796633848.jpg" alt="">
+		</div>
+		<div class="sale_content">
+			<a>
+				<img src="imgs/149570068853978246.png" alt="">
+			</a>
+			<a>
+				<img src="imgs/149570071488656177.png" alt="">
+			</a>
+			<a>
+				<img src="imgs/149563566905892279.png" alt="">
+			</a>
+		</div>
+	</section>
+
+	<!-- 掌上抢 -->
+	<section class="palmGrab">
+		<div class="palmGrab_title">
+			<img src="imgs/palm_grab.png" alt="">
+			<span id="grabTime">12点场</span>
+			<div class="timeArea">
+				<span id="grabHour">01</span>
+				<span class="colon">&#58;</span>
+				<span id="grabMinute">01</span>
+				<span class="colon">&#58;</span>
+				<span id="grabsecond">01</span>
+			</div>
+			<div class="palmMore">
+				<span>好货超值抢</span>
+				<i class="icon_grabMore"></i>
+			</div>
+		</div>
+		<div class="palmWrap">
+			<div class="palmContent">
+				<div class="palmContent_long">
+					<a class="pl_prod">
+						<img src="imgs/100039248192930417picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;148.00</p>
+							<p class="pl_delPrice">&yen;149.00</p>
+							<span class="icon_priceDown">9.9折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039312132386970picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;110.00</p>
+							<p class="pl_delPrice">&yen;199.00</p>
+							<span class="icon_priceDown">6.0折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039264135746745picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;858.00</p>
+							<p class="pl_delPrice">&yen;2008.00</p>
+							<span class="icon_priceDown">4.1折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039296160315324picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;89.00</p>
+							<p class="pl_delPrice">&yen;168.00</p>
+							<span class="icon_priceDown">5.3折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039264129251027picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;108.00</p>
+							<p class="pl_delPrice">&yen;138.00</p>
+							<span class="icon_priceDown">7.8折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039280162529854picA_1.jpg" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;21.90</p>
+							<p class="pl_delPrice">&yen;51.80</p>
+							<span class="icon_priceDown">4.2折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039248192930417picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;148.00</p>
+							<p class="pl_delPrice">&yen;149.00</p>
+							<span class="icon_priceDown">9.9折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039312132386970picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;110.00</p>
+							<p class="pl_delPrice">&yen;199.00</p>
+							<span class="icon_priceDown">6.0折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039264135746745picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;858.00</p>
+							<p class="pl_delPrice">&yen;2008.00</p>
+							<span class="icon_priceDown">4.1折</span>
+						</div>
+					</a>
+					<a class="pl_prod">
+						<img src="imgs/100039296160315324picA_1.webp" alt="">
+						<div class="pl_priceArea">
+							<p class="pl_price">&yen;89.00</p>
+							<p class="pl_delPrice">&yen;168.00</p>
+							<span class="icon_priceDown">5.3折</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 省钱 -->
+	<section class="saveMoney">
+		<div class="saveMoney_title">
+			<img src="imgs/149559219946350066.png" alt="">
+		</div>
+		<div class="saveMoney_content clearFloat">
+			<div class="scArea sec_djh">
+				<p class="area_title">大聚惠</p>
+				<p class="area_p">4000个透气孔</p>
+				<img src="imgs/0000000000000000000125292969.webp" alt="">
+				<img src="imgs/0000000000000000000129505249.webp" alt="">
+			</div>
+			<div class="scArea sec_djh">
+				<p class="area_title">乐拼购</p>
+				<p class="area_p">烟台大红灯3斤49</p>
+				<img src="imgs/149578123368736043.webp" alt="">
+				<img src="imgs/149576811529361174.webp" alt="">
+			</div>
+			<div class="scArea sec_djh">
+				<p class="area_title">领券中心</p>
+				<p class="area_p">用券立减30</p>
+				<img src="imgs/149576114328156277.webp" alt="">
+				<img src="imgs/149576114118742377.webp" alt="">
+			</div>
+			<div class="scArea sec_djh">
+				<p class="area_title">好货</p>
+				<p class="area_p">5五杀 四核i5 6500主机</p>
+				<img src="imgs/0070086517000000000109682439.webp" alt="">
+				<img src="imgs/149509030431498812.webp" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- 必逛 -->
+	<section class="willVisit">
+		<div class="willVisit_title">
+			<img src="imgs/149559224478616126.png" alt="">
+		</div>
+		<div class="wilVisit_content clearFloat">
+			<div class="secArea">
+				<p class="area_title">手机通讯</p>
+				<p class="area_p">三星S8 新品</p>
+				<img src="imgs/149518090779435848.webp" alt="">
+				<img src="imgs/149518091670657946.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">超市</p>
+				<p class="area_p">"纸"因为你</p>
+				<img src="imgs/0000000000000000000186866635.webp" alt="">
+			</div>
+			<div class="secArea_sub clear_marginRight">
+				<p class="area_title">苏鲜生</p>
+				<p class="area_p color_FF9900">任2件5折</p>
+				<img src="imgs/149578445004357859.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">苏宁家电</p>
+				<p class="area_p">最高减500</p>
+				<img src="imgs/0000000000000000000128775786.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">母婴</p>
+				<p class="area_p">9.8元包邮</p>
+				<img src="imgs/149579865037240362.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">生活家电</p>
+				<p class="area_p color_FF9900">满千减150</p>
+				<img src="imgs/149619434932501431.webp" alt="">
+			</div>
+			<div class="secArea_sub clear_marginRight">
+				<p class="area_title">苏宁体育</p>
+				<p class="area_p">399减50</p>
+				<img src="imgs/149595395078665318.webp" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- 特色 -->
+	<section class="features">
+		<div class="features_title">
+			<img src="imgs/149559224478616126.png" alt="">
+		</div>
+		<div class="features_content clearFloat">
+			<div class="secArea">
+				<p class="area_title">手机通讯</p>
+				<p class="area_p">三星S8 新品</p>
+				<img src="imgs/149518090779435848.webp" alt="">
+				<img src="imgs/149518091670657946.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">超市</p>
+				<p class="area_p">"纸"因为你</p>
+				<img src="imgs/0000000000000000000186866635.webp" alt="">
+			</div>
+			<div class="secArea_sub clear_marginRight">
+				<p class="area_title">苏鲜生</p>
+				<p class="area_p color_FF9900">任2件5折</p>
+				<img src="imgs/149578445004357859.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">苏宁家电</p>
+				<p class="area_p">最高减500</p>
+				<img src="imgs/0000000000000000000128775786.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">母婴</p>
+				<p class="area_p">9.8元包邮</p>
+				<img src="imgs/149579865037240362.webp" alt="">
+			</div>
+			<div class="secArea_sub">
+				<p class="area_title">生活家电</p>
+				<p class="area_p color_FF9900">满千减150</p>
+				<img src="imgs/149619434932501431.webp" alt="">
+			</div>
+			<div class="secArea_sub clear_marginRight">
+				<p class="area_title">苏宁体育</p>
+				<p class="area_p">399减50</p>
+				<img src="imgs/149595395078665318.webp" alt="">
+			</div>
+		</div>
+	</section>
+	<div class="banner1">
+		<!-- Swiper -->
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149604462659759223.webp" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149587160858251126.jpg" alt="">
+					</a>
+	            </div>
+	            <div class="swiper-slide">
+					<a>
+						<img src="imgs/149586652747715363.jpg" alt="">
+					</a>
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <!-- <div class="swiper-button-next"></div> -->
+	        <!-- <div class="swiper-button-prev"></div> -->
+	    </div>
+
+	    <!-- Swiper JS -->
+	    <script src="js/swiper.js"></script>
+
+	    <!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.banner1 .swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        paginationClickable: true,
+	        spaceBetween: 0,//图片之间的间隔
+	        loop: true,//无限轮播
+	        centeredSlides: true,
+	        autoplay: 2500,
+	        autoplayDisableOnInteraction: false
+	    });
+	    </script>
+	</div>
+
+
+	<div style="height: 1.9688rem;"></div>
+	
+	<footer>
+		<a href="#" class="footer_active">
+			<img src="imgs/149542391521941574.png" alt="">
+			<p>首页</p>
+		</a>
+		<a href="#">
+			<img src="imgs/149542394170197894.png" alt="">
+			<p>分类</p>
+		</a>
+		<a href="#">
+			<img src="imgs/149542396539322161.png" alt="">
+			<p>必抢清单</p>
+		</a>
+		<a href="#">
+			<img src="imgs/149542398391389490.png" alt="">
+			<p>我的易购</p>
+		</a>
+		<a href="#">
+			<img src="imgs/149542400564835081.png" alt="">
+			<p>新人大礼包</p>
+		</a>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+</html>

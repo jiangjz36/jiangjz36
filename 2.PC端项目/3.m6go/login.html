@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>注册页</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/register.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                <a href="index.html"><img src="img/logo.gif" alt=""></a>
+            </h1>
+            <img class="head_right_img" src="img/registerAuthenticPic.png" alt="">
+        </div>
+        <div class="container login_container clear_float">
+            <img src="img/y-f47pogB-mW6latDSyH4k.png" alt="">
+            <div class="login_area">
+                <p class="ra_head">登录</p>
+                <span class="ra_h_sub"><a href="register.html">免费快速注册</a></span>
+                <form action="#">
+                    <input class="login_name" type="text" placeholder="手机号码/邮箱/用户名">
+                    <i class="icon_login_name"></i>
+                    <p class="err_ln">&nbsp;</p>
+                    <input class="login_pass" type="password" placeholder="密码">
+                    <i class="icon_login_pass"></i>
+                    <p class="err_lp">&nbsp;</p>
+                    <div class="verify">
+                        <input class="user_verify" type="text" placeholder="验证码">
+                        <span id="verify_img"></span>
+                        <a id="verify_btn" href="#">换一张</a>
+                    </div>
+                    <p class="err_lv">&nbsp;</p>
+                    <a href="#" class="la_forget">忘记密码？</a>
+                    <input class="user_submit" type="submit" value="登录">
+                    <p class="other">使用其它帐号登录：
+                        <a class="icon_l_qq" href="#"></a>
+                        <a class="icon_l_alipay" href="#"></a>
+                        <a class="icon_l_360" href="#"></a>
+                        <a class="icon_l_sina" href="#"></a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <script type="text/javascript">
+            $(document).ready(function() {
+    			$.get('footer.html', function(e) {
+    				$('.footer').prepend(e)
+    			});
+            });
+        	</script>
+        </div>
+        <script src="js/register.js"></script>
+    </body>
+</html>

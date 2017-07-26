@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>初级轮播图</title>
+    <style media="screen">
+      div#lunbo {
+        position: relative;
+        display: inline-block;
+      }
+      div#div1 {
+        width: 480px;
+        height: 270px;
+        border: 1px solid rgb(195, 0, 23);
+        overflow: hidden;
+      }
+      img {
+        width: 480px;
+        display: block;
+      }
+      ul {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        border-radius: 50%;
+        border: 1px solid #CCC;
+        font-size: 12px;
+        text-align: center;
+        line-height: 16px;
+        background: rgba(0,0,0,0.8);
+        color: #FFF;
+        cursor: pointer;
+      }
+      .li_active {
+        background: rgba(255,255,255,0.8);
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="lunbo">
+      <div id="div1">
+        <img src="imgs/imgs (1).jpg" alt="lunBoTu">
+        <img src="imgs/imgs (2).jpg" alt="lunBoTu">
+        <img src="imgs/imgs (3).jpg" alt="lunBoTu">
+        <img src="imgs/imgs (4).jpg" alt="lunBoTu">
+        <img src="imgs/imgs (5).jpg" alt="lunBoTu">
+        <img src="imgs/imgs (6).jpg" alt="lunBoTu">
+        <img src="imgs/imgs (7).jpg" alt="lunBoTu">
+      </div>
+      <ul id="ul1">
+        <li class="li_active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      function $(str){
+        return document.getElementById(str);
+      }
+      // 获得图片对象的集合
+      var aImg = $("div1").children;
+      // 图片的序列
+      var imgIndex = 0;
+      // 定义定时器
+      var timer = null;
+      function move(){
+        aImg[imgIndex].style.display = "none";
+        imgIndex++;
+        if(imgIndex == aImg.length){
+          imgIndex = 0;
+        }
+        aImg[imgIndex].style.display = "block";
+
+        // 获得按钮对象的集合
+        var aLi = $("ul1").children;
+        for(var i=0;i<aLi.length;i++){
+          aLi[i].className = "";
+        }
+        aLi[imgIndex].className = "li_active";
+
+        // 设置按钮被点击时的事件
+        $("ul1").onclick = function(event){
+          var e = event || window.event;
+          e.target = e.target || e.srcElement;
+          // 防止ul触发事件报错，只能li触发事件
+          if(e.target.nodeName == "UL"){
+            return false;
+          }
+          // 先暂停定时器
+          clearInterval(timer);
+          // 获得当前按钮的序号覆盖imgIndex图片序列
+          imgIndex = parseInt(e.target.innerHTML-1);
+          // 初始化图片和按钮，隐藏和清楚样式
+          for(var j=0;j<aImg.length;j++){
+            aImg[j].style.display = "none";
+            aLi[j].className = "";
+          }
+          // 重新定义当前序列的图片显示、按钮样式
+          aImg[imgIndex].style.display = "block";
+          e.target.className = "li_active";
+          // 重启定时器
+          timer = setInterval(move,1000);
+        };
+      }
+      timer = setInterval(move,1000);
+    </script>
+  </body>
+</html>

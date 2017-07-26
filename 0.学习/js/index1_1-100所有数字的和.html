@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //1-100所有整数的和
+
+    function getTotal(maxNum,type){
+      var num = 0;
+      type = type || "all";
+      for(var i=1;i<=maxNum;i++){
+        if(type=="even"){
+          if(i%2==0){//偶数 取摸等于0
+            num += i;
+          }
+        }else if(type=="odd"){
+          if(i%2==1){//奇数 取摸等于1
+            num += i;
+          }
+        }else if(type=="all"){
+          num += i;
+        }
+
+      }
+      return num;
+    }
+    document.write(getTotal(100));
+    //1-100所有奇数或偶数的和
+  </script>
+</body>
+</html>

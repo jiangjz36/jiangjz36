@@ -1,0 +1,268 @@
+body {
+    font-family: "Microsoft Yahei","微软雅黑";
+}
+/*header 头部*/
+div#head_top_banner,.logo_bar,.nav_bar,#sidebar {
+    display: none;
+}
+.nav_top .wrap {
+    width: 1000px;
+}
+.nt_login_bar,.nt_user_bar {
+    margin: 0!important;
+}
+
+/*.container 主题内容*/
+.container .wrap {
+    width: 1000px;
+}
+    /*头部*/
+    .c_head {
+        padding: 20px 0 5px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid red;
+    }
+        /*商标*/
+        .ch_logo{
+            width: 260px;
+            height: 83px;
+            font-size: 0;
+        }
+        /*购物车流程图*/
+        .ch_process {
+            float: right;
+            width: 600px;
+            height: 50px;
+            margin-top: 25px;
+        }
+        .ch_pro {
+            float: left;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+        }
+        /*选中时的样式*/
+        .ch_pro_active span {
+            background-position: 0 -40px;
+        }
+        .ch_pro_active p {
+            color: #CF2E29;
+        }
+            .ch_pro span {
+                display: block;
+                width: 150px;
+                height: 30px;
+                background-image: url(../img/car518step.png);
+                font: bold 16px/30px "微软雅黑";
+                color: #FFF;
+            }
+            .ch_pro p {
+                color: #999;
+                font-size: 14px;
+            }
+    /*购物车*/
+    .shop_cart_area {
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid #C97070;
+    }
+        /*购物车h3*/
+        .sca_head {
+            font-size: 17px;
+            line-height: 28px;
+            text-indent: 10px;
+            color: #FFF;
+            background: #C97070;
+        }
+        .shop_cart_area form {
+            padding: 20px;
+        }
+            /*全选*/
+            .sca_all_checked {
+                font-size: 5px;
+                margin: 5px 0;
+            }
+                .sca_all_checked input {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            /*每个商品区域*/
+            .sca_sec {
+                width: 958px;
+                border: 1px solid #CCC;
+            }
+            /*表头*/
+            .ss_head {
+                height: 28px;
+                border-bottom: 1px solid #CCC;
+                background: #EEE;
+            }
+            .ss_head div {
+                float: left;
+                text-align: center;
+                line-height: 28px;
+                font-size: 12px;
+                color: #5A5C5A;
+            }
+            .ss_head div:not(:last-child) {
+                border-right: 1px solid #CCC;
+            }
+                /*发货*/
+                div.sh_delivery,
+                .ss_delivery {
+                    width: 479px;
+                    text-align: left;
+                    text-indent: 10px;
+                }
+                    .sh_delivery input {
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                /*单价*/
+                .sh_price,
+                .ss_price {
+                    width: 143px;
+                }
+                /*数量*/
+                .sh_count,
+                .ss_count {
+                    width: 143px;
+                }
+                /*小计*/
+                .sh_total,
+                .ss_total {
+                    width: 95px;
+                }
+                /*操作*/
+                .sh_action,
+                .ss_action {
+                    width: 94px;
+                }
+            /*主题内容body*/
+            .sb_sec {
+                height: 72px;
+                font-size: 12px;
+            }
+            .sb_sec:not(:last-child) {
+                border-bottom: 1px solid #CCC;
+            }
+            .sb_sec div {
+                float: left;
+                height: 72px;
+                line-height: 72px;
+                text-align: center;
+                border-right: 1px solid #CCC;
+            }
+            .sb_sec div:last-child {
+                border-right: 0;
+            }
+                /*发货*/
+                div.ss_delivery {
+                    text-align: left;
+                }
+                /*单价*/
+                div.ss_price {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                /*小计*/
+                div.ss_total {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #E52184;
+                }
+                /*操作*/
+                div.ss_action a {
+                    color: #2966ED;
+                }
+                    .ss_delivery input {
+                        float: left;
+                        margin: 25px 10px;
+                    }
+                    .ss_delivery img {
+                        float: left;
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid #CCC;
+                        margin-top: 10px;
+                    }
+                    .ss_delivery a {
+                        float: left;
+                        width: 356px;
+                        height: 32px;
+                        line-height: 1.2em;
+                        margin-top: 10px;
+                        color: #5C5E5C;
+                    }
+                        .ss_delivery a:hover {
+                            text-decoration: underline;
+                        }
+                /*数量按钮*/
+                div.ss_btn {
+                    width: 70px;
+                    height: 24px;
+                    margin: 24px 36.5px;
+                }
+                    .ss_btn button {
+                        float: left;
+                        width: 20px;
+                        height: 24px;
+                        border: 1px solid #CCC;
+                        cursor: pointer;
+                    }
+                    /*数量*/
+                    .ss_b_txt {
+                        float: left;
+                        width: 30px;
+                        height: 22px;
+                        border-top: 1px solid #CCC;
+                        border-bottom: 1px solid #CCC;
+                        text-align: center;
+                        line-height: 24px;
+                    }
+            /*结算条*/
+            .settement_bar {
+                width: 1000px;
+                height: 45px;
+                margin-left: -20px;
+                margin-top: 16px;
+                line-height: 45px;
+                background: #F0F0F0;
+                font-size: 12px;
+            }
+                /*全选*/
+                .settement_bar input[type='checkbox'] {
+                    margin-left: 30px;
+                    margin-right: 5px;
+                }
+            /*总计条*/
+            .total_bar {
+                float: right;
+                width: 320px;
+                height: 45px;
+                line-height: 45px;
+            }
+                /*数量*/
+                #tb_count {
+                    color: #CF2E13;
+                }
+                /*总计*/
+                #tb_total {
+                    color: #CF2E13;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 0 10px;
+                }
+                .total_bar input {
+                    float: right;
+                    width: 140px;
+                    height: 45px;
+                    background: #CF2E13;
+                    color: #FFF;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+/*footer 底部*/
+.f_promise,.f_related {
+    display: none;
+}

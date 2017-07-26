@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 22rem;
+  height: 3.8rem;
+  background: #FFDA44;
+  padding: 1.53333333rem 1.5rem;
+  border-bottom: 0.03333333rem solid #fff1b6;
+}
+header .logo {
+  float: left;
+  width: 9.73333333rem;
+  height: 4.1rem;
+  background: url(../../img/logo.png) no-repeat;
+}
+header .logo a {
+  display: block;
+  height: 100%;
+}
+header .loginBar {
+  float: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8.66666667rem;
+  height: 1.43333333rem;
+  margin-top: 1.73333333rem;
+}
+header .loginBar a {
+  width: 3.96666667rem;
+  height: 1.36666667rem;
+  border: 1px solid #333;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  line-height: 1.36666667rem;
+  text-indent: 0.7rem;
+}
+header .loginBar .register {
+  background: url(../../img/zhuce.png) 0.56666667rem center no-repeat;
+}
+header .loginBar .login {
+  background: url(../../img/denglu.png) 0.56666667rem center no-repeat;
+}
+header#user {
+  position: relative;
+  padding-top: 1.2rem !important;
+  height: 5.7rem !important;
+  width: 23rem;
+  height: 4.83333333rem;
+  padding: 0.83333333rem 1rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+header#user img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+header#user span:nth-child(2) {
+  float: right;
+}
+header#user .user_two span {
+  font-size: 1rem;
+}
+header#user .user_two span b {
+  font-size: 2.86666667rem;
+  font-weight: normal;
+}
+header#user .user_two a {
+  position: absolute;
+  right: 1rem;
+  bottom: 1.33333333rem;
+  width: 3.96666667rem;
+  height: 1.36666667rem;
+  border: 1px solid #333;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.36666667rem;
+  color: #333;
+}
+.banner {
+  width: 25rem;
+  height: 10.73333333rem;
+}
+.banner img {
+  width: 25rem;
+}
+.container {
+  padding: 0.73333333rem 1.03333333rem 0.53333333rem 1rem;
+}
+.container .inviteFriend {
+  width: 8.6rem;
+  height: 3rem;
+  padding: 1.46666667rem 1.33333333rem 1.33333333rem;
+  margin-right: 0.43333333rem;
+}
+.container .inviteFriend dt {
+  line-height: 0.96666667rem;
+}
+.container .inviteFriend dd {
+  font-size: 1.06666667rem;
+  color: #ffa53c;
+}
+.container .inviteFriend span {
+  font-size: 1.66666667rem;
+}
+.container .bagsmokEggs {
+  height: 9.66666667rem;
+  padding: 1.13333333rem 0;
+  margin: -5.43333333rem 0.43333333rem 0 0;
+}
+.container .bagsmokEggs dd {
+  font-size: 1rem;
+  color: #ff4041;
+}
+.container .bagsmokEggs img {
+  margin-top: 0.56666667rem;
+}
+.container .shareIt {
+  height: 9.3rem;
+  padding: 1.3rem 0;
+}
+.container .shareIt dd {
+  font-size: 1.2rem;
+  color: #6bd2f5;
+}
+.container .shareIt img {
+  margin-top: 1.1rem;
+}
+.container .improveInfo {
+  width: 9.13333333rem;
+  height: 3rem;
+  padding: 1.46666667rem 1.06666667rem 1.33333333rem;
+  margin-top: 0.66666667rem;
+}
+.container .improveInfo dd {
+  font-size: 1.06666667rem;
+  color: #4ad3a9;
+}
+.container .improveInfo span {
+  font-size: 1.66666667rem;
+}
+.popUp {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22.96666667rem;
+  height: 34.7rem;
+  padding: 0 1rem 0rem 1.03333333rem;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3);
+}
+.popUp > div {
+  width: 15.76666667rem;
+  height: 21.93333333rem;
+  margin: 7.66666667rem 3.3rem 0 3.9rem;
+  text-align: center;
+}
+.pp_inviteFriend {
+  display: none;
+}
+.pp_inviteFriend p {
+  font-size: 1.13333333rem;
+  color: #FFF;
+  white-space: nowrap;
+}
+.pp_inviteFriend span.cash {
+  color: #ffda44;
+}
+.pp_inviteFriend span.cash b {
+  font-size: 2.66666667rem;
+  font-weight: normal;
+}
+.pp_inviteFriend .list_one,
+.pp_inviteFriend .list_two {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.8rem;
+}
+.pp_inviteFriend .list_one {
+  margin-top: 2rem;
+}
+.pp_inviteFriend .list_two {
+  margin-top: 1.66666667rem;
+}
+.pp_inviteFriend dl {
+  width: 3.66666667rem;
+  height: 4.33333333rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.pp_inviteFriend dl a {
+  color: #FFF;
+}
+.pp_inviteFriend button {
+  display: block;
+  width: 15.76666667rem;
+  height: 1.96666667rem;
+  margin-top: 2.96666667rem;
+  background: #ffc600;
+  font-size: 0.93333333rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.1rem;
+  background: #ffda44 url(../../img/footerBorder.png) left top repeat-x;
+  text-align: center;
+}
+footer a {
+  float: left;
+  display: inline-block;
+  width: 6.25rem;
+  height: 3rem;
+  margin-top: 0.1rem;
+  font-size: 0;
+  color: #333;
+}
+footer a img {
+  margin-top: 0.43333333rem;
+}
+footer a p {
+  font-size: 0.66666667rem;
+}

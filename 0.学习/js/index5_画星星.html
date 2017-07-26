@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /*body { text-align: center;}*/
+  </style>
+</head>
+<body>
+
+<script>
+  function drowStr(maxStar){
+    for(var i=1;i<=maxStar;i++){
+      if(i%2==0){
+        continue;
+      }
+      var limit = maxStar-i;
+      for(var j=1;j<=maxStar;j++){
+        if(j<=limit){
+          if(j%2 == 0){
+            document.write("★");
+          }
+        }else{
+          document.write("☆");
+        }
+      }
+      document.write("<br>");
+    }
+  }
+  drowStr(10);
+</script>
+</body>
+</html>

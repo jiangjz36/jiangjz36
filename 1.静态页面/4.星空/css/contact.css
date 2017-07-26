@@ -1,0 +1,19 @@
+.header { margin-bottom: 50px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
+
+.content { width: 1000px; margin: 0 auto;}
+.content:after { content: "";clear: both;display: block;}
+
+.content ul:after { content: "";clear:both;display: block;}
+.content li { float: left; width: 100px;height: 70px;margin-right: 20px;border: 1px solid #DADADA; color: #828282; text-align: center; line-height: 70px;}
+.content li:last-child { background: #303030;color: #FFF;}
+
+.content form { width: 883px; margin-top: 10px;padding: 50px 75px 65px 40px; border: 1px solid #D7D7D7;}
+.content form h2 { margin-bottom: 70px; font-weight: normal;font-size: 18px;color: #555555;}
+         form h2 span { font-size: 14px;color: #787878;}
+.content form label { float: left;width: 408px;height: 42px;padding-left: 13px;margin-bottom: 34px;border: 1px solid #C6C6C6;}
+.content form label:nth-child(even) { margin-right: 37px;}
+         form label span { float: left;line-height: 42px; width: 20%;}
+         form label input { float: left; padding: 0; width: 80%; height: 100%;border: none; outline: none;}
+         form textarea { display: block; padding: 0; width: 100%; border-color: #C6C6C6;outline: none; line-height: 1.5;}
+         form input[type="submit"] { width:136px;height: 45px; margin-top: 70px;border: none;border-radius: 4px;font-size: 14px;color: #FFF;background:#EC1F4A; letter-spacing: 6px;}
+         form em { display: inline-block; font-style: normal;font-size: 10px;color: #CF0000;text-indent: 10px;}

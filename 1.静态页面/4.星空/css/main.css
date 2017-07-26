@@ -1,0 +1,52 @@
+/*
+.wrap 包裹层 width:1430px
+  .header
+    .top_nav
+      .top_bar
+        .logo
+        .blog_link
+      .nav 链接
+    .banner 横幅
+  .content
+    .plates 板块链接
+    .cases 节目合作
+  .footer
+    .foot_nav 底部链接
+      .link  友情链接
+    .copy 版权
+ */
+
+
+
+.content { width: 100%;}
+.content .plates { width: 69.93%/*1000px*/; height: 444px; margin: 0 auto;}
+         .m-plate { float: left; width: 22.70%/*227px*/; height: 344px; margin-right: 2.30%/*28px*/;margin-top: 50px;margin-bottom: 50px; border: 1px solid #CECECE; text-align: center;}
+         .m-plate:last-child { margin-right: 0;}
+         .m-plate .plate_icon { position: relative; width: 105px;height: 105px; border-radius: 50%; background: #666666; margin: 25px auto 20px; }
+         .m-plate .plate_icon i { position: absolute; top: 30px; left: 10px; width: 84px;height: 48px; background: url(../image/sprites.png);}
+         .m-plate h2 { margin-bottom: 16px; font: normal 18px "sans-serif"; }
+         .m-plate p { width: 192px; padding-bottom: 20px; margin: 0 auto; border-bottom: 1px dotted #8D8D8D; line-height: 1.8;font-size:12px;color: #484848;}
+         .m-plate button { margin-top: 20px; padding: 10px 35px; font-size: 12px;color: #3F3F3F; border-color: #B7B7B7; border-radius: 5px;background-color: #FFF; }
+         .plates .plate_1 i { background-position: 0 -45px; }
+         .plates .plate_2 i { background-position: -91px -45px; }
+         .plates .plate_3 i { background-position: -180px -45px; }
+         .plates .plate_4 i { background-position: -269px -45px; }
+.content .cases { position: relative; width: 1000px; height: 618px; margin: 0 auto;}
+         .cases h3 { width: 100%; height: 44px; padding-top: 28px;font: 30px "微软雅黑"; font-variant: small-caps;}
+         .cases img { display: block;}
+         .cases .case_title { padding: 12px 0 18px 16px; }
+         .cases .case_title h4 { font: normal 18px "sans-serif";}
+         .cases .case_title span.case_date { font-size: 10px;color:#ADADAD;}
+         .cases h3 span { font-size: 14px; margin-left: 10px;}
+         .cases .main_case,.cases .side_case { float: left;}
+         .cases .main_case { width: 402px; height:506px; background: #FFF;}
+                .main_case .recommend { display: block; margin-left: 18px; line-height: 64px; font-size: 16px;color: #858585;}
+                .main_case .case_title { padding: 25px 0 12px 22px; border-bottom: 1px solid #ECECEC;}
+                .main_case .case_title h4 { font: normal 18px "sans-serif";}
+                .main_case .case_title span.case_date { font-size: 10px;color:#ADADAD;}
+                .main_case p { font-size: 12px; padding: 20px 33px 0 20px; color: #868686; line-height: 2;}
+         .cases .side_case { width: 284px; height:245px; margin: 0 0 15px 15px; background: #FFF;}
+                .side_case .case_title { height: 34px;}
+         .cases .n-more { position: absolute; right: 0;top:25px;width: 87px;height: 25px; border: 1px solid #CBCBCB;border-radius: 3px;background: #CBCBCB;color:#FFF;text-transform: uppercase;}
+         .cases .n-more i { display: inline-block; width: 7px;height: 10px; margin-left: 15px;background: url(../image/sprites.png);background-position: -269px 0;}
+/*content end*************************************/

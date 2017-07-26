@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  //水仙花数
+  function getDaffodil(power){
+    var formula,a,b,c,d,e,f,g;
+    for(var i=100000;i<1000000;i++){
+      a = i%10;//取个位数
+      b = parseInt((i%100)/10);//取十位数
+      c = parseInt((i%1000)/100);//取到百位数
+      d = parseInt((i%10000)/1000);//取到千位数
+      e = parseInt((i%100000)/10000);//取到万位数
+      f = parseInt(i/100000);//取到十万位数
+      formula = Math.pow(a,power);//幂运算
+      formula += Math.pow(b,power);
+      formula += Math.pow(c,power);
+      formula += Math.pow(d,power);
+      formula += Math.pow(e,power);
+      formula += Math.pow(f,power);
+
+      if(formula == i){
+        document.write(i+"<br>");
+      }
+    }
+  }
+  getDaffodil(6);//
+</script>
+</body>
+</html>

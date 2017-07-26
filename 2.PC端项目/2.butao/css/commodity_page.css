@@ -1,0 +1,503 @@
+.ce_container {
+    background: #F7F7F7;
+    padding-top: 10px;
+}
+
+/*商品的head*/
+    .ce_head {
+        border: 1px solid #DDDDDD;
+        padding: 19px;
+        width: 960px;
+        height: 340px;
+        background: #FFF;
+    }
+    /*商品名字*/
+    .ce_head_name {
+        padding-bottom: 16px;
+        font-size: 19px;
+        font-weight: normal;
+    }
+    /*商品图片*/
+    .ce_head_img {
+        position: relative;
+        float: left;
+        width: 440px;
+        height: 280px;
+        background: url(../imgs/shoes_liebao.png);
+    }
+        /*蒙版放大镜*/
+        .ce_head_marked {
+            position: absolute;
+            display: none;
+            width: 110px;
+            height: 70px;
+            background: red;
+            opacity: .4;
+            cursor: pointer;
+        }
+        /*放大镜图片*/
+        .ce_head_magnifier {
+            position: absolute;
+            display: none;
+            right: -460px;
+            width: 440px;
+            height: 280px;
+            background-image: url(../imgs/shoes_liebao.png);
+            background-size: 400%;
+            z-index: 100;
+        }
+    /*商品右侧价格、商品评价等*/
+    .ce_head_detail {
+        float: right;
+        width: 480px;
+    }
+    .ce_head_detail li {
+        border-bottom: 1px solid #EEE;
+        padding: 10px 0;
+    }
+        /*价格*/
+        li.ce_head_price {
+            padding: 0;
+            color: #D71E2A;
+        }
+        .ce_price_dt {
+            float: left;
+            font-size: 35px;
+            font-weight: bold;
+        }
+            .ce_price_dt b {
+                font-size: 14px;
+            }
+        .ce_price_dd {
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+            .ce_discount,
+            .ce_del {
+                display: block;
+                font-size: 14px;
+            }
+            .ce_del {
+                font-size: 12px;
+                color: #999;
+            }
+        /*商品评价*/
+        .ce_head_evaluation {
+            font-size: 12px;
+            color: #686868;
+        }
+            /*评分*/
+            .ce_star_rating {
+                margin-left: 5px;
+            }
+            /*评价人数*/
+            .ce_evaluation_count {
+                float: right;
+            }
+            .ce_ec_count {
+                color: #DC393C;
+                font-weight: normal;
+            }
+        /*立即购买按钮*/
+        .ce_btn_buy,
+        .ce_btn_shopping_cart {
+            display: inline-block;
+            width: 169px;
+            height: 50px;
+            background-image: url(../imgs/ce_head_operation_spirit.png);
+            cursor: pointer;
+        }
+        /*加入购物车*/
+        .ce_btn_shopping_cart {
+            width: 129px;
+            margin-left: 5px;
+            background-position: 0 -60px;
+        }
+        /*倒计时*/
+        .ce_countdown {
+            margin-top: 15px;
+            text-indent: 120px;
+        }
+        .ce_countdown span {
+            color: #DE1E2A;
+        }
+        /*分享到*/
+        .ce_share {
+            float: right;
+            position: relative;
+            margin-right: 5px;
+            text-indent: 20px;
+            font-size: 12px;
+            line-height: 50px;
+            background: url(../imgs/fan_xiang.png) no-repeat left center;
+        }
+        /*承诺正品*/
+        .ce_head_commitment {
+            font-size: 12px;
+        }
+            /*图标*/
+            .ce_head_commitment i {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+                background-image: url(../imgs/ce_commitment.png);
+                vertical-align: middle;
+            }
+            .ce_hc_1 i {
+                margin-left: 22px;
+            }
+            .ce_hc_2 i {
+                margin-left: 35px;
+                background-position: -40px 0;
+            }
+            .ce_hc_3 i {
+                margin-left: 35px;
+                background-position: -80px 0;
+            }
+        /*购买人数*/
+        .ce_head_number {
+            font-size: 12px;
+            text-align: center;
+        }
+            /*数字*/
+            .ce_hn_count {
+                color: #D71E2A;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+    /*商品详情*/
+    .ce_db_content {
+        display: none;
+    }
+    .ce_details {
+        position: relative;
+        float: left;
+        width: 718px;
+        border: 1px solid #e5e5e5;
+        border-top: 2px solid #e5e5e5;
+        padding: 55px 15px 15px 15px;
+        margin: 15px 0 87px;
+        background: #FFF;
+    }
+    /*商品详情顶部导航*/
+    .ce_details_bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 32px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #E5E5E5;
+        background: url(../imgs/stuff_tab_bg.png) repeat-x;
+    }
+    /*商品属性*/
+    .ce_details_property {
+        padding: 5px;
+        font-size: 14px;
+    }
+        .ce_db_ul {
+            float: left;
+            height: 32px;
+        }
+        .ce_db_ul li {
+            float: left;
+            height: 32px;
+            margin-top: 1px;
+
+        }
+        .ce_db_ul li a {
+            display: block;
+            padding: 0 15px;
+            line-height: 30px;
+            font-size: 12px;
+            color: #333;
+        }
+        /*点评背景图片*/
+        .ce_db_review {
+            width: 90px;
+            background: url(../imgs/bg-new.png) no-repeat 80px 5px;
+        }
+        .ce_db_active,
+        .ce_db_ul li:hover {
+            background: url(../imgs/stuff_tab_bg.png) repeat-x 0 -35px;
+        }
+        /*分割线*/
+        .ce_db_ul .ce_line {
+            font-size: 0;
+            width: 2px;
+            background: url(../imgs/stuff_tab_bg.png) no-repeat 0 -70px;
+        }
+        /*抢购人数*/
+        .ce_db_count {
+            float: left;
+            line-height: 32px;
+            font-size: 12px;
+            text-indent: 50px;
+        }
+        .ce_db_count b {
+            font-size: 13px;
+            color: #D51F2B;
+        }
+        /*立即抢购按钮*/
+        .ce_btn_snapping_up {
+            float: left;
+            display: inline-block;
+            width: 87px;
+            height: 30px;
+            margin-top: 1px;
+            margin-left: 75px;
+            background: url(../imgs/buying.png);
+        }
+    .ce_details_property li {
+        margin-bottom: 10px;
+        color: #383735;
+    }
+    .ce_details_property li:nth-child(odd) {
+        float: left;
+        width: 344px;
+    }
+    .ce_details_property li:nth-child(even){
+        float: right;
+        width: 310px;
+    }
+    /*清仓标语*/
+    .ce_stressed {
+        display: block;
+        font-size: 25px;
+        font-weight: normal;
+        margin-top： 40px;
+        color: #e53333;
+    }
+    .ce_details_img {
+        margin-bottom: 34px;
+    }
+    .ce_details_footer {
+        position: absolute;
+        bottom: -57px;
+        left: 50%;
+        margin-left: -220px;
+        width: 439px;
+        height: 57px;
+        font-size: 12px;
+        color: #555;
+        background: url(../imgs/deal_buy_439.png);
+    }
+    /*商品详情底部*/
+    .ce_details_footer table {
+        float: left;
+        padding: 10px 0 0 25px;
+    }
+    .ce_details_footer td {
+        width: 55px;
+    }
+        /*价格*/
+        .ce_df_price {
+            font-size: 30px;
+            font-weight: bold;
+            color: #CE1B1F;
+            line-height: 53px;
+        }
+        .ce_df_price i {
+            font-size: 20px;
+            font-style: normal;
+        }
+        .ce_df_btn {
+            float: right;
+            display: inline-block;
+            width: 113px;
+            height: 39px;
+            margin: 9px 10px 0 0;
+            background: url(../imgs/deal_buy_01.png);
+        }
+
+    /*发货快递*/
+    .ce_db_express {
+        font-size: 14px;
+        color: #666;
+    }
+    .ce_db_express th {
+        width: 90px;
+        text-indent: 20px;
+        background: #F0F0F0;
+        border-left: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+    }
+    .ce_db_express th:first-child {
+        border-top: 1px solid #DDD;
+    }
+    .ce_db_express td {
+        background: #F9F9F9;
+        border-bottom: 1px solid #DDD;
+        border-right: 1px solid #DDD;
+    }
+
+    /*同类推荐（左）*/
+    .ce_recommended {
+        float: left;
+        position: relative;
+        width: 750px;
+        margin-bottom: 36px;
+        background: #FFF;
+    }
+    .ce_rd_head {
+        width: 100%;
+        height: 32px;
+        background: url(../imgs/stuff_tab_bg.png) repeat-x;
+        line-height: 32px;
+        font-size: 12px;
+    }
+        .ce_rd_head span {
+            margin-left: 5px;
+            color: #666;
+        }
+        .ce_rd_head a {
+            position: relative;
+            float: right;
+            padding-right: 20px;
+            color: #555;
+            line-height: 32px;
+        }
+        .ce_rd_head a:after {
+            position: absolute;
+            top: 50%;
+            content: '';
+            width: 0;
+            height: 0;
+            margin-top: -4px;
+            margin-left: 4px;
+            border: 4px solid transparent;
+            border-left-color: #666;
+        }
+    .ce_rd_sec {
+        display: inline-block;
+        width: 170px;
+        font-size: 12px;
+        margin: 10px;
+        margin-right: 0;
+    }
+    .ce_rd_sec dt {
+        border-bottom: 1px dashed #DCDCDC;
+    }
+    .ce_rd_sec dt img {
+        display: block;
+        width: 150px;
+        height: 95px;
+        padding-bottom: 15px;
+    }
+    .ce_rd_sec dt span {
+        display: block;
+        margin: 5px;
+        color: #555;
+    }
+    .ce_rd_price {
+        color: #EB3947;
+        font-weight: bold;
+    }
+    .ce_rd_count {
+        float: right;
+        color: #5A5A5A;
+    }
+    .ce_rd_count i {
+        font-style: normal;
+        color: #EB3947;
+        font-weight: bold;
+    }
+    /*右侧栏目*/
+    .ce_sidebar {
+        width: 235px;
+        float: right;
+        margin-top: 16px;
+        background: #FFFAFA;
+    }
+    .ce_safeguard img {
+        display: block;
+    }
+    /*诚实消费保障举措*/
+    .ce_sd_list {
+        border: 1px solid #CCC;
+    }
+    .ce_sd_list a {
+        display: block;
+        padding: 10px;
+        color: #555;
+        font-size: 12px;
+        line-height:20px;
+    }
+    .ce_sd_list li {
+        border-bottom: 1px dashed #555;
+    }
+    .ce_sd_list h4 {
+        color: #000;
+        font-size: 18px;
+        text-indent: 30px;
+    }
+    .ce_sd_list li p {
+        padding-left: 30px;
+        margin-top: 8px;
+    }
+    .ce_sd_list_1 h4 {
+        color: #EA1724;
+        background: url(../imgs/detail_h2_01.png) no-repeat left center;
+    }
+    .ce_sd_list_2 h4 {
+        background: url(../imgs/detail_h2_02.png) no-repeat left center;
+    }
+    .ce_sd_list_3 h4 {
+        background: url(../imgs/detail_h2_03.png) no-repeat left center;
+    }
+    .ce_sd_list_4 h4 {
+        background: url(../imgs/detail_h2_04.png) no-repeat left center;
+    }
+    li.ce_sd_list_5 {
+        list-style: none;
+        text-align: center;
+        border: 0;
+    }
+    .ce_sd_list_5 a {
+        display: inline-block;
+        padding: 12px 0 14px 0;
+
+    }
+    /*同类推荐*/
+    .ce_recommended_0 {
+        width: 233px;
+        margin-top: 15px;
+        border: 1px solid #DDD;
+        background: #FFF;
+    }
+    .ce_rd_list a {
+        display: block;
+        padding: 10px;
+        color: #555;
+        border-bottom: 1px solid #DDD;
+    }
+    .ce_rd_list h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .ce_rd_list img {
+        float: left;
+        display: block;
+        margin-right: 6px;
+        border: 1px solid #DDD;
+    }
+    .ce_rd_price,
+    .ce_rd_del {
+        float: left;
+    }
+    .ce_rd_del {
+        color: #999;
+        font-size: 12px;
+    }
+    .ce_rd_list button {
+        float: left;
+        width: 57px;
+        height: 21px;
+        margin-top: 3px;
+        font-size: 0;
+        background: url(../imgs/sift_buy_bg.png) 0 -75px;
+    }

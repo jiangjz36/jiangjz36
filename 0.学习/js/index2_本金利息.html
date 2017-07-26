@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //用复利的方法计算本利和
+    function getPrincipal(year){
+      var principal = 10000;//初始本金
+      var interest = 0.035;//初始利息
+      for(var i=1;i<=year;i++){
+        principal *= (interest+1);
+      }
+      return principal;
+    }
+    for(var i=1;i<6;i++){
+      document.write(getPrincipal(i)+"<br />");
+    }
+
+    //计算五年后的本息和
+  </script>
+</body>
+</html>

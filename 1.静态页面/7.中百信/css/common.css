@@ -1,0 +1,226 @@
+/*
+.wrap
+  .header 页面最顶部的logo和菜单
+  .banner 广告栏
+  .sub_nav  副导航栏
+  .container  主题
+  .footer 底部
+ */
+
+/*reset start*/
+html,body,ul,dl,dt,dd,input,button,
+h1,h2,h3,img,p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "黑体";
+}
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+ul {
+  list-style: none;
+}
+input,button {
+  border: none;
+  outline: none;
+}
+/*reset end*/
+
+/*common start*/
+.wrap { /*最外面的包裹层*/
+  width: 1240px;
+
+  /*width: 100%;*/
+
+  margin: 0 auto;
+  background: #F4F4F4;
+}
+.sub_wrap { /*小包裹层 备用*/
+  width: 1000px;
+  margin: 0 auto;
+}
+/*common end*/
+
+/*header start*/
+.header {
+  width: 100%;
+  height: 55px;
+  background: rgba(0,0,0,0.9);
+}
+.logo { /*logo*/
+  float: left;
+  width: 160px;
+  height: 55px;
+  margin-left: 120px;
+  font-size: 0;
+  background: url(../imgs/logo.png);
+}
+.menu {   /*ul*/
+  float: right;
+  margin-right: 120px;
+}
+.menu li {
+  float: left;
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  line-height: 55px;
+  padding: 0 18px;
+}
+.menu li:hover,
+.menu li.active {  /*顶部菜单被选中时的样式*/
+  background: #000;
+}
+/*header end*/
+
+/*banner start*/
+.banner img {
+  display: block;
+  width: 100%;
+}
+/*banner end*/
+
+
+/*.index_footer start*/
+.index_footer {
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 46px;
+  background: #222;
+  overflow: hidden;
+}
+.footer_title { /*footer 中的标题*/
+  margin-bottom: 14px;
+}
+.footer_title span {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "微软雅黑";
+  color: #646464;
+}
+.footer_title i {
+  display: inline-block;
+  width: 25px;
+  height: 29px;
+  background: url(../imgs/sprites.png);
+}
+.footer_title h2 {
+  font-size: 20px;
+  color: #FFF;
+  font-weight: normal;
+}
+
+
+
+.contact {
+  float: left;
+  width: 340px;
+  margin-left: 120px;
+}
+.contact p {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  color: #919191;
+  line-height: 2;
+}
+.search {
+  float: left;
+  width: 106px;
+  margin-left: 88px;
+}
+.search i.icon_search {
+  position: relative;
+  top: 5px;
+  background-position: -1px -30px;
+}
+.search form {
+  width: 268px;
+  height: 40px;
+}
+.search form input:nth-child(1) {
+  float: left;
+  display: inline-block;
+  width: 220px;
+  height: 100%;
+}
+.search form input:nth-child(2) {
+  float: left;
+  width: 44px;
+  height: 40px;
+  color: #777;
+  background: #000;
+}
+.weixin { /*微信*/
+  float: right;
+  margin-right: 120px;
+}
+.weixin dd {
+  font-size: 12px;
+  text-align: center;
+  color: #565656;
+  font-family: "微软雅黑";
+}
+
+.index_footer .author {
+  width: 100%;
+  margin-top: 26px;
+  padding-top: 10px;
+  border-top: 1px solid #666;
+  clear: both;
+}
+.author ul {
+  margin-left: 120px;
+  font-size: 12px;
+  color: #B3B3B3;
+}
+.author ul li,
+.author ul span {
+  float: left;
+}
+.author ul span {
+  padding: 0 10px;
+}
+.author p {
+  margin-left: 120px;
+  padding-top: 5px;
+  color: #585858;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  clear: both;
+}
+.index_footer .author img {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.index_footer > img {
+  position: absolute;
+  right: 120px;
+  bottom: 40px;
+}
+/*.index_footer end*/
+
+
+/*common_footer start*/
+.common_footer {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 45px 0;
+  background: #222;
+}
+.common_footer .author img {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.common_footer > img {
+  position: absolute;
+  right: 120px;
+  top: 20px;
+}
+
+/*common_footer end*/

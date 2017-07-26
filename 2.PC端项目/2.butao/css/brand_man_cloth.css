@@ -1,0 +1,241 @@
+.bmc_head {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    box-shadow: 0 4px 6px rgba(68, 78, 65, 0.49);
+}
+.bmc_head .wrap {
+    background: #FFF;
+    font-size: 12px;
+}
+.bmc_head li {
+    float: left;
+    padding: 7px 10px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+li.bmc_head_acitve,
+.bmc_head li:hover {
+    border-color: #E02F2F;
+    color: #E02F2F;
+}
+
+/*网购商品标签*/
+.bmc_product_label {
+    padding: 12px 5px 6px 25px;
+    margin: 12px 0;
+    border: 1px solid #DDD;
+    font-size: 12px;
+}
+    /*网购*/
+    .pl_name {
+        float: left;
+        width: 40px;
+        height: 100%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    /*标签*/
+    .pl_tag {
+        margin-left: 40px;
+    }
+    .pl_tag_1 a {
+        color: #38599E;
+    }
+    .pl_tag_2,
+    .pl_tag_3 {
+        padding: 7px 7px 0;
+        border: 1px solid #EEE;
+        margin-bottom: 5px;
+        background: #F2F2F2;
+    }
+    .pl_tag a {
+        display: inline-block;
+        padding: 2px;
+        margin-right: 20px;
+        margin-bottom: 6px;
+        color: #555;
+    }
+    .pl_tag a span {
+        color: #99AFD0;
+    }
+    a.pl_tag_active,
+    .pl_tag a:hover {
+        background: #F95A0E;
+        color: #FFF;
+    }
+    .pl_tag_active:hover span,
+    .pl_tag a:hover span {
+        color: #FFF;
+    }
+
+    /*排序*/
+    .bmc_sort {
+        position: relative;
+        padding: 10px;
+        background: #F1EFF2;
+        margin-bottom: 20px;
+    }
+    .bmc_sort .pl_name {
+        font-weight: normal;
+    }
+    /*折扣、价格排序按钮*/
+    .pl_s_discount,
+    .pl_s_price {
+        position: absolute;
+        top: 5px;
+        display: inline-block;
+        padding: 1px 5px 1px 8px;
+        font-size: 14px;
+        background: #FBF9FB url(../imgs/brand_rank_bg.png) repeat-x left bottom;
+        border: 1px solid #DBD7D9;
+        color: #555;
+    }
+    .pl_s_price {
+        left: 130px;
+    }
+    .pl_s_discount span,
+    .pl_s_price span {
+        display: inline-block;
+        width: 9px;
+        height: 16px;
+        margin-left: 6px;
+        background-image: url(../imgs/arrows.png);
+        vertical-align: middle;
+    }
+    .pl_s_price span {
+        background-position: 0 -20px;
+    }
+    .pl_s_active {
+        color: #D41F2B;
+
+    }
+
+    .bmc_sec {
+        float: left;
+        width: 288px;
+        height: 317px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        padding: 15px;
+        border: 1px solid #E5E5E5;
+    }
+    .bmc_sec:hover {
+        border-color: #D41F2B;
+        box-shadow: 0 0 8px rgba(52, 61, 55, 0.44);
+    }
+    .bmc_sec:nth-child(3n+2) {
+        margin-right: 0;
+    }
+    .bmc_sec p {
+        margin-bottom: 10px;
+        line-height: 1.4;
+        font-family: "宋体";
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .bmc_sec p a {
+        color: #555;
+    }
+    .bmc_img_area img {
+        width: 288px;
+        height: 190px;
+        border: 1px solid #A51100;
+        display: block;
+    }
+    .bmc_img_area a {
+        display: block;
+        height: 100%;
+    }
+    .bmc_price_area {
+        position: relative;
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        border: 1px solid #A51100;
+        border-top: 0;
+        background: url(../imgs/go_see_bg.png) repeat-x;
+        text-indent: 10px;
+    }
+    /*价格*/
+    .bmc_price {
+        font-size: 30px;
+        font-weight: bold;
+        color: #FFF;
+    }
+    .bmc_price sub {
+        position: relative;
+        bottom: 6px;
+    }
+    .bmc_price span {
+        font-size: 23px;
+    }
+    /*去看看按钮*/
+    .bmc_btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: inline-block;
+        width: 86px;
+        height: 31px;
+        background: url(../imgs/qkk.jpg);
+    }
+    /*原价*/
+    .bmc_del_price {
+        font-size: 12px;
+        color: #555;
+    }
+    /*折扣*/
+    .bmc_discount {
+        margin-left: 100px;
+        font-size: 12px;
+        color: #555;
+    }
+    .bmc_discount i {
+        font-style: normal;
+        color: #D41F2B;
+        font-weight: bold;
+    }
+
+
+
+    /*翻页*/
+    .bmc_page {
+        clear: left;
+        font-size: 12px;
+        color: #666;
+        padding: 20px 0 40px;
+    }
+    .bmc_page span {
+        float: left;
+        text-indent: 330px;
+        line-height: 24px;
+    }
+    .bmc_page ul {
+        display: block;
+        width: 395px;
+        margin: 0 auto;
+    }
+    .bmc_page li {
+        float: left;
+    }
+    .bmc_page li {
+        padding: 3px 6px;
+        margin-right:2px;
+        border: 1px solid #CCC;
+        cursor: pointer;
+    }
+
+    .bmc_page li:hover:not(.bmc_page_active) {
+        color: #FFF;
+        background: #D41F2B;
+    }
+    li.bmc_page_active {
+        padding: 0;
+        border: 0;
+        line-height: 24px;
+        color: #D41F2B;
+        font-weight: bold;
+    }

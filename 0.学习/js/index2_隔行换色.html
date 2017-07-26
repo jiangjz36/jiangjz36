@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    input { width: 50px;}
+  </style>
+  <script type="text/javascript">
+  window.onload = function(){
+    var btn = document.getElementsByTagName("button")[0];
+    btn.onclick = function(){
+      var oTable = document.createElement("table"),index = 0;
+      var num1 = parseInt(document.getElementById("input1").value),num2 = parseInt(document.getElementById("input2").value);
+      oTable.border = "1";
+      oTable.style.tableLayout = "fixed";
+
+      for(var i=0;i<num1;i++){
+        index++;
+        var oTr = document.createElement("tr");
+        index%2 == 0?oTr.style.background="red":oTr.style.background="green";
+        for(var j=0;j<num2;j++){
+          var oTd = document.createElement("td");
+          oTd.style.width = "50px";
+          oTd.style.height = "50px";
+          oTr.appendChild(oTd);
+        }
+        oTable.appendChild(oTr);
+      }
+      document.body.appendChild(oTable);
+    }
+
+  }
+  </script>
+</head>
+<body>
+行数：<input id="input1" type="text" />
+列数：<input id="input2" type="text" />
+<button>隔行换色</button>
+
+</body>
+</html>

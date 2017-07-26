@@ -1,0 +1,15 @@
+.header { margin-bottom: 50px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
+
+.content .sub_wrap { width: 1000px; margin: 0 auto;}
+
+.content ul { width: 926px; padding: 42px 34px 40px 40px; }
+.content ul:after {content: "";display: block;clear:both; }
+.content li { position: relative; float: left; width: 272px;height:380px;padding: 13px; margin-right: 16px;margin-bottom: 16px;background: #FFF;}
+.content ul li.f_nmr { margin-right: 0;}
+         ul li img { display: block; }
+         ul li h3 { font-size: 14px; margin-top: 20px;margin-bottom: 10px;}
+         ul li span { display: block; font-size: 10px; color: #929292;}
+         ul li p { height: 88px; margin-top: 16px; line-height: 190%;font-size: 10px;color: #414141;overflow: hidden;}
+         ul li button { position: absolute; right: 0;bottom: 0;  width: 126px;height: 42px; font-size: 0; background: url(../image/sprites.png);background-position: -128px -95px;outline: none;cursor: pointer;}
+         ul li:first-child button { background-position: 0 -95px;}
+/*background-position: 0 -95px;*/

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <script>
+            var nbMenuSwitch = true;
+            $(document).ready(function() {
+                $.get('header.html',function(e) {
+                    $('.header').prepend(e);
+                });
+            });
+        </script>
+    </div>
+    <div class="container">
+        <!--历史导航-->
+        <div class="history_nav wrap">
+            <a href="#">首页</a>
+            <span>&gt;</span>
+            <a href="#">宝宝食品</a>
+            <span>&gt;</span>
+            <a href="#">奶粉</a>
+        </div>
+        <div class="wrap clear_float">
+            <!--左侧商品分类等-->
+            <div class="l_left_side">
+                <!--左侧商品分类-->
+                <div class="l_category">
+                    <h3 class="l_h3" style="border-bottom-width: 2px;">全部商品分类</h3>
+                    <p class="lc_p" style="border-bottom-width: 1px"><a href="#">宝宝食品</a><button class="lc_switch">-</button></p>
+                    <div class="lc_content" style="display: block;">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">奶粉</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">牛奶粉</a>
+                                <a href="#">羊奶粉</a>
+                                <a href="#">有机奶粉</a>
+                                <a href="#">早产儿奶粉</a>
+                                <a href="#">牛乳蛋白过敏奶粉</a>
+                                <a href="#">益生菌奶粉</a>
+                                <a href="#">乳糖不耐受奶粉</a>
+                                <a href="#">孕妇奶粉</a>
+                                <a href="#">0-6个月</a>
+                                <a href="#">6-12个月</a>
+                                <a href="#">1-2岁</a>
+                                <a href="#">2-3岁</a>
+                                <a href="#">3-6岁</a>
+                                <a href="#">儿童奶粉</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">辅食</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">米粉/麦粉/粥</a>
+                                <a href="#">肉泥/果泥/菜泥</a>
+                                <a href="#">面条类</a>
+                                <a href="#">调味/拌饭/油</a>
+                                <a href="#">鱼肠/肉肠</a>
+                                <a href="#">宝宝零食</a>
+                                <a href="#">饮料/果汁</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">宝宝营养品</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">DHA/鱼油</a>
+                                <a href="#">钙镁锌铁</a>
+                                <a href="#">维生素/VD</a>
+                                <a href="#">益生菌</a>
+                                <a href="#">补脑益智</a>
+                                <a href="#">提高免疫力</a>
+                                <a href="#">调节肠胃</a>
+                                <a href="#">清火降火</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">宝宝用品</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">纸尿裤</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">纸尿裤</a>
+                                <a href="#">拉拉裤</a>
+                                <a href="#">湿巾</a>
+                                <a href="#">NB号</a>
+                                <a href="#">S号</a>
+                                <a href="#">M号</a>
+                                <a href="#">L号</a>
+                                <a href="#">XL/XXL号</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">喂养用品</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">奶瓶/奶嘴</a>
+                                <a href="#">牙胶/安抚</a>
+                                <a href="#">奶瓶清洁/配件</a>
+                                <a href="#">消毒/暖奶/调奶</a>
+                                <a href="#">水杯/水壶</a>
+                                <a href="#">儿童餐具</a>
+                                <a href="#">围兜/防溅衣</a>
+                                <a href="#">辅食料理机</a>
+                                <a href="#">食物存储</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">洗护/护理</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">沐浴系列</a>
+                                <a href="#">护肤系列</a>
+                                <a href="#">护臀系列</a>
+                                <a href="#">洗浴用具</a>
+                                <a href="#">理发器</a>
+                                <a href="#">防蚊驱蚊</a>
+                                <a href="#">洗手液</a>
+                                <a href="#">洗衣液/皂</a>
+                                <a href="#">奶瓶/果蔬清洗液</a>
+                                <a href="#">牙刷/牙膏</a>
+                                <a href="#">指甲钳</a>
+                                <a href="#">医护用品</a>
+                                <a href="#">防护用品</a>
+                                <a href="#">坐便器</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">营养保健</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">营养素</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">维生素</a>
+                                <a href="#">矿物质</a>
+                                <a href="#">钙+维生素D</a>
+                                <a href="#">蛋白质</a>
+                                <a href="#">叶酸</a>
+                                <a href="#">鱼油/卵磷脂</a>
+                                <a href="#">螺旋藻/叶绿素</a>
+                                <a href="#">番茄红素</a>
+                                <a href="#">叶黄素/胡萝卜素</a>
+                                <a href="#">葡萄籽/蔓越莓</a>
+                                <a href="#">左旋肉碱/减肥茶</a>
+                                <a href="#">月见草</a>
+                                <a href="#">辅酶Q10</a>
+                                <a href="#">蜂胶/人参</a>
+                                <a href="#">益生菌</a>
+                                <a href="#">玛卡</a>
+                                <a href="#">膳食纤维</a>
+                                <a href="#">胶原蛋白</a>
+                                <a href="#">大豆异黄酮</a>
+                                <a href="#">芦荟提取</a>
+                                <a href="#">酵素</a>
+                                <a href="#">海狗油/牡蛎精</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">营养人群</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">父母健康</a>
+                                <a href="#">男士保健</a>
+                                <a href="#">魅力女士</a>
+                                <a href="#">青少年营养</a>
+                                <a href="#">孕妈营养</a>
+                                <a href="#">宝宝营养</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">功能功效</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">美容养颜</a>
+                                <a href="#">提高免疫力</a>
+                                <a href="#">补脑益智</a>
+                                <a href="#">瘦身排毒</a>
+                                <a href="#">调节三高</a>
+                                <a href="#">调节内分泌</a>
+                                <a href="#">眼疲劳/明目</a>
+                                <a href="#">胃肠调节</a>
+                                <a href="#">肝肾养护</a>
+                                <a href="#">改善睡眠</a>
+                                <a href="#">缓解疲劳</a>
+                                <a href="#">骨骼健康</a>
+                                <a href="#">改善贫血</a>
+                                <a href="#">延缓衰老</a>
+                                <a href="#">心血管健康</a>
+                                <a href="#">关节保护</a>
+                                <a href="#">止咳润肺</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">宝宝玩具</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">婴幼玩具</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">床铃摇铃</a>
+                                <a href="#">婴儿健身架</a>
+                                <a href="#">拖拉玩具</a>
+                                <a href="#">早教益智</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">遥控/电动/模型</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">遥控车</a>
+                                <a href="#">遥控飞机</a>
+                                <a href="#">轨道/助力</a>
+                                <a href="#">电动玩具枪</a>
+                                <a href="#">仿真模型</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">积木/绘画/DIY</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">积木/拼插</a>
+                                <a href="#">磁力片</a>
+                                <a href="#">拼图</a>
+                                <a href="#">彩泥/绘画</a>
+                                <a href="#">情景玩具</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">爬行健身</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">爬行垫/毯</a>
+                                <a href="#">沙滩/戏水</a>
+                                <a href="#">户外玩具</a>
+                                <a href="#">滑板车/轮滑</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">毛绒公仔</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">芭比娃娃</a>
+                                <a href="#">卡通娃娃</a>
+                                <a href="#">毛绒玩具</a>
+                                <a href="#">抱枕/靠垫</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">动漫/卡通玩具</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">疯狂动物城</a>
+                                <a href="#">变形金刚</a>
+                                <a href="#">超级飞侠</a>
+                                <a href="#">飓风战魂/陀螺</a>
+                                <a href="#">海底小纵队</a>
+                                <a href="#">巨神战击队</a>
+                                <a href="#">巴拉拉小魔仙</a>
+                                <a href="#">铠甲勇士</a>
+                                <a href="#">奇积乐园</a>
+                                <a href="#">魔幻车神</a>
+                                <a href="#">机甲兽神/爆裂飞车</a>
+                                <a href="#">元气拯救队</a>
+                                <a href="#">魔币精灵</a>
+                                <a href="#">蛋神2</a>
+                                <a href="#">极速勇士</a>
+                                <a href="#">魔弹王</a>
+                                <a href="#">猎车兽魂</a>
+                                <a href="#">灵动蹦蹦兔/超萌英雄</a>
+                                <a href="#">光明守卫者/猪猪侠</a>
+                                <a href="#">斗龙战士</a>
+                                <a href="#">蛋蛋小子</a>
+                                <a href="#">零速争霸</a>
+                                <a href="#">其他卡通</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">乐器玩具</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">钢琴/电子琴</a>
+                                <a href="#">吉他/贝斯</a>
+                                <a href="#">其他乐器</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">书籍文具</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">绘本</a>
+                                <a href="#">儿童文学</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">宝宝服饰</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">童装</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">T恤/衬衫</a>
+                                <a href="#">马甲/背心</a>
+                                <a href="#">裤子</a>
+                                <a href="#">裙子</a>
+                                <a href="#">内衣/家居服</a>
+                                <a href="#">卫衣/外套</a>
+                                <a href="#">亲子装</a>
+                                <a href="#">套装</a>
+                                <a href="#">泳衣泳裤</a>
+                                <a href="#">毛衣/针织衫</a>
+                                <a href="#">雨衣</a>
+                                <a href="#">棉服/羽绒服</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">童鞋</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">学步/机能鞋</a>
+                                <a href="#">运动/休闲鞋</a>
+                                <a href="#">皮鞋/公主鞋</a>
+                                <a href="#">短靴/雪地靴</a>
+                                <a href="#">凉鞋/凉拖</a>
+                                <a href="#">雨鞋</a>
+                                <a href="#">智能鞋</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">婴幼服饰</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">新生儿礼盒</a>
+                                <a href="#">婴幼内衣裤</a>
+                                <a href="#">口水巾/汗巾</a>
+                                <a href="#">婴幼外出服</a>
+                                <a href="#">连体服/哈衣</a>
+                                <a href="#">围兜/肚围</a>
+                                <a href="#">隔尿垫/尿布</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">宝宝寝居</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">床上用品</a>
+                                <a href="#">婴儿枕</a>
+                                <a href="#">睡袋</a>
+                                <a href="#">毛毯/被褥</a>
+                                <a href="#">浴巾/毛巾</a>
+                                <a href="#">抱被/包巾</a>
+                                <a href="#">凉席/蚊帐</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">宝宝配饰</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">帽子/围巾/手套</a>
+                                <a href="#">袜子</a>
+                                <a href="#">宝宝口罩</a>
+                                <a href="#">太阳镜</a>
+                                <a href="#">新生儿手脚套</a>
+                                <a href="#">发饰/发夹</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">孕产用品</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">孕妈营养</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">孕妇奶粉</a>
+                                <a href="#">DHA/叶酸/备孕</a>
+                                <a href="#">孕期营养</a>
+                                <a href="#">产后调理</a>
+                                <a href="#">催奶茶</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">孕妈洗护</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">面部护理</a>
+                                <a href="#">妊娠纹/祛疤</a>
+                                <a href="#">身体护理</a>
+                                <a href="#">乳房护理</a>
+                                <a href="#">口腔护理</a>
+                                <a href="#">洗发护发</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">孕妇穿着</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">防辐射服</a>
+                                <a href="#">哺乳巾/文胸</a>
+                                <a href="#">长裤/托腹裤</a>
+                                <a href="#">孕妇装</a>
+                                <a href="#">孕妇内裤</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">产前产后</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">防溢乳垫</a>
+                                <a href="#">吸奶器</a>
+                                <a href="#">母乳储存</a>
+                                <a href="#">护腰枕</a>
+                                <a href="#">待产包</a>
+                                <a href="#">塑身/束腹带</a>
+                                <a href="#">托腹带</a>
+                                <a href="#">产妇卫生巾</a>
+                                <a href="#">产妇垫</a>
+                                <a href="#">妈咪包</a>
+                                <a href="#">背婴带</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">个护化妆</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">面部护肤</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">卸妆</a>
+                                <a href="#">洁面</a>
+                                <a href="#">化妆/爽肤水</a>
+                                <a href="#">面霜/乳液</a>
+                                <a href="#">精华</a>
+                                <a href="#">眼部护理</a>
+                                <a href="#">防晒/隔离</a>
+                                <a href="#">面膜</a>
+                                <a href="#">剃须</a>
+                                <a href="#">护肤套装</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">洗发护发</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">洗发/护发</a>
+                                <a href="#">直发器/卷发器/电吹风</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">身体护肤</a></dt>
+                            <dd class="lcc_dd">
+                               <a href="#">身体乳/沐浴露</a>
+                               <a href="#">美体塑身</a>
+                               <a href="#">手足护理</a>
+                               <a href="#">美胸丰胸</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">口腔护理</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">牙膏/牙刷</a>
+                                <a href="#">漱口水</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">女性护理</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">卫生巾/护垫</a>
+                                <a href="#">私密护理</a>
+                                <a href="#">脱毛膏/脱毛器</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">香水彩妆</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">女士香水</a>
+                                <a href="#">男士香水</a>
+                                <a href="#">粉底/BB霜/遮瑕</a>
+                                <a href="#">眉笔/眉粉</a>
+                                <a href="#">睫毛膏</a>
+                                <a href="#">眼线/眼影</a>
+                                <a href="#">唇膏/唇彩</a>
+                                <a href="#">腮红</a>
+                                <a href="#">美妆工具</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">居家生活</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">成人奶粉</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">全脂奶粉</a>
+                                <a href="#">脱脂奶粉</a>
+                                <a href="#">高钙奶粉</a>
+                                <a href="#">羊奶粉</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">食品饮料</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">休闲食品</a>
+                                <a href="#">坚果/果仁</a>
+                                <a href="#">蜂蜜</a>
+                                <a href="#">巧克力</a>
+                                <a href="#">冲调饮品</a>
+                                <a href="#">粮油调味</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">生活日用</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">家居收纳</a>
+                                <a href="#">美发工具</a>
+                                <a href="#">净化除味</a>
+                                <a href="#">口罩</a>
+                                <a href="#">家庭清洁</a>
+                                <a href="#">衣架/晾晒</a>
+                                <a href="#">雨伞/雨具</a>
+                                <a href="#">水杯/水壶</a>
+                                <a href="#">相册/</a>照
+                                <a href="#">纸品湿巾</a>
+                                <a href="#">成人用品</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">居家/布艺</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">内衣/睡衣</a>
+                                <a href="#">毛巾浴巾</a>
+                                <a href="#">家居服</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">个护健康</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">体重秤/血压计</a>
+                                <a href="#">磨毛器/粘毛器</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">生活电器</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">空气净化器</a>
+                                <a href="#">挂烫机/电熨斗</a>
+                                <a href="#">干衣机/除湿机</a>
+                                <a href="#">吸尘器/扫地机</a>
+                                <a href="#">加湿器/暖风机</a>
+                                <a href="#">变压器</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">厨房生活</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">净水/滤水</a>
+                                <a href="#">厨房电器</a>
+                                <a href="#">厨具/餐具</a>
+                                <a href="#">调味/食用油</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">轻奢生活</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">箱包</a>
+                                <a href="#">鞋服/配饰</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">海外直邮</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">按分类</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">宝宝奶粉</a>
+                                <a href="#">宝宝辅食</a>
+                                <a href="#">宝宝营养品</a>
+                                <a href="#">宝宝用品</a>
+                                <a href="#">儿童奶粉</a>
+                                <a href="#">成人奶粉</a>
+                                <a href="#">成人保健品</a>
+                                <a href="#">食品饮料</a>
+                                <a href="#">瘦身保健</a>
+                                <a href="#"> 美妆个护</a>
+                                <a href="#">轻奢生活</a>
+                                <a href="#">居家用品</a>
+                                <a href="#">孕产用品</a>
+                                <a href="#">宝宝服饰</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">按国别</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">日本直邮</a>
+                                <a href="#">韩国直邮</a>
+                                <a href="#">美国直邮</a>
+                                <a href="#">德国直邮</a>
+                                <a href="#">香港直邮</a>
+                                <a href="#">澳洲直邮</a>
+                                <a href="#">荷兰直邮</a>
+                                <a href="#">英国直邮</a>
+                                <a href="#">法国直邮</a>
+                                <a href="#">意大利直邮</a>
+                                <a href="#">加拿大直邮</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p class="lc_p"><a href="#">礼品卡</a><button class="lc_switch">+</button></p>
+                    <div class="lc_content">
+                        <dl>
+                            <dt class="lcc_dt"><a href="#">礼品卡</a></dt>
+                            <dd class="lcc_dd">
+                                <a href="#">500元礼品卡</a>
+                                <a href="#">1000元礼品卡</a>
+                                <a href="#">2000元礼品卡</a>
+                                <a href="#">5000元礼品卡</a>
+                                <a href="#">10000元礼品卡</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 此分类大部分用户浏览了 -->
+                <div class="l_other_browse">
+                    <h3 class="l_h3">此分类大部分用户浏览了</h3>
+                    <div class="lo_content">
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43.jpg" alt=""></a>
+                            <a class="loc_sec_name" href="">【清淡不上火】荷兰美素奶粉Hero Baby 1段（0-6</a>
+                            <span class="loc_sec_price">¥188（7.6折）</span>
+                            <span class="loc_sec_buy_count">51043人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (1).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">荷兰牛栏奶粉Nutrilon 1段（0-6个月）850g（海外</a>
+                            <span class="loc_sec_price">¥1608（6.5折）</span>
+                            <span class="loc_sec_buy_count">226679人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (2).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">荷兰牛栏奶粉Nutrilon 4段（1-2岁）800g（海外</a>
+                            <span class="loc_sec_price">¥242（7.8折）</span>
+                            <span class="loc_sec_buy_count">320984人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (3).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">荷兰牛栏奶粉Nutrilon 4段（1-2岁）800g</a>
+                            <span class="loc_sec_price">¥1684（6.7折）</span>
+                            <span class="loc_sec_buy_count">71720人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (4).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">【清淡不上火】荷兰美素奶粉Hero Baby 1段（0-6个</a>
+                            <span class="loc_sec_price">¥188（7.6折）</span>
+                            <span class="loc_sec_buy_count">51043人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (5).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">荷兰牛栏奶粉Nutrilon 5段（2-7岁）800g</a>
+                            <span class="loc_sec_price">¥1684（6.7折）</span>
+                            <span class="loc_sec_buy_count">52520人已购买</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购物达人同时还购买了这些 -->
+                <div class="l_other_buy">
+                    <h3 class="l_h3">购物达人同时还购买了这些</h3>
+                    <div class="lo_content">
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (6).jpg" alt="</a>">
+                            <a class="loc_sec_name" href=""><font color="red">3包包邮</font>【柔软干爽透气】日本花王Merries纸尿裤 </a>
+                            <span class="loc_sec_price">¥113（7.7折）</span>
+                            <span class="loc_sec_buy_count">203703人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (7).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">新西兰宜可诚ecostore一般中干性发质洗发露 </a>
+                            <span class="loc_sec_price">¥89（7.7折）</span>
+                            <span class="loc_sec_buy_count">60049人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (8).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">【气血双补 省去腮红】德国莎露斯Salus铁元 </a>
+                            <span class="loc_sec_price">¥154（5.9折）</span>
+                            <span class="loc_sec_buy_count">50487人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (9).jpg" alt="</a>">
+                            <a class="loc_sec_name" href="">【气血双补 省去腮红】德国莎露斯Salus铁元 </a>
+                            <span class="loc_sec_price">¥167（7.7折）</span>
+                            <span class="loc_sec_buy_count">16511人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (11).jpg" alt=</a>"">
+                            <a class="loc_sec_name" href="">【减重不减健康】美国康宝莱Herbalife奶昔快速减 </a>
+                            <span class="loc_sec_price">¥278（5.0折）</span>
+                            <span class="loc_sec_buy_count">16362人已购买</span>
+                        </div>
+                        <div class="loc_sec">
+                            <a href="#"><img src="img/43 (12).jpg" alt=</a>"">
+                            <a class="loc_sec_name" href="">【宝宝爬行玩耍必备】迪士尼米奇维尼双面经济爬 </a>
+                            <span class="loc_sec_price">¥38（4.8折）</span>
+                            <span class="loc_sec_buy_count">3559人已购买</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧商品删选等-->
+            <div class="l_right_main">
+                 <!-- 热卖推荐 -->
+                <div class="l_best_selling">
+                    <h3 class="r_h3">热卖推荐</h3>
+                    <div class="l_bs_wrap">
+                        <button class="l_bs_prev"></button>
+                        <button class="l_bs_next"></button>
+                        <div class="l_bsw">
+                            <div class="l_bs_sec">
+                                <a href="#"><img src="img/43 (13).jpg" alt=""></a>
+                                <a href="#" class="l_bs_name">荷兰牛栏奶粉Nutrilon 4段（1-2</a>
+                                <p class="l_bs_price">¥891</p>
+                                <p class="l_bs_del">价格<del>¥666</del></p>
+                                <a href="#" class="s_bl_btn">立即抢购</a>
+                            </div>
+                            <div class="l_bs_sec">
+                                <a href="#"><img src="img/43 (13).jpg" alt=""></a>
+                                <a href="#" class="l_bs_name">荷兰牛栏奶粉Nutrilon 4段（1-2</a>
+                                <p class="l_bs_price">¥891</p>
+                                <p class="l_bs_del">价格<del>¥666</del></p>
+                                <a href="#" class="s_bl_btn">立即抢购</a>
+                            </div>
+                            <div class="l_bs_sec">
+                                <a href="#"><img src="img/43 (13).jpg" alt=""></a>
+                                <a href="#" class="l_bs_name">荷兰牛栏奶粉Nutrilon 4段（1-2</a>
+                                <p class="l_bs_price">¥891</p>
+                                <p class="l_bs_del">价格<del>¥666</del></p>
+                                <a href="#" class="s_bl_btn">立即抢购</a>
+                            </div>
+                            <div class="l_bs_sec">
+                                <a href="#"><img src="img/43 (13).jpg" alt=""></a>
+                                <a href="#" class="l_bs_name">荷兰牛栏奶粉Nutrilon 4段（1-2</a>
+                                <p class="l_bs_price">¥891</p>
+                                <p class="l_bs_del">价格<del>¥666</del></p>
+                                <a href="#" class="s_bl_btn">立即抢购</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 奶粉-商品筛选 -->
+                <div class="l_filter">
+                    <h3 class="r_h3"><span class="r_h3_red">奶粉</span>-商品筛选</h3>
+                    <div class="l_f_content">
+                        <!-- 国别筛选 -->
+                        <div class="l_fc_sec l_fc_sec1 clear_float">
+                            <span class="l_fcs_span">国别：</span>
+                            <span class="l_fcs_a"><a class="l_fcs_active" href="#">全部</a></span>
+                            <span class="l_fcs_a"><a href="#">荷兰</a></span>
+                            <span class="l_fcs_a"><a href="#">新西兰</a></span>
+                            <span class="l_fcs_a"><a href="#">德国</a></span>
+                            <span class="l_fcs_a"><a href="#">美国</a></span>
+                            <span class="l_fcs_a"><a href="#">澳大利亚</a></span>
+                            <span class="l_fcs_a"><a href="#">英国</a></span>
+                            <span class="l_fcs_a"><a href="#">法国</a></span>
+                            <span class="l_fcs_a"><a href="#">国内精品</a></span>
+                            <span class="l_fcs_a"><a href="#">中国香港</a></span>
+                            <span class="l_fcs_a"><a href="#">中国进口</a></span>
+                        </div>
+                        <!-- 品牌筛选 -->
+                        <div class="l_fc_sec l_fc_sec2 clear_float">
+                            <span class="l_fcs_span">品牌：</span>
+
+                            <span class="l_fcs_a"><a class="l_fcs_active" href="#">全部</a></span>
+                            <span class="l_fcs_a"><a href="#">荷兰牛栏Nutrilon</a></span>
+                            <span class="l_fcs_a"><a href="#">德国爱他美Aptamil</a></span>
+                            <span class="l_fcs_a"><a href="#">德国喜宝Hipp</a></span>
+                            <span class="l_fcs_a"><a href="#">荷兰美素Hero Baby</a></span>
+                            <span class="l_fcs_a"><a href="#">英国牛栏Cow＆Gate</a></span>
+                            <span class="l_fcs_a"><a href="#">新西兰爱他美Aptamil</a></span>
+                            <span class="l_fcs_a"><a href="#">新西兰Karicare</a></span>
+                            <span class="l_fcs_a"><a href="#">英国爱他美Aptamil</a></span>
+                            <span class="l_fcs_a"><a href="#">德国特福芬Topfer</a></span>
+                            <span class="l_fcs_a"><a href="#">澳洲贝拉米Bellamy’s</a></span>
+                            <span class="l_fcs_a"><a href="#">美素佳儿 Friso</a></span>
+                            <span class="l_fcs_a"><a href="#">英国纽康特Neocate</a></span>
+                            <span class="l_fcs_a"><a href="#">澳洲a2</a></span>
+                            <span class="l_fcs_a"><a href="#">美国雅培Similac</a></span>
+                            <span class="l_fcs_a"><a href="#">美国美赞臣Meadjohnson</a></span>
+                            <span class="l_fcs_a"><a href="#">新西兰惠氏Wyeth</a></span>
+                            <span class="l_fcs_a"><a href="#">雀巢Nestle</a></span>
+                            <span class="l_fcs_a"><a href="#">惠氏Wyeth</a></span>
+                            <span class="l_fcs_a"><a href="#">贝拉米Bellamy's</a></span>
+                            <span class="l_fcs_a"><a href="#">德国凯莉泓乐Holle</a></span>
+                            <span class="l_fcs_a"><a href="#">雅培Abbott</a></span>
+                            <span class="l_fcs_a"><a href="#">英国Nannycare</a></span>
+                            <span class="l_fcs_a"><a href="#">美赞臣Meadjohnson</a></span>
+                            <span class="l_fcs_a"><a href="#">英国惠氏SMA</a></span>
+                            <span class="l_fcs_a"><a href="#">法国达能Gallia</a></span>
+                            <span class="l_fcs_a"><a href="#">港版惠氏启赋illuma</a></span>
+                            <span class="l_fcs_a"><a href="#">英国雅培Abbott</a></span>
+                            <span class="l_fcs_a"><a href="#">安满Anmum</a></span>
+                            <span class="l_fcs_a"><a href="#">澳洲雅培</a></span>
+                        </div>
+                        <!-- 年龄筛选 -->
+                        <div class="l_fc_sec l_fc_sec3 clear_float">
+                            <span class="l_fcs_span">年龄：</span>
+                            <span class="l_fcs_a"><a href="#" class="l_fcs_active">全部</a></span>
+                            <span class="l_fcs_a"><a href="#">0-6个月</a></span>
+                            <span class="l_fcs_a"><a href="#">6-12个月</a></span>
+                            <span class="l_fcs_a"><a href="#">12-36个月</a></span>
+                            <span class="l_fcs_a"><a href="#">10个月以上</a></span>
+                            <span class="l_fcs_a"><a href="#">2-7岁</a></span>
+                            <span class="l_fcs_a"><a href="#">1-2岁</a></span>
+                            <span class="l_fcs_a"><a href="#">3-6岁</a></span>
+                            <span class="l_fcs_a"><a href="#">6岁以上</a></span>
+                            <span class="l_fcs_a"><a href="#">其他</a></span>
+                        </div>
+                        <!-- 包装筛选 -->
+                        <div class="l_fc_sec l_fc_sec4 clear_float">
+                            <span class="l_fcs_span">包装：</span>
+                            <span class="l_fcs_a"><a href="#" class="l_fcs_active">全部</a></span>
+                            <span class="l_fcs_a"><a href="#">罐装</a></span>
+                            <span class="l_fcs_a"><a href="#">盒装</a></span>
+                            <span class="l_fcs_a"><a href="#">袋装</a></span>
+                            <span class="l_fcs_a"><a href="#">2罐优惠</a></span>
+                            <span class="l_fcs_a"><a href="#">4罐优惠</a></span>
+                            <span class="l_fcs_a"><a href="#">买7送1</a></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 综合销量价格等排序 -->
+                <div class="l_sorting">
+                    <span class="ls_btn lsb_active">综合</span>
+                    <span class="ls_btn">销量</span>
+                    <span class="ls_btn">价格</span>
+                    <span class="ls_btn">评价</span>
+                    <span class="ls_btn">上架时间</span>
+                    <form action="#" class="ls_price_interval">
+                        <label>价格：</label>
+                        <input class="ls_pi_txt" type="text">
+                        <span>-</span>
+                        <input class="ls_pi_txt" type="text">
+                        <input class="ls_pi_sub" type="submit" value="搜索">
+                    </form>
+                    <span class="ls_cart_count">
+                        共计<b>608</b>件商品
+                    </span>
+                </div>
+                <!-- 商品列表 -->
+                <div id="l_cart_list">
+                    <!-- <div class="l_cl_sec">
+                        商品图片
+                        <a href="#"><img class="l_cls_img" src="img/44 (14).jpg" alt=""></a>
+                        <p class="l_cls_price">
+                            价格
+                            <span class="lcp_price">￥1608</span>
+                            <i class="icon_l_divide"></i>
+                            单价
+                            <span class="lcp_unit_price">单价：￥201</span>
+                        </p>
+                        商品名称
+                        <a href="#" class="l_cls_name">
+                            <span class="lcn_count">8件装</span>
+                            <i class="icon_l_divide"></i>
+                            <span class="lcn_name">荷兰牛栏奶粉Nutrilon 1段（0-6个月）850g（海外版）</span>
+                        </a>
+                        销量和评价
+                        <div class="l_cls_btn">
+                            销量
+                            <a href="#" class="l_cb_sales">销量 22.7万</a>
+                            评价
+                            <a href="#" class="l_cb_assess">评价 19141</a>
+                        </div>
+                        按钮-购物车和收藏
+                        <div class="l_cls_btn1">
+                            <a href="#" class="lcb_add_shop_cart">加入购物车</a>
+                            <a href="#" class="lcb_collection" data-collection="false"><i class="icon_collection"></i>收藏</a>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- 商品添加成功弹窗 -->
+                <div id="add_success">
+                    <a id="as_close" href="#"></a>
+                    <p class="as_p"><i class="icon_as_success"></i>添加成功</p>
+                    <div class="as_btn clear_float">
+                        <a id="as_settlement" href="#">去结算</a>
+                        <a id="as_carry_on" href="#">继续购物</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <script>
+            $(document).ready(function() {
+                $.get('footer.html',function(e) {
+                    $('.footer').prepend(e);
+                });
+            });
+        </script>
+    </div>
+    <script src="js/list.js"></script>
+</body>
+</html>

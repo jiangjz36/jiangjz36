@@ -1,0 +1,37 @@
+body {
+  position: relative;
+  background: #FFF;
+}
+.container {
+  width: 22.96666667rem;
+  padding: 0 1.06666667rem 0 0.96666667rem;
+}
+.container dl {
+  padding: 1.3rem 0 1.2rem 0;
+  border-bottom: 1px solid #d7d7d7;
+  color: #333;
+}
+.container dl .name {
+  float: left;
+  font-size: 0.86666667rem;
+  line-height: 1.43333333rem;
+}
+.container dl .change {
+  float: right;
+  font-size: 1rem;
+}
+.container dl .time {
+  font-size: 0.8rem;
+  color: #666;
+}
+.download {
+  position: absolute;
+  bottom: 1.06666667rem;
+  left: 0.96666667rem;
+  width: 22.96666667rem;
+  height: 1.9rem;
+  background: #ffda44;
+  border: 1px solid #ffc600;
+  font-size: 0.93333333rem;
+  color: #333;
+}

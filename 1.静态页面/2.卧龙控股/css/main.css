@@ -1,0 +1,130 @@
+/*
+  .wrap
+    .header
+      .logo_search
+      .nav
+      .banner
+        .banner_info 图片的相关信息
+        .banner_btns 轮播用的上下按钮
+    .content
+      .new  相关新闻
+      .section
+        .introduce  卧龙介绍
+        .recruit  人才招聘
+      .market  卧龙市场，市场相关消息
+    .footer
+      .center 产品中心
+      .research 技术研发
+      .network 营销网络
+      .footer_ifon 网站地址、版权及分享等
+ */
+body,ul,li,h1,h2,h3,h4,p { padding: 0;margin: 0;}
+input,button { border: none;outline: none;}
+a { text-decoration: none; color: black;}
+li { list-style: none;}
+/*reset end*/
+
+.wrap { width: 1000px; margin: 0 auto;}
+
+/*
+.header
+  .logo_search  logo图片（h1）、搜索框（form）
+  .nav 主导航栏
+  .bar 横幅图片
+ */
+.header { width: 100%;}
+.logo_search { height: 100px;}
+.logo_search h1,.header form { margin-top: 40px;}
+.logo_search h1 { float: left;width:265px;height: 30px;  font-size: 0;}
+.logo_search h1 a { display: inline-block; width: 100%;height: 100%;background: url(../images/sprites.png);}
+.logo_search form { position: relative; float: right; margin-right: 20px;}
+.logo_search form input.s_txt { width: 210px;height: 20px; border: 1px solid #E5E5E5; padding: 4px 5px 4px 10px; background: #F1F1F1;}
+.logo_search form input.s_btn { position: absolute; right: 8px;top: 5px; width: 20px;height: 20px; background: url(../images/sprites.png); background-position: -166px -88px;}
+
+.nav { width: 100%;height: 60px; background: #303030;}
+.nav ul { width: 940px;height: 100%; margin: 0 auto;}
+.nav li { float: left; width: 116.625px;height: 100%; border-left: 1px solid #484848; text-align: center;}
+.nav li:first-child { border: none;}
+.nav li a { display: inline-block; width: 100%; line-height: 60px; color: #FFF;font-size: 14px;}
+.nav li:hover { background: #CC433F;}
+
+.banner { position: relative; width: 100%;height: 463px; background: url(../images/bar.png);}
+.banner .banner_info { position: absolute; bottom: 92px;left: 25px; width: 245px;height: 180px; padding: 0 28px; background: rgba(203, 39, 45, 0.5); color: #FFF;font-family: "微软雅黑";}
+     .banner_info h3 { padding: 22px 0 10px 0;border-bottom: 1px solid #F5605A; font-size: 156.25%;/*25px*/font-weight: normal; letter-spacing: 1px;;}
+     .banner_info p { margin: 13px 0 25px; line-height: 1.5; font-size: 75%;/*12px*/}
+     .banner_info .i-more { display: inline-block; width: 18px;height: 18px;background: url(../images/sprites.png);background-position: -11px -53px; vertical-align: middle;}
+     .banner_info a { position: absolute; bottom: 25px;left: 28px;font-size: 75%; color: #FFF;}
+     .banner_btns { position: absolute; right: 20px;bottom: 0; width: 98px;;height: 48px;}
+     .banner_btns button { float: left; width: 48px;height: 48px; background: url(../images/sprites.png);}
+     .banner_btns button:first-child {background-position: -88px -51px; }
+     .banner_btns button:last-child { margin-left: 2px; background-position: -287px -66px; }
+     .banner_btns button:hover:first-child { background-position: -40px -51px;}
+     .banner_btns button:hover:last-child { margin-left: 2px; background-position: -237px -67px; }
+/*header end**********************************************************/
+
+/*
+.content
+  .new  相关新闻板块
+  .section 公司介绍及招聘板块
+    .introduce  卧龙介绍板块
+    .recruit  人才招聘板块
+  .market  卧龙市场板块，市场相关消息
+ */
+.content { width: 100%; overflow: hidden; clear: both;}
+.content .p1 { margin-top: 32px; line-height: 1.8; font-size: 14px; color: #4B4B4B;}
+.content .p1 span { font-size: 12px;}
+.content .p2 { margin-top: 22px; line-height: 1.8; font-size: 12px; color: #8E8E8E;}
+.content h2 { margin-top: 35px; font-size: 20px;}
+
+.new { float: left; width: 445px;height: 240px;padding-left: 20px; padding-right: 35px;color: #2D2D2D;}
+.new ul { margin-top: 25px;}
+.new ul li { position: relative; margin-top: 10px;text-indent: 10px; list-style-position: inside;color: #4D4D4D;font-size: 14px;}
+.new ul .new_date { float: right; padding: 1px 2px;color: #999;  font-size: 12px;}
+.new ul .dot { display: inline-block; position: absolute; width: 3px;height: 3px;background: #898989; left: 0;top:6px;}
+
+.section { float: left; width: 500px;height: 240px; }
+.section div { float: left; width: 215px;height: 240px; padding-left: 25px;} /*给每个div版块统一的样式*/
+.section .introduce { background: #F1F1F1;}
+.section .recruit { width: 233px; margin-left: 2px; background: #FBFBFB; background-image: url(../images/2017-02-09_123317.png);background-repeat: no-repeat; background-position: right bottom;}
+.section .recruit p { color: #4D4D4D;}
+.section .recruit button { width: 68px;height: 20px; margin-top: 55px; border-radius: 5px; background: url(../images/sprites.png);background-position: -143px -51px;}
+
+.market { float: left; width: 980px; padding-left: 20px;padding-bottom: 50px;}
+.market li { float: left; width: 210px;margin-left: 40px;}
+.market li:first-child { margin-left: 0;}
+.market li img { margin-top: 20px;}
+.market li p.p2 { line-height: 2;}
+
+/*content end**********************************************************/
+
+/*
+.footer
+  .center 产品中心
+  .research 技术研发
+  .network 营销网络
+  .footer_ifon 网站地址、版权及分享等
+ */
+.footer { padding-left: 20px; padding-top: 30px; background: #E5E5E5; overflow: hidden;clear: both;}
+.footer h3 { padding-bottom: 10px; border-bottom: 1px solid #C3C3C3; font-size: 18px; color: #606060;}
+.footer div { float: left;}
+.footer li { margin-top: 6px;margin-left: 3px; list-style-image: url(../images/list_img2.png); list-style-position: inside;}
+.footer li a { font-size: 12px; color: #5F5F5F;}
+
+.research,.network { margin-left: 50px;}
+.center { width: 455px;}
+.center ul { float: left; margin-left: 70px;}
+.center ul.center_ul_0 { margin-left: 0;}
+
+.research { width: 150px; }
+
+.network { width: 255px; padding-bottom: 30px; }
+
+.footer_ifon { width: 960px; height: 60px; margin-left: -20px; padding: 20px 20px 0 20px; background: #FFF; font-size: 9px;color: #808080; }
+.footer_ifon ul { float: left;}  /*左浮动的副导航*/
+.footer_ifon ul li { float: left; padding: 0 4px; border-left: 1px solid #808080; list-style: none; }
+.footer_ifon ul li:first-child { border: none;}
+.footer_ifon p { float: right; margin-top: 6px;}  /*有浮动的页面相关信息*/
+.footer_ifon .copyright { text-transform: uppercase;}
+.footer_ifon .share { display: inline-block; width: 115px; height: 15px;vertical-align: middle; background: url(../images/sprites.png); background-position: -220px -51px;}
+
+/*footer end*****************************************/

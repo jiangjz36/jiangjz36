@@ -1,0 +1,75 @@
+/*h_content 首页*/
+.h_content { padding: 54px 0 30px 0; text-align: center;}
+  .h_service { margin-bottom: 68px;}
+  .h_service h2 { margin-bottom: 45px; font: 24px "黑体"; text-transform: uppercase; background: url(../images/hr.png) no-repeat center;}
+  .h_service li { margin-bottom: 46px;}
+  .h_service li dl { float: left; width: 244px; margin-right: 134px;}
+  .h_service li dl:last-child { margin-right: 0;}
+  .h_service dl dt { width: 160px;height: 160px; margin: 0 auto;background: url(../images/service_01.png);}
+  .h_service dl h3 { margin: 18px 0 18px; font-size: 16px;}
+  .h_service dl p { font-size: 12px;line-height: 2;color: #666666;}
+  .information button { position: absolute; right: 10px;top: 10px; width: 48px;height: 17px;font-size: 12px;border: 1px solid #DCDCDC;background: #FFF;text-transform: uppercase;}
+    .dynamic,.about_us { position: relative;}
+    .dynamic { float: left; width: 600px;}
+    .dynamic h2 {padding-bottom:10px;margin-bottom: 25px; font-size: 20px;font-weight: normal;border-bottom: 1px solid #E7E7E7;text-align: left;}
+    .dynamic .dyn_sec { margin-bottom: 25px;overflow: hidden;clear: both;}
+    .dynamic .dyn_img { float: left; width: 80px;height: 60px;margin-right: 10px;background: url(../images/sprites.png) 0 -134px;}
+    .dynamic dt,.dynamic dd { float: left;}
+    .dynamic dt span { display: inline-block;width: 56px;height: 16px;background: #FF9C00; font-size: 12px;color: #FFF;border-radius: 10px;}
+    .dynamic dt a { font-size: 13px;color: #666;}
+    .dynamic dd { width: 500px;margin-top: 4px; line-height: 1.5;font-size: 13px; color: #666;}
+    .about_us { float: right;width: 346px;height: 190px;padding: 20px;border: 1px solid #DFDFDF;}
+    .about_us h2 { border-bottom: 1px dashed #DFE0DF;padding-bottom: 12px; text-align: left; font-size: 20px;font-weight: normal;color: #FF6F05; }
+    .about_us p { padding-top: 20px;margin-top: 1px;border-top: 1px dashed #DFE0DF;font-size: 12px;color: #666;text-align: left;line-height: 1.5;}
+    .about_us p i { color: #FF6F05;font-style: normal;}
+/*h_content 首页 end*/
+/*s_content 我们的服务*/
+.s_content { background: #F4F4F4; padding-bottom: 90px;}
+
+.s_content ul { padding: 0 60px; background: #FFF;}
+.s_content ul li {padding: 38px 0 22px;border-bottom: 1px dotted #CCC; clear: both;overflow: hidden;}
+.s_content li .service_img {float: left;width: 125px;height: 125px;margin-right: 20px;background: url(../images/ser_img1.png); }
+.s_content dl dt { margin-bottom: 10px;}
+.s_content dl dd { font-size: 12px;color: #666; line-height: 2;}
+.s_content dl a { color: #B4B4B4;}
+/*s_content 我们的服务 end*/
+/*c_content 案例展示*/
+.c_content { padding-bottom: 106px; background: #F4F4F4; }
+  .c_nav { margin: 42px 0;}
+  .c_nav li { float: left; width: 96px;height: 24px;line-height: 24px; margin-right: 14px; font-size: 13px; text-align: center;color: #959595;background: #DCDCDC;cursor: pointer;}
+  .c_nav li.cn_active,.c_nav li:hover { background: #FF9C00;color: #FFF;}
+  .c_sec { margin-bottom: 41px;text-align: center;}
+  .c_sec dl { float: left;width: 286px; margin-bottom: 41px;margin-right: 71px;}
+  .c_sec dl:nth-child(3) { margin-right: 0;}
+  .c_sec dt { width: 286px;height: 175px;background: url(../images/case01.png);}
+  .c_sec dd { font-size: 12px;margin-top: 10px;color: #F8931F;}
+  .c_page { float: right;text-align: center;}
+  .c_page ul,.c_page button {float: left;}
+  .c_page ul li { float: left; width: 15px;height: 19px;margin-left: 5px;border: 1px solid #E5E5E5;font-size: 12px;line-height: 19px; color: #D12800;cursor: pointer;}
+  .c_page ul li.cp_active,.c_page ul li:hover {background:#FF9C00;color: #FFF; border-color: #FF9C00;}
+  .c_page button.next_page,.c_page button.last_page {float: left;width: 50px;height: 21px;margin-left: 5px;font-size: 12px;background-color: #F4F4F4;border: 1px solid #E5E5E5;line-height: 21px; color: #D12800;cursor: pointer;}
+  .c_page button.cp_active,.c_page button:hover { background:#FF9C00;color: #FFF; border-color: #FF9C00;}
+/*c_content 案例展示 end*/
+/*a_content 关于我们*/
+.a_content { padding-bottom: 106px; background: #F4F4F4; }
+.a_content .a_container { width:100%; padding: 50px 0 226px;background: #FFF;}
+.a_content .a_container p { margin: 0 68px;font-size: 14px;color: #6F6F6F;line-height: 2;text-indent: 2em;}
+.a_content .a_container p.fuwu { font-weight: 700;color: #F8931F;}
+/*a_content 关于我们 end*/
+/*cn_content 联系我们*/
+.cn_content { padding-bottom: 106px; background: #F4F4F4; }
+.cn_content .cn_container { width:100%; padding: 75px 0 85px;background: #FFF;}
+.cn_content .cn_container p {margin: 0 60px;padding-bottom: 20px;border-bottom: 1px dotted #CCC;color: #6F6F6F;line-height: 2;}
+.cn_content .cn_container form {width: 480px;margin: 60px 60px 0 60px;}
+  .cn_caption legend { color: #666;}
+  .cn_caption em { display: inline-block; width: 34px;height: 34px;background: url(../images/sprites.png) -154px -159px;vertical-align: middle;}
+  .cn_sec { width: 100%;height: 90px;}
+  form label,.cn_sec label { display: block;}
+  form label { margin: 15px 0; color: #999;}
+  form input {padding: 12px;width: 194px;border: 1px solid #D3D3D3;background: #F8F8F8;}
+  form textarea { display: block; width: 374px;height: 140px; padding: 12px; border: 1px solid #D3D3D3;background: #F8F8F8;}
+  form .cn_submit,form .sn_reset { float: left; width: 195px;height: 38px;margin: 24px 10px 0 0;background: #B8B8B8;color: #F0F0F0; cursor: pointer;}
+  .cn_sec .sec_left,.cn_sec .sec_right { width: 220px;}
+  .cn_sec .sec_left { float: left;}
+  .cn_sec .sec_right { float: right;}
+/*cn_content 联系我们 end*/
